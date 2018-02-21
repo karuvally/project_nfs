@@ -1,0 +1,1566 @@
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       3.89 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+ 4491 be/4 root        0.00 B/s    3.89 K/s  0.00 %  0.00 % python /usr/sbin/iotop -b -o
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       3.92 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+ 1000 be/4 research    0.00 B/s    3.92 K/s  0.00 %  0.00 % upstart --user
+Total DISK READ :       0.00 B/s | Total DISK WRITE :      93.19 K/s
+Actual DISK READ:       3.41 M/s | Actual DISK WRITE:      62.13 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 1653 be/4 research    0.00 B/s   93.19 K/s  0.00 % 26.08 % zeitgeist-daemon
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :      14.13 M/s | Total DISK WRITE :     104.54 K/s
+Actual DISK READ:      14.13 M/s | Actual DISK WRITE:     205.21 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4496 be/4 research   14.13 M/s    0.00 B/s  0.00 % 99.99 % firefox
+  196 be/3 root        0.00 B/s   58.08 K/s  0.00 % 49.04 % [jbd2/sda1-8]
+ 1661 be/4 research    0.00 B/s   46.46 K/s  0.00 % 25.86 % zeitgeist-fts
+ 1653 be/4 research    0.00 B/s    0.00 B/s  0.00 %  7.62 % zeitgeist-daemon
+Total DISK READ :      17.73 M/s | Total DISK WRITE :      15.52 K/s
+Actual DISK READ:      17.96 M/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4496 be/4 research   17.73 M/s   15.52 K/s  0.00 % 85.77 % firefox
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :      13.22 M/s | Total DISK WRITE :     411.98 K/s
+Actual DISK READ:      13.34 M/s | Actual DISK WRITE:     155.46 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4496 be/4 research   13.22 M/s  307.04 K/s  0.00 % 57.86 % firefox
+  196 be/3 root        0.00 B/s  104.94 K/s  0.00 %  8.06 % [jbd2/sda1-8]
+Total DISK READ :       3.75 M/s | Total DISK WRITE :      85.44 K/s
+Actual DISK READ:       4.97 M/s | Actual DISK WRITE:     167.00 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4496 be/4 research    3.67 M/s   38.84 K/s  0.00 % 23.28 % firefox
+  196 be/3 root        0.00 B/s   38.84 K/s  0.00 %  9.85 % [jbd2/sda1-8]
+ 4509 be/4 research   77.67 K/s    0.00 B/s  0.00 %  6.23 % firefox [Socket Thread]
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+ 1000 be/4 research    0.00 B/s    7.77 K/s  0.00 %  0.00 % upstart --user
+Total DISK READ :       4.61 M/s | Total DISK WRITE :     269.25 K/s
+Actual DISK READ:       4.61 M/s | Actual DISK WRITE:     405.82 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s    3.90 K/s  0.00 % 59.14 % [jbd2/sda1-8]
+ 4496 be/4 research    4.61 M/s  265.34 K/s  0.00 % 20.48 % firefox
+Total DISK READ :     291.23 K/s | Total DISK WRITE :       2.36 M/s
+Actual DISK READ:     291.23 K/s | Actual DISK WRITE:       2.64 M/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s   11.65 K/s  0.00 % 91.43 % [jbd2/sda1-8]
+ 4496 be/4 research  236.87 K/s    2.35 M/s  0.00 %  8.03 % firefox
+ 4509 be/4 research   54.36 K/s    0.00 B/s  0.00 %  1.53 % firefox [Socket Thread]
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :     427.78 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:     700.00 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s    0.00 B/s  0.00 % 99.99 % [jbd2/sda1-8]
+ 4496 be/4 research    0.00 B/s  423.89 K/s  0.00 %  0.11 % firefox
+ 4491 be/4 root        0.00 B/s    3.89 K/s  0.00 %  0.00 % python /usr/sbin/iotop -b -o
+Total DISK READ :       3.86 M/s | Total DISK WRITE :    1442.89 K/s
+Actual DISK READ:       3.86 M/s | Actual DISK WRITE:    1524.56 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s    7.78 K/s  0.00 % 22.35 % [jbd2/sda1-8]
+ 4496 be/4 research    3.77 M/s   31.11 K/s  0.00 % 16.12 % firefox
+ 4527 be/4 research   27.22 K/s   23.34 K/s  0.00 %  1.01 % firefox [DOM Worker]
+ 4556 be/4 research    0.00 B/s 1372.89 K/s  0.00 %  0.06 % firefox [mozStorage #1]
+ 4549 be/4 research   62.23 K/s    0.00 B/s  0.00 %  0.05 % firefox [StreamTrans #20]
+ 4553 be/4 research    0.00 B/s    0.00 B/s  0.00 %  0.03 % firefox [ImgDecoder #1]
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :    1130.19 K/s | Total DISK WRITE :    1254.05 K/s
+Actual DISK READ:    1130.19 K/s | Actual DISK WRITE:    1068.26 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s    0.00 B/s  0.00 % 63.90 % [jbd2/sda1-8]
+ 4496 be/4 research  936.66 K/s  185.78 K/s  0.00 % 31.02 % firefox
+ 4509 be/4 research   73.54 K/s    0.00 B/s  0.00 %  8.79 % firefox [Socket Thread]
+ 4553 be/4 research   65.80 K/s    0.00 B/s  0.00 %  0.77 % firefox [ImgDecoder #1]
+ 4556 be/4 research    0.00 B/s 1068.26 K/s  0.00 %  0.74 % firefox [mozStorage #1]
+ 4549 ?err research   54.19 K/s    0.00 B/s  0.00 %  0.00 % {no such process}
+Total DISK READ :     943.85 K/s | Total DISK WRITE :     537.69 K/s
+Actual DISK READ:     943.85 K/s | Actual DISK WRITE:     483.53 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s  185.68 K/s  0.00 % 66.02 % [jbd2/sda1-8]
+ 4496 be/4 research  943.85 K/s  290.12 K/s  0.00 %  5.85 % firefox
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+ 4519 be/4 research    0.00 B/s    3.87 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+ 4527 be/4 research    0.00 B/s    3.87 K/s  0.00 %  0.00 % firefox [DOM Worker]
+ 4568 be/4 research    0.00 B/s   15.47 K/s  0.00 %  0.00 % firefox [SSL Cert #1]
+ 1000 be/4 research    0.00 B/s    3.87 K/s  0.00 %  0.00 % upstart --user
+Total DISK READ :    1307.59 K/s | Total DISK WRITE :     473.04 K/s
+Actual DISK READ:    1349.89 K/s | Actual DISK WRITE:     857.62 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s   23.08 K/s  0.00 % 50.48 % [jbd2/sda1-8]
+ 4496 be/4 research 1307.59 K/s   19.23 K/s  0.00 %  7.19 % firefox
+ 4519 be/4 research    0.00 B/s    3.85 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+ 4527 be/4 research    0.00 B/s   23.08 K/s  0.00 %  0.00 % firefox [DOM Worker]
+ 4556 be/4 research    0.00 B/s  399.97 K/s  0.00 %  0.00 % firefox [mozStorage #1]
+Total DISK READ :     321.15 K/s | Total DISK WRITE :    1036.96 K/s
+Actual DISK READ:     321.15 K/s | Actual DISK WRITE:     944.10 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s  139.29 K/s  0.00 % 99.28 % [jbd2/sda1-8]
+ 4496 be/4 research  321.15 K/s  123.82 K/s  0.00 % 23.00 % firefox
+ 4556 be/4 research    0.00 B/s  595.87 K/s  0.00 % 19.44 % firefox [mozStorage #1]
+ 4577 be/4 research    0.00 B/s  162.51 K/s  0.00 %  8.87 % firefox [localStorage DB]
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+ 4519 be/4 research    0.00 B/s   11.61 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+ 4527 be/4 research    0.00 B/s    3.87 K/s  0.00 %  0.00 % firefox [DOM Worker]
+Total DISK READ :     119.36 K/s | Total DISK WRITE :     338.82 K/s
+Actual DISK READ:     119.36 K/s | Actual DISK WRITE:     396.58 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s   65.45 K/s  0.00 % 96.78 % [jbd2/sda1-8]
+ 4559 be/4 research  103.96 K/s   34.65 K/s  0.00 % 29.21 % firefox [URL Classifier]
+ 4578 be/4 research    0.00 B/s   50.05 K/s  0.00 % 19.93 % firefox [Lazy Idle]
+ 4496 be/4 research   15.40 K/s    7.70 K/s  0.00 %  8.56 % firefox
+ 4519 be/4 research    0.00 B/s   23.10 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+ 4556 be/4 research    0.00 B/s  154.01 K/s  0.00 %  0.00 % firefox [mozStorage #1]
+ 4566 be/4 research    0.00 B/s    3.85 K/s  0.00 %  0.00 % firefox [DOM Worker]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :     169.69 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:     482.06 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s   15.43 K/s  0.00 % 99.99 % [jbd2/sda1-8]
+ 4559 be/4 research    0.00 B/s   46.28 K/s  0.00 % 20.76 % firefox [URL Classifier]
+ 4578 be/4 research    0.00 B/s  104.13 K/s  0.00 % 20.15 % firefox [Lazy Idle]
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+ 4491 be/4 root        0.00 B/s    3.86 K/s  0.00 %  0.00 % python /usr/sbin/iotop -b -o
+Total DISK READ :    1250.98 K/s | Total DISK WRITE :      31.37 K/s
+Actual DISK READ:    1250.98 K/s | Actual DISK WRITE:      78.43 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s    0.00 B/s  0.00 % 34.94 % [jbd2/sda1-8]
+ 4496 be/4 research 1160.78 K/s    0.00 B/s  0.00 %  6.84 % firefox
+ 4559 be/4 research    0.00 B/s   11.76 K/s  0.00 %  5.80 % firefox [URL Classifier]
+ 4526 be/4 research   90.20 K/s    0.00 B/s  0.00 %  0.00 % firefox [IPDL Background]
+ 4527 be/4 research    0.00 B/s    0.00 B/s  0.00 %  0.00 % firefox [DOM Worker]
+ 4584 be/4 research    0.00 B/s   15.69 K/s  0.00 %  0.00 % firefox [IndexedDB #1]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :      11.54 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+ 4519 be/4 research    0.00 B/s   11.54 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+Total DISK READ :     302.85 K/s | Total DISK WRITE :      34.94 K/s
+Actual DISK READ:     302.85 K/s | Actual DISK WRITE:     124.25 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s   19.41 K/s  0.00 % 22.75 % [jbd2/sda1-8]
+ 4496 be/4 research  302.85 K/s    0.00 B/s  0.00 %  1.91 % firefox
+ 4584 be/4 research    0.00 B/s   11.65 K/s  0.00 %  0.02 % firefox [IndexedDB #1]
+ 4519 be/4 research    0.00 B/s    3.88 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+Total DISK READ :     369.18 K/s | Total DISK WRITE :     519.16 K/s
+Actual DISK READ:     369.18 K/s | Actual DISK WRITE:     523.01 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s   19.23 K/s  0.00 % 36.56 % [jbd2/sda1-8]
+ 4496 be/4 research  369.18 K/s    0.00 B/s  0.00 %  4.17 % firefox
+ 4559 be/4 research    0.00 B/s  430.71 K/s  0.00 %  0.05 % firefox [URL Classifier]
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+ 4519 be/4 research    0.00 B/s   23.07 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :    1112.88 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:    1478.65 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s   23.35 K/s  0.00 % 21.54 % [jbd2/sda1-8]
+ 4556 be/4 research    0.00 B/s 1089.53 K/s  0.00 %  0.24 % firefox [mozStorage #1]
+Total DISK READ :     204.10 K/s | Total DISK WRITE :     890.99 K/s
+Actual DISK READ:     204.10 K/s | Actual DISK WRITE:     949.86 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s    0.00 B/s  0.00 %  9.32 % [jbd2/sda1-8]
+ 4496 be/4 research  204.10 K/s    0.00 B/s  0.00 %  5.24 % firefox
+ 4556 be/4 research    0.00 B/s  887.06 K/s  0.00 %  0.26 % firefox [mozStorage #1]
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+ 4491 be/4 root        0.00 B/s    3.93 K/s  0.00 %  0.00 % python /usr/sbin/iotop -b -o
+Total DISK READ :    1031.22 K/s | Total DISK WRITE :     749.98 K/s
+Actual DISK READ:    1031.22 K/s | Actual DISK WRITE:     492.17 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s   35.16 K/s  0.00 % 42.40 % [jbd2/sda1-8]
+ 4496 be/4 research 1031.22 K/s    0.00 B/s  0.00 % 28.19 % firefox
+ 4556 be/4 research    0.00 B/s  476.55 K/s  0.00 %  1.53 % firefox [mozStorage #1]
+ 4519 be/4 research    0.00 B/s  238.27 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+Total DISK READ :       2.02 M/s | Total DISK WRITE :     627.03 K/s
+Actual DISK READ:       2.02 M/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4496 be/4 research    2.02 M/s    0.00 B/s  0.00 %  8.48 % firefox
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+ 4519 be/4 research    0.00 B/s  319.29 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+ 4556 be/4 research    0.00 B/s  123.10 K/s  0.00 %  0.00 % firefox [mozStorage #1]
+ 4589 be/4 research    0.00 B/s  184.65 K/s  0.00 %  0.00 % firefox [mozStorage #6]
+Total DISK READ :     170.47 K/s | Total DISK WRITE :     530.77 K/s
+Actual DISK READ:       4.61 M/s | Actual DISK WRITE:     236.33 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 1653 be/4 research    0.00 B/s   61.99 K/s  0.00 % 22.06 % zeitgeist-daemon
+ 4554 be/4 research  100.73 K/s    0.00 B/s  0.00 %  0.89 % firefox [ImageIO]
+ 4553 be/4 research   69.74 K/s    0.00 B/s  0.00 %  0.05 % firefox [ImgDecoder #1]
+ 4519 be/4 research    0.00 B/s  468.79 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+Total DISK READ :      42.90 M/s | Total DISK WRITE :    1288.19 K/s
+Actual DISK READ:      42.90 M/s | Actual DISK WRITE:     208.27 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4594 be/4 research   42.79 M/s    0.00 B/s  0.00 % 87.40 % oosplash --writer
+ 1661 be/4 research    0.00 B/s   46.28 K/s  0.00 % 48.48 % zeitgeist-fts
+  196 be/3 root        0.00 B/s 1218.77 K/s  0.00 % 40.88 % [jbd2/sda1-8]
+ 4587 be/4 research   27.00 K/s    0.00 B/s  0.00 % 27.49 % firefox [SSL Cert #3]
+ 1653 be/4 research    0.00 B/s    0.00 B/s  0.00 % 13.36 % zeitgeist-daemon
+ 4496 be/4 research   84.85 K/s    0.00 B/s  0.00 %  2.34 % firefox
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+ 4519 be/4 research    0.00 B/s   23.14 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+Total DISK READ :      29.63 M/s | Total DISK WRITE :     131.48 K/s
+Actual DISK READ:      35.45 M/s | Actual DISK WRITE:      42.54 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4594 be/4 research   29.63 M/s    0.00 B/s  0.00 % 63.34 % oosplash --writer
+  196 be/3 root        0.00 B/s    0.00 B/s  0.00 % 18.95 % [jbd2/sda1-8]
+ 1661 be/4 research    0.00 B/s    0.00 B/s  0.00 % 12.89 % zeitgeist-fts
+ 4584 be/4 research    0.00 B/s    0.00 B/s  0.00 %  6.99 % firefox [IndexedDB #1]
+ 4491 be/4 root        0.00 B/s    3.87 K/s  0.00 %  0.00 % python /usr/sbin/iotop -b -o
+ 4519 be/4 research    0.00 B/s  123.74 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+ 4566 be/4 research    0.00 B/s    3.87 K/s  0.00 %  0.00 % firefox [DOM Worker]
+Total DISK READ :      16.02 M/s | Total DISK WRITE :    1306.84 K/s
+Actual DISK READ:      16.02 M/s | Actual DISK WRITE:     798.84 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4616 be/4 research   16.02 M/s 1116.83 K/s  0.00 % 66.45 % soffice.bin --writer --splash-pipe=5
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.06 % [kworker/u2:2]
+ 4519 be/4 research    0.00 B/s  112.46 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+ 4577 be/4 research    0.00 B/s   62.05 K/s  0.00 %  0.00 % firefox [localStorage DB]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :     162.54 K/s
+Actual DISK READ:      27.95 M/s | Actual DISK WRITE:       3.87 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4491 be/4 root        0.00 B/s    3.87 K/s  0.00 %  0.00 % python /usr/sbin/iotop -b -o
+ 4519 be/4 research    0.00 B/s  147.06 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+Total DISK READ :       2.72 M/s | Total DISK WRITE :      61.84 K/s
+Actual DISK READ:       3.02 M/s | Actual DISK WRITE:     927.67 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4630 be/4 research    2.72 M/s    3.87 K/s  0.00 % 29.39 % soffice.bin --writer --splash-pipe=5
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+ 4519 be/4 research    0.00 B/s   57.98 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+Total DISK READ :       4.30 M/s | Total DISK WRITE :       2.29 M/s
+Actual DISK READ:       4.72 M/s | Actual DISK WRITE:    1014.81 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4630 be/4 research    4.28 M/s    0.00 B/s  0.00 % 42.29 % soffice.bin --writer --splash-pipe=5
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 % 17.80 % [kworker/u2:2]
+  196 be/3 root        0.00 B/s    2.14 M/s  0.00 % 16.52 % [jbd2/sda1-8]
+ 1535 be/4 research   23.24 K/s    0.00 B/s  0.00 %  1.35 % compiz
+ 4519 be/4 research    0.00 B/s  151.06 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+  777 be/4 syslog      0.00 B/s    3.87 K/s  0.00 %  0.00 % rsyslogd -n [rs:main Q:Reg]
+Total DISK READ :     284.86 K/s | Total DISK WRITE :      78.71 K/s
+Actual DISK READ:     284.86 K/s | Actual DISK WRITE:     142.43 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4630 be/4 research  284.86 K/s    0.00 B/s  0.00 %  4.53 % soffice.bin --writer --splash-pipe=5
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+ 4519 be/4 research    0.00 B/s   78.71 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :     252.40 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4519 be/4 research    0.00 B/s  240.93 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+Total DISK READ :       3.85 K/s | Total DISK WRITE :      42.31 K/s
+Actual DISK READ:       3.85 K/s | Actual DISK WRITE:      15.39 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4630 be/4 research    3.85 K/s    0.00 B/s  0.00 %  1.83 % soffice.bin --writer --splash-pipe=5
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+ 4519 be/4 research    0.00 B/s   38.46 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :    1313.06 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:      96.83 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+   33 be/4 root        0.00 B/s 1231.72 K/s  0.00 %  0.00 % [kswapd0]
+ 4519 be/4 research    0.00 B/s   15.49 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+ 4577 be/4 research    0.00 B/s   61.97 K/s  0.00 %  0.00 % firefox [localStorage DB]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :     833.39 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:     668.25 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s  825.71 K/s  0.00 % 30.17 % [jbd2/sda1-8]
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+ 4519 be/4 research    0.00 B/s    7.68 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :      30.89 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4491 be/4 root        0.00 B/s    3.86 K/s  0.00 %  0.00 % python /usr/sbin/iotop -b -o
+ 4519 be/4 research    0.00 B/s   27.03 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :     240.03 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+ 4519 be/4 research    0.00 B/s  143.24 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+ 4609 be/4 research    0.00 B/s   30.97 K/s  0.00 %  0.00 % firefox [SSL Cert #6]
+ 4627 be/4 research    0.00 B/s   50.33 K/s  0.00 %  0.00 % firefox [SSL Cert #7]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :      19.65 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+ 4519 be/4 research    0.00 B/s   11.79 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+ 4527 be/4 research    0.00 B/s    3.93 K/s  0.00 %  0.00 % firefox [DOM Worker]
+Total DISK READ :     315.47 K/s | Total DISK WRITE :     556.95 K/s
+Actual DISK READ:     315.47 K/s | Actual DISK WRITE:     128.53 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s  447.89 K/s  0.00 %  9.35 % [jbd2/sda1-8]
+ 4630 be/4 research  292.10 K/s    0.00 B/s  0.00 %  8.00 % soffice.bin --writer --splash-pipe=5
+ 4496 be/4 research   11.68 K/s    7.79 K/s  0.00 %  0.44 % firefox
+ 4638 be/4 research   11.68 K/s    0.00 B/s  0.00 %  0.01 % soffice.bin --writer --splash-pipe=5 [pool]
+ 4561 be/4 research    0.00 B/s  101.26 K/s  0.00 %  0.00 % firefox [DOM Worker]
+Total DISK READ :      38.36 K/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:      38.36 K/s | Actual DISK WRITE:     421.95 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4630 be/4 research   38.36 K/s    0.00 B/s  0.00 %  1.01 % soffice.bin --writer --splash-pipe=5
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       3.91 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       3.91 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4566 be/4 research    0.00 B/s    0.00 B/s  0.00 %  0.00 % firefox [DOM Worker]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       7.77 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+ 4519 be/4 research    0.00 B/s    7.77 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+Total DISK READ :       7.78 K/s | Total DISK WRITE :       3.89 K/s
+Actual DISK READ:       7.78 K/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4630 be/4 research    7.78 K/s    3.89 K/s  0.00 %  1.11 % soffice.bin --writer --splash-pipe=5
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :      89.90 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:     211.08 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s   89.90 K/s  0.00 % 13.17 % [jbd2/sda1-8]
+ 4491 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.02 % python /usr/sbin/iotop -b -o
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       3.87 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4491 be/4 root        0.00 B/s    3.87 K/s  0.00 %  0.00 % python /usr/sbin/iotop -b -o
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.02 % [kworker/u2:2]
+Total DISK READ :      15.59 K/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:      15.59 K/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4496 be/4 research   15.59 K/s    0.00 B/s  0.00 %  0.31 % firefox
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:     762.99 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s    0.00 B/s  0.00 % 10.13 % [jbd2/sda1-8]
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.05 % [kworker/u2:2]
+Total DISK READ :       3.84 K/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       3.84 K/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4496 be/4 research    3.84 K/s    0.00 B/s  0.00 %  0.50 % firefox
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.02 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       7.81 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:    1222.40 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s    3.91 K/s  0.00 % 13.73 % [jbd2/sda1-8]
+ 4491 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.02 % python /usr/sbin/iotop -b -o
+ 4566 be/4 research    0.00 B/s    3.91 K/s  0.00 %  0.00 % firefox [DOM Worker]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       3.90 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+ 4491 be/4 root        0.00 B/s    3.90 K/s  0.00 %  0.00 % python /usr/sbin/iotop -b -o
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :       0.00 B/s | Total DISK WRITE :     293.33 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+ 4589 be/4 research    0.00 B/s  293.33 K/s  0.00 %  0.00 % firefox [mozStorage #6]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       7.82 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       3.91 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4527 be/4 research    0.00 B/s    7.82 K/s  0.00 %  0.00 % firefox [DOM Worker]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :      11.59 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       2.56 M/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s    7.73 K/s  0.00 % 15.61 % [jbd2/sda1-8]
+ 4491 be/4 root        0.00 B/s    3.86 K/s  0.00 %  0.02 % python /usr/sbin/iotop -b -o
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :     124.33 K/s | Total DISK WRITE :     271.98 K/s
+Actual DISK READ:     734.35 K/s | Actual DISK WRITE:     303.07 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s  135.99 K/s  0.00 % 65.31 % [jbd2/sda1-8]
+ 1653 be/4 research    0.00 B/s   93.25 K/s  0.00 % 18.04 % zeitgeist-daemon
+ 1661 be/4 research    0.00 B/s   38.85 K/s  0.00 %  4.89 % zeitgeist-fts
+ 4650 be/4 root      124.33 K/s    3.89 K/s  0.00 %  1.70 % cupsd -l
+Total DISK READ :       4.45 M/s | Total DISK WRITE :      34.87 K/s
+Actual DISK READ:       4.45 M/s | Actual DISK WRITE:      89.12 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4661 be/4 research    4.44 M/s    0.00 B/s  0.00 % 37.43 % unity-control-center --overview
+  196 be/3 root        0.00 B/s    0.00 B/s  0.00 % 17.73 % [jbd2/sda1-8]
+ 1661 be/4 research    0.00 B/s    7.75 K/s  0.00 % 15.35 % zeitgeist-fts
+  827 be/4 root        3.87 K/s    3.87 K/s  0.00 %  0.01 % Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+ 1000 be/4 research    3.87 K/s    3.87 K/s  0.00 %  0.01 % upstart --user
+ 4527 be/4 research    0.00 B/s   19.37 K/s  0.00 %  0.00 % firefox [DOM Worker]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :      11.57 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4519 be/4 research    0.00 B/s   11.57 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+Total DISK READ :      26.92 K/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:      26.92 K/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4661 be/4 research   26.92 K/s    0.00 B/s  0.00 %  2.15 % unity-control-center --overview
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.03 % [kworker/u2:2]
+Total DISK READ :      11.37 K/s | Total DISK WRITE :       3.79 K/s
+Actual DISK READ:      11.37 K/s | Actual DISK WRITE:     356.20 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4661 be/4 research    7.58 K/s    0.00 B/s  0.00 %  0.83 % unity-control-center --overview
+ 1000 be/4 research    3.79 K/s    3.79 K/s  0.00 %  0.01 % upstart --user
+Total DISK READ :     214.75 K/s | Total DISK WRITE :     132.76 K/s
+Actual DISK READ:     214.75 K/s | Actual DISK WRITE:     327.98 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s  101.52 K/s  0.00 % 35.10 % [jbd2/sda1-8]
+  710 be/4 root      206.94 K/s    3.90 K/s  0.00 %  9.95 % accounts-daemon
+ 4661 be/4 research    7.81 K/s    3.90 K/s  0.00 %  4.86 % unity-control-center --overview
+ 1176 be/4 research    0.00 B/s   23.43 K/s  0.00 %  0.04 % dconf-service
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :     107.93 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:     223.57 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s    3.85 K/s  0.00 % 19.96 % [jbd2/sda1-8]
+ 1653 be/4 research    0.00 B/s   61.67 K/s  0.00 % 14.67 % zeitgeist-daemon
+ 1661 be/4 research    0.00 B/s   42.40 K/s  0.00 %  8.05 % zeitgeist-fts
+Total DISK READ :     127.88 K/s | Total DISK WRITE :      96.88 K/s
+Actual DISK READ:     720.79 K/s | Actual DISK WRITE:     201.51 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s    3.88 K/s  0.00 % 42.66 % [jbd2/sda1-8]
+ 1661 be/4 research    0.00 B/s   42.63 K/s  0.00 % 17.55 % zeitgeist-fts
+ 1653 be/4 research    0.00 B/s   50.38 K/s  0.00 % 13.36 % zeitgeist-daemon
+ 1290 be/4 research    3.88 K/s    0.00 B/s  0.00 %  4.47 % unity-settings-daemon
+ 4496 be/4 research  124.01 K/s    0.00 B/s  0.00 %  2.35 % firefox
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :       2.80 M/s | Total DISK WRITE :      31.37 K/s
+Actual DISK READ:       2.82 M/s | Actual DISK WRITE:     105.88 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4675 be/4 research    2.80 M/s    0.00 B/s  0.00 % 44.41 % python3 /usr/bin/gnome-language-selector
+  196 be/3 root        0.00 B/s   15.69 K/s  0.00 % 23.03 % [jbd2/sda1-8]
+ 1661 be/4 research    0.00 B/s    7.84 K/s  0.00 % 20.47 % zeitgeist-fts
+ 4496 be/4 research    0.00 B/s    0.00 B/s  0.00 %  9.01 % firefox
+ 4661 be/4 research    7.84 K/s    0.00 B/s  0.00 %  1.50 % unity-control-center --overview
+ 4491 be/4 root        0.00 B/s    3.92 K/s  0.00 %  0.00 % python /usr/sbin/iotop -b -o
+ 4519 be/4 research    0.00 B/s    3.92 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+Total DISK READ :      26.92 K/s | Total DISK WRITE :       2.22 M/s
+Actual DISK READ:      69.23 K/s | Actual DISK WRITE:     850.04 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4675 be/4 research   26.92 K/s    0.00 B/s  0.00 %  6.78 % python3 /usr/bin/gnome-language-selector
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+ 4496 be/4 research    0.00 B/s 1296.21 K/s  0.00 %  0.00 % firefox
+ 4519 be/4 research    0.00 B/s  488.48 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+ 4527 be/4 research    0.00 B/s  484.64 K/s  0.00 %  0.00 % firefox [DOM Worker]
+ 4566 be/4 research    0.00 B/s    7.69 K/s  0.00 %  0.00 % firefox [DOM Worker]
+Total DISK READ :     512.61 K/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       2.12 M/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4675 be/4 research  135.92 K/s    0.00 B/s  0.00 %  1.31 % python3 /usr/bin/gnome-language-selector
+ 4559 be/4 research  376.69 K/s    0.00 B/s  0.00 %  0.03 % firefox [URL Classifier]
+Total DISK READ :     271.27 K/s | Total DISK WRITE :       3.88 K/s
+Actual DISK READ:     271.27 K/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4675 be/4 research  271.27 K/s    0.00 B/s  0.00 %  1.35 % python3 /usr/bin/gnome-language-selector
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+ 4519 be/4 research    0.00 B/s    3.88 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+Total DISK READ :       3.90 K/s | Total DISK WRITE :     187.16 K/s
+Actual DISK READ:       3.90 K/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4675 be/4 research    3.90 K/s    0.00 B/s  0.00 %  1.59 % python3 /usr/bin/gnome-language-selector
+ 4589 be/4 research    0.00 B/s  187.16 K/s  0.00 %  0.00 % firefox [mozStorage #6]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :     502.97 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:     265.13 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s  502.97 K/s  0.00 %  0.01 % [jbd2/sda1-8]
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :     150.56 K/s
+Actual DISK READ:    1142.70 K/s | Actual DISK WRITE:      11.58 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s  150.56 K/s  0.00 %  8.81 % [jbd2/sda1-8]
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :     112.07 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:     243.46 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s    3.86 K/s  0.00 % 30.37 % [jbd2/sda1-8]
+ 1653 be/4 research    0.00 B/s   61.83 K/s  0.00 % 15.96 % zeitgeist-daemon
+ 1661 be/4 research    0.00 B/s   46.37 K/s  0.00 % 14.56 % zeitgeist-fts
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       3.91 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       7.82 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s    0.00 B/s  0.00 % 10.53 % [jbd2/sda1-8]
+ 1661 be/4 research    0.00 B/s    0.00 B/s  0.00 %  4.88 % zeitgeist-fts
+ 4491 be/4 root        0.00 B/s    3.91 K/s  0.00 %  0.00 % python /usr/sbin/iotop -b -o
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:      23.49 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s    0.00 B/s  0.00 % 10.10 % [jbd2/sda1-8]
+ 4491 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.09 % python /usr/sbin/iotop -b -o
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :      58.08 K/s | Total DISK WRITE :     588.59 K/s
+Actual DISK READ:      58.08 K/s | Actual DISK WRITE:      92.94 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s   23.23 K/s  0.00 % 11.33 % [jbd2/sda1-8]
+ 4559 be/4 research   58.08 K/s  565.36 K/s  0.00 %  0.14 % firefox [URL Classifier]
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       2.17 M/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:    1383.75 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s    0.00 B/s  0.00 % 32.14 % [jbd2/sda1-8]
+ 4559 be/4 research    0.00 B/s    2.16 M/s  0.00 %  0.11 % firefox [URL Classifier]
+ 4566 be/4 research    0.00 B/s    7.75 K/s  0.00 %  0.00 % firefox [DOM Worker]
+Total DISK READ :     125.06 K/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:     125.06 K/s | Actual DISK WRITE:      15.63 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4588 be/4 research  125.06 K/s    0.00 B/s  0.00 %  0.05 % firefox [mozStorage #5]
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.02 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       3.89 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4491 be/4 root        0.00 B/s    3.89 K/s  0.00 %  0.00 % python /usr/sbin/iotop -b -o
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.02 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :     464.22 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:     530.54 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4556 be/4 research    0.00 B/s  460.32 K/s  0.00 %  0.05 % firefox [mozStorage #1]
+  196 be/3 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [jbd2/sda1-8]
+ 4491 be/4 root        0.00 B/s    3.90 K/s  0.00 %  0.00 % python /usr/sbin/iotop -b -o
+Total DISK READ :      19.33 K/s | Total DISK WRITE :    1945.08 K/s
+Actual DISK READ:      19.33 K/s | Actual DISK WRITE:    1686.00 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s   30.94 K/s  0.00 % 55.95 % [jbd2/sda1-8]
+ 4589 be/4 research   15.47 K/s  208.82 K/s  0.00 %  3.98 % firefox [mozStorage #6]
+ 4556 be/4 research    0.00 B/s 1597.06 K/s  0.00 %  1.23 % firefox [mozStorage #1]
+ 4496 be/4 research    3.87 K/s    0.00 B/s  0.00 %  0.06 % firefox
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+ 4519 be/4 research    0.00 B/s  108.28 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+Total DISK READ :      61.67 K/s | Total DISK WRITE :     285.22 K/s
+Actual DISK READ:      61.67 K/s | Actual DISK WRITE:     593.58 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4496 be/4 research   61.67 K/s    0.00 B/s  0.00 %  0.10 % firefox
+ 4519 be/4 research    0.00 B/s  281.37 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+ 4577 be/4 research    0.00 B/s    3.85 K/s  0.00 %  0.00 % firefox [localStorage DB]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :      69.46 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+ 4519 be/4 research    0.00 B/s   61.74 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :      81.14 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4676 be/4 research    0.00 B/s   81.14 K/s  0.00 %  0.00 % firefox [SSL Cert #11]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :    1049.44 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:      73.31 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s  443.70 K/s  0.00 % 13.97 % [jbd2/sda1-8]
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+ 4556 be/4 research    0.00 B/s  470.71 K/s  0.00 %  0.01 % firefox [mozStorage #1]
+ 4519 be/4 research    0.00 B/s  135.04 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+Total DISK READ :     124.11 K/s | Total DISK WRITE :    1605.70 K/s
+Actual DISK READ:     124.11 K/s | Actual DISK WRITE:    1190.70 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s  523.60 K/s  0.00 % 24.89 % [jbd2/sda1-8]
+ 4556 be/4 research    0.00 B/s  620.56 K/s  0.00 %  0.06 % firefox [mozStorage #1]
+ 4496 be/4 research  124.11 K/s    0.00 B/s  0.00 %  0.02 % firefox
+ 4519 be/4 research    0.00 B/s  461.54 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :     312.90 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:     498.33 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+ 4519 be/4 research    0.00 B/s  243.37 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+ 4577 be/4 research    0.00 B/s   69.53 K/s  0.00 %  0.00 % firefox [localStorage DB]
+Total DISK READ :      89.80 K/s | Total DISK WRITE :     612.95 K/s
+Actual DISK READ:      89.80 K/s | Actual DISK WRITE:      50.75 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s  480.21 K/s  0.00 % 30.45 % [jbd2/sda1-8]
+ 4496 be/4 research   89.80 K/s    0.00 B/s  0.00 % 26.37 % firefox
+ 4556 be/4 research    0.00 B/s  132.74 K/s  0.00 %  0.01 % firefox [mozStorage #1]
+Total DISK READ :    1129.47 K/s | Total DISK WRITE :     469.34 K/s
+Actual DISK READ:    1129.47 K/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4496 be/4 research 1129.47 K/s    0.00 B/s  0.00 %  6.03 % firefox
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+ 4491 be/4 root        0.00 B/s    3.82 K/s  0.00 %  0.00 % python /usr/sbin/iotop -b -o
+ 4519 be/4 research    0.00 B/s  248.03 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+ 4589 be/4 research    0.00 B/s  217.50 K/s  0.00 %  0.00 % firefox [mozStorage #6]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :     116.31 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4519 be/4 research    0.00 B/s  116.31 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :     187.39 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       7.65 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+ 4519 be/4 research    0.00 B/s  168.27 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+ 4566 be/4 research    0.00 B/s   11.47 K/s  0.00 %  0.00 % firefox [DOM Worker]
+Total DISK READ :     134.50 K/s | Total DISK WRITE :     714.78 K/s
+Actual DISK READ:     134.50 K/s | Actual DISK WRITE:    1786.95 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4496 be/4 research  134.50 K/s    0.00 B/s  0.00 %  0.03 % firefox
+ 4519 be/4 research    0.00 B/s  345.86 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+ 4589 be/4 research    0.00 B/s  368.92 K/s  0.00 %  0.00 % firefox [mozStorage #6]
+Total DISK READ :     135.03 K/s | Total DISK WRITE :       3.06 M/s
+Actual DISK READ:     135.03 K/s | Actual DISK WRITE:    1184.40 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s    2.15 M/s  0.00 % 46.63 % [jbd2/sda1-8]
+ 4556 be/4 research    0.00 B/s  902.77 K/s  0.00 %  9.04 % firefox [mozStorage #1]
+ 4496 be/4 research  135.03 K/s    0.00 B/s  0.00 %  0.03 % firefox
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+ 4519 be/4 research    0.00 B/s   30.86 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+ 1000 be/4 research    0.00 B/s    3.86 K/s  0.00 %  0.00 % upstart --user
+Total DISK READ :     638.40 K/s | Total DISK WRITE :     646.04 K/s
+Actual DISK READ:     638.40 K/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4496 be/4 research  496.96 K/s    0.00 B/s  0.00 %  2.62 % firefox
+ 1535 be/4 research  141.44 K/s    0.00 B/s  0.00 %  1.06 % compiz
+ 4519 be/4 research    0.00 B/s  447.26 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+ 4556 be/4 research    0.00 B/s  122.33 K/s  0.00 %  0.00 % firefox [mozStorage #1]
+ 4561 be/4 research    0.00 B/s   15.29 K/s  0.00 %  0.00 % firefox [DOM Worker]
+ 4577 be/4 research    0.00 B/s   61.16 K/s  0.00 %  0.00 % firefox [localStorage DB]
+Total DISK READ :       7.70 K/s | Total DISK WRITE :     373.42 K/s
+Actual DISK READ:       7.70 K/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.05 % [kworker/u2:2]
+ 4496 be/4 research    7.70 K/s    0.00 B/s  0.00 %  0.02 % firefox
+ 4519 be/4 research    0.00 B/s  373.42 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       7.72 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4519 be/4 research    0.00 B/s    3.86 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :      26.94 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:    1558.51 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+ 4519 be/4 research    0.00 B/s   26.94 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       2.11 M/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:     152.13 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s    2.09 M/s  0.00 %  0.01 % [jbd2/sda1-8]
+ 4491 be/4 root        0.00 B/s    3.90 K/s  0.00 %  0.00 % python /usr/sbin/iotop -b -o
+ 4519 be/4 research    0.00 B/s   19.50 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :     290.18 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s   15.48 K/s  0.00 % 14.83 % [jbd2/sda1-8]
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+ 4519 be/4 research    0.00 B/s  212.80 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+ 4577 be/4 research    0.00 B/s   61.90 K/s  0.00 %  0.00 % firefox [localStorage DB]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :     836.65 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4519 be/4 research    0.00 B/s  836.65 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :      19.24 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.02 % [kworker/u2:2]
+ 4519 be/4 research    0.00 B/s    0.00 B/s  0.00 %  0.00 % firefox [Cache2 I/O]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       7.83 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.02 % [kworker/u2:2]
+ 4519 be/4 research    0.00 B/s    7.83 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :    1622.04 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:     678.45 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s 1169.74 K/s  0.00 % 10.47 % [jbd2/sda1-8]
+ 4556 be/4 research    0.00 B/s  436.70 K/s  0.00 %  0.06 % firefox [mozStorage #1]
+ 4491 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.04 % python /usr/sbin/iotop -b -o
+ 4519 be/4 research    0.00 B/s   15.60 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+Total DISK READ :      88.46 K/s | Total DISK WRITE :    1880.64 K/s
+Actual DISK READ:      88.46 K/s | Actual DISK WRITE:     576.88 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s 1107.61 K/s  0.00 % 34.74 % [jbd2/sda1-8]
+ 4496 be/4 research   88.46 K/s    0.00 B/s  0.00 %  1.33 % firefox
+ 4556 be/4 research    0.00 B/s  592.27 K/s  0.00 %  0.08 % firefox [mozStorage #1]
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+ 4519 be/4 research    0.00 B/s   73.07 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+ 4566 be/4 research    0.00 B/s   15.38 K/s  0.00 %  0.00 % firefox [DOM Worker]
+ 4589 be/4 research    0.00 B/s   92.30 K/s  0.00 %  0.00 % firefox [mozStorage #6]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:    1480.59 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :      11.69 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4491 be/4 root        0.00 B/s    7.79 K/s  0.00 %  0.00 % python /usr/sbin/iotop -b -o
+ 4519 be/4 research    0.00 B/s    3.90 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :     244.72 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:     143.72 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s  244.72 K/s  0.00 % 15.89 % [jbd2/sda1-8]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :      58.16 K/s
+Actual DISK READ:     259.78 K/s | Actual DISK WRITE:     135.70 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s   58.16 K/s  0.00 % 23.04 % [jbd2/sda1-8]
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:     493.23 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :       0.00 B/s | Total DISK WRITE :      15.48 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4459 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:1]
+ 4561 be/4 research    0.00 B/s   15.48 K/s  0.00 %  0.00 % firefox [DOM Worker]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4459 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:1]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4459 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.03 % [kworker/u2:1]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :      11.63 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:    1763.29 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s   11.63 K/s  0.00 % 13.01 % [jbd2/sda1-8]
+Total DISK READ :      19.23 K/s | Total DISK WRITE :       3.85 K/s
+Actual DISK READ:    1673.04 K/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  777 be/4 syslog      3.85 K/s    3.85 K/s  0.00 %  3.29 % rsyslogd -n [rs:main Q:Reg]
+ 2086 be/4 research    3.85 K/s    0.00 B/s  0.00 %  0.85 % unity-scope-loader applications/applications.scope applications/scopes.scope commands.scope
+ 1535 be/4 research   11.54 K/s    0.00 B/s  0.00 %  0.03 % compiz
+ 4459 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:1]
+Total DISK READ :     142.31 K/s | Total DISK WRITE :     550.00 K/s
+Actual DISK READ:     153.85 K/s | Actual DISK WRITE:     619.23 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s  538.46 K/s  0.00 % 19.10 % [jbd2/sda1-8]
+ 5075 be/4 research  142.31 K/s    0.00 B/s  0.00 %  2.32 % compiz [pool]
+ 1176 be/4 research    0.00 B/s   11.54 K/s  0.00 %  0.06 % dconf-service
+Total DISK READ :       0.00 B/s | Total DISK WRITE :      15.36 K/s
+Actual DISK READ:     433.96 K/s | Actual DISK WRITE:      15.36 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4459 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.02 % [kworker/u2:1]
+ 4566 be/4 research    0.00 B/s   15.36 K/s  0.00 %  0.00 % firefox [DOM Worker]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       3.90 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4491 be/4 root        0.00 B/s    3.90 K/s  0.00 %  0.00 % python /usr/sbin/iotop -b -o
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:    1676.55 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4459 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.02 % [kworker/u2:1]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4459 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.04 % [kworker/u2:1]
+Total DISK READ :      15.63 K/s | Total DISK WRITE :      85.97 K/s
+Actual DISK READ:     113.32 K/s | Actual DISK WRITE:     128.95 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s   70.34 K/s  0.00 % 40.64 % [jbd2/sda1-8]
+ 1439 be/4 colord      7.82 K/s    0.00 B/s  0.00 %  6.73 % colord
+ 1486 be/4 research    3.91 K/s    0.00 B/s  0.00 %  5.73 % nautilus -n
+ 1176 be/4 research    0.00 B/s   11.72 K/s  0.00 %  0.03 % dconf-service
+ 4491 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.02 % python /usr/sbin/iotop -b -o
+ 1290 be/4 research    3.91 K/s    0.00 B/s  0.00 %  0.01 % unity-settings-daemon
+  827 be/4 root        0.00 B/s    3.91 K/s  0.00 %  0.00 % Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+Total DISK READ :     163.73 K/s | Total DISK WRITE :     483.58 K/s
+Actual DISK READ:     163.73 K/s | Actual DISK WRITE:     830.08 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s   11.42 K/s  0.00 % 43.53 % [jbd2/sda1-8]
+ 4630 be/4 research   60.92 K/s    0.00 B/s  0.00 %  5.55 % soffice.bin --writer --splash-pipe=5
+ 1486 be/4 research  102.81 K/s  437.88 K/s  0.00 %  1.30 % nautilus -n
+ 1176 be/4 research    0.00 B/s   34.27 K/s  0.00 %  0.41 % dconf-service
+ 4459 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:1]
+Total DISK READ :      15.69 K/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:      15.69 K/s | Actual DISK WRITE:     949.49 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 1535 be/4 research   15.69 K/s    0.00 B/s  0.00 %  1.26 % compiz
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4459 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:1]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4459 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:1]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :      31.33 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:      82.23 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s   31.33 K/s  0.00 % 17.02 % [jbd2/sda1-8]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       3.90 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:    1076.95 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+ 4491 be/4 root        0.00 B/s    3.90 K/s  0.00 %  0.00 % python /usr/sbin/iotop -b -o
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.02 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       3.87 K/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       3.92 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:     227.56 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s    3.92 K/s  0.00 % 20.48 % [jbd2/sda1-8]
+ 4491 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.02 % python /usr/sbin/iotop -b -o
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       3.90 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:      50.70 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s    3.90 K/s  0.00 % 19.65 % [jbd2/sda1-8]
+ 4491 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.05 % python /usr/sbin/iotop -b -o
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.02 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       3.90 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4491 be/4 root        0.00 B/s    3.90 K/s  0.00 %  0.00 % python /usr/sbin/iotop -b -o
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.02 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.03 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :      11.80 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:      47.19 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s    7.87 K/s  0.00 % 21.59 % [jbd2/sda1-8]
+ 4491 be/4 root        0.00 B/s    3.93 K/s  0.00 %  0.01 % python /usr/sbin/iotop -b -o
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.02 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.02 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :       0.00 B/s | Total DISK WRITE :      54.69 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:      58.59 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s   54.69 K/s  0.00 % 18.03 % [jbd2/sda1-8]
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.03 % [kworker/u2:2]
+ 4491 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % python /usr/sbin/iotop -b -o
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       7.68 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:     583.85 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s    7.68 K/s  0.00 % 28.80 % [jbd2/sda1-8]
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  1.13 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :       3.90 K/s | Total DISK WRITE :       3.90 K/s
+Actual DISK READ:       3.90 K/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4496 be/4 research    3.90 K/s    0.00 B/s  0.00 %  0.32 % firefox
+ 4491 be/4 root        0.00 B/s    3.90 K/s  0.00 %  0.00 % python /usr/sbin/iotop -b -o
+Total DISK READ :       0.00 B/s | Total DISK WRITE :      11.68 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:      23.36 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s   11.68 K/s  0.00 % 14.17 % [jbd2/sda1-8]
+ 4491 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.02 % python /usr/sbin/iotop -b -o
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :    1670.16 K/s | Total DISK WRITE :      50.03 K/s
+Actual DISK READ:    1670.16 K/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4496 be/4 research 1670.16 K/s    0.00 B/s  0.00 % 12.79 % firefox
+ 4589 be/4 research    0.00 B/s   42.33 K/s  0.00 %  0.00 % firefox [mozStorage #6]
+ 1000 be/4 research    0.00 B/s    7.70 K/s  0.00 %  0.00 % upstart --user
+Total DISK READ :       3.92 K/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       3.92 K/s | Actual DISK WRITE:     204.08 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.15 % [kworker/u2:2]
+ 4496 be/4 research    3.92 K/s    0.00 B/s  0.00 %  0.01 % firefox
+Total DISK READ :     116.88 K/s | Total DISK WRITE :      23.38 K/s
+Actual DISK READ:     116.88 K/s | Actual DISK WRITE:     124.67 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4496 be/4 research  116.88 K/s    7.79 K/s  0.00 %  3.69 % firefox
+  196 be/3 root        0.00 B/s    0.00 B/s  0.00 %  0.61 % [jbd2/sda1-8]
+ 4566 be/4 research    0.00 B/s   15.58 K/s  0.00 %  0.00 % firefox [DOM Worker]
+Total DISK READ :     586.51 K/s | Total DISK WRITE :       2.23 M/s
+Actual DISK READ:     586.51 K/s | Actual DISK WRITE:    1986.30 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s  132.94 K/s  0.00 % 82.01 % [jbd2/sda1-8]
+ 4496 be/4 research  559.14 K/s  907.13 K/s  0.00 % 21.57 % firefox
+ 1535 be/4 research   15.64 K/s    0.00 B/s  0.00 %  2.68 % compiz
+ 4556 be/4 research    0.00 B/s 1239.48 K/s  0.00 %  0.13 % firefox [mozStorage #1]
+  229 be/4 root       11.73 K/s    0.00 B/s  0.00 %  0.02 % systemd-journald
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+  777 be/4 syslog      0.00 B/s    3.91 K/s  0.00 %  0.00 % rsyslogd -n [rs:main Q:Reg]
+ 1589 be/4 research    0.00 B/s    3.91 K/s  0.00 %  0.00 % gvfsd-metadata
+Total DISK READ :       3.58 M/s | Total DISK WRITE :     658.94 K/s
+Actual DISK READ:       3.58 M/s | Actual DISK WRITE:     522.47 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4496 be/4 research    3.53 M/s    3.90 K/s  0.00 % 28.38 % firefox
+ 1653 be/4 research   54.59 K/s  109.17 K/s  0.00 % 14.53 % zeitgeist-daemon
+  196 be/3 root        0.00 B/s  506.88 K/s  0.00 % 11.72 % [jbd2/sda1-8]
+ 1661 be/4 research    0.00 B/s   35.09 K/s  0.00 %  0.03 % zeitgeist-fts
+ 4519 be/4 research    0.00 B/s    3.90 K/s  0.00 %  0.00 % firefox [Cache2 I/O]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :      62.04 K/s
+Actual DISK READ:       7.75 K/s | Actual DISK WRITE:     166.72 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s   23.26 K/s  0.00 % 37.13 % [jbd2/sda1-8]
+ 1661 be/4 research    0.00 B/s   11.63 K/s  0.00 % 20.17 % zeitgeist-fts
+ 1653 be/4 research    0.00 B/s   27.14 K/s  0.00 %  6.58 % zeitgeist-daemon
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :       5.75 M/s | Total DISK WRITE :     107.26 K/s
+Actual DISK READ:       5.75 M/s | Actual DISK WRITE:     260.50 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4630 be/4 research    5.73 M/s    0.00 B/s  0.00 % 80.76 % soffice.bin --writer --splash-pipe=5
+  196 be/3 root        0.00 B/s   11.49 K/s  0.00 % 59.79 % [jbd2/sda1-8]
+ 1661 be/4 research    0.00 B/s   61.29 K/s  0.00 % 26.31 % zeitgeist-fts
+ 1653 be/4 research    0.00 B/s   34.48 K/s  0.00 %  9.90 % zeitgeist-daemon
+ 5117 be/4 research   22.98 K/s    0.00 B/s  0.00 %  4.98 % oosplash --calc file:///home/researcher/Downloads/VisualDailyPlanning%C2%AEv.1.ots
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :      19.13 M/s | Total DISK WRITE :     207.76 K/s
+Actual DISK READ:      19.14 M/s | Actual DISK WRITE:     430.91 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4630 be/4 research   19.13 M/s  200.07 K/s  0.00 % 68.13 % soffice.bin --writer --splash-pipe=5
+  196 be/3 root        0.00 B/s    0.00 B/s  0.00 % 12.78 % [jbd2/sda1-8]
+ 1661 be/4 research    0.00 B/s    0.00 B/s  0.00 %  4.81 % zeitgeist-fts
+ 4491 be/4 root        0.00 B/s    3.85 K/s  0.00 %  0.00 % python /usr/sbin/iotop -b -o
+ 1164 be/4 research    0.00 B/s    3.85 K/s  0.00 %  0.00 % bamfdaemon
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:      38.53 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :     320.55 K/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:     320.55 K/s | Actual DISK WRITE:     637.23 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4630 be/4 research  320.55 K/s    0.00 B/s  0.00 %  0.17 % soffice.bin --writer --splash-pipe=5
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :       3.22 M/s | Total DISK WRITE :       8.78 M/s
+Actual DISK READ:       3.22 M/s | Actual DISK WRITE:     259.12 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4630 be/4 research    3.21 M/s   19.34 K/s  0.00 % 38.80 % soffice.bin --writer --splash-pipe=5
+  196 be/3 root        0.00 B/s  100.55 K/s  0.00 % 16.62 % [jbd2/sda1-8]
+ 1589 be/4 research    3.87 K/s   34.81 K/s  0.00 %  7.61 % gvfsd-metadata
+ 1164 be/4 research    3.87 K/s    0.00 B/s  0.00 %  0.01 % bamfdaemon
+ 1000 be/4 research    0.00 B/s    3.87 K/s  0.00 %  0.00 % upstart --user
+Total DISK READ :       3.08 M/s | Total DISK WRITE :      23.08 K/s
+Actual DISK READ:       3.08 M/s | Actual DISK WRITE:     611.53 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s   23.08 K/s  0.00 % 12.58 % [jbd2/sda1-8]
+ 4630 be/4 research    3.08 M/s    0.00 B/s  0.00 % 11.30 % soffice.bin --writer --splash-pipe=5
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:      84.61 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :      15.53 K/s | Total DISK WRITE :       3.88 K/s
+Actual DISK READ:      15.53 K/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4630 be/4 research   15.53 K/s    0.00 B/s  0.00 %  3.59 % soffice.bin --writer --splash-pipe=5
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+ 4491 be/4 root        0.00 B/s    3.88 K/s  0.00 %  0.00 % python /usr/sbin/iotop -b -o
+Total DISK READ :      11.68 K/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:      11.68 K/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4496 be/4 research   11.68 K/s    0.00 B/s  0.00 %  0.01 % firefox
+Total DISK READ :      34.88 K/s | Total DISK WRITE :       3.88 K/s
+Actual DISK READ:      34.88 K/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 1535 be/4 research   34.88 K/s    0.00 B/s  0.00 %  0.01 % compiz
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+ 4491 be/4 root        0.00 B/s    3.88 K/s  0.00 %  0.00 % python /usr/sbin/iotop -b -o
+Total DISK READ :       0.00 B/s | Total DISK WRITE :      57.70 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:     115.40 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s   57.70 K/s  0.00 % 15.58 % [jbd2/sda1-8]
+Total DISK READ :     282.65 K/s | Total DISK WRITE :       3.87 K/s
+Actual DISK READ:     282.65 K/s | Actual DISK WRITE:      50.34 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4630 be/4 research  282.65 K/s    0.00 B/s  0.00 %  0.43 % soffice.bin --writer --splash-pipe=5
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+ 1000 be/4 research    0.00 B/s    3.87 K/s  0.00 %  0.00 % upstart --user
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.03 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :      15.63 K/s | Total DISK WRITE :       7.82 K/s
+Actual DISK READ:      15.63 K/s | Actual DISK WRITE:      27.36 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s    7.82 K/s  0.00 % 13.16 % [jbd2/sda1-8]
+ 4491 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.02 % python /usr/sbin/iotop -b -o
+ 4630 be/4 research   15.63 K/s    0.00 B/s  0.00 %  0.02 % soffice.bin --writer --splash-pipe=5
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:     627.32 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.02 % [kworker/u2:2]
+Total DISK READ :      62.67 K/s | Total DISK WRITE :      23.50 K/s
+Actual DISK READ:      62.67 K/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4630 be/4 research   62.67 K/s    0.00 B/s  0.00 %  0.02 % soffice.bin --writer --splash-pipe=5
+ 1000 be/4 research    0.00 B/s   23.50 K/s  0.00 %  0.00 % upstart --user
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       7.81 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+ 1000 be/4 research    0.00 B/s    7.81 K/s  0.00 %  0.00 % upstart --user
+Total DISK READ :       0.00 B/s | Total DISK WRITE :      11.51 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:      15.34 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s    3.84 K/s  0.00 % 30.78 % [jbd2/sda1-8]
+ 4491 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % python /usr/sbin/iotop -b -o
+ 1000 be/4 research    0.00 B/s    7.67 K/s  0.00 %  0.00 % upstart --user
+Total DISK READ :       0.00 B/s | Total DISK WRITE :      15.51 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.02 % [kworker/u2:2]
+ 4491 be/4 root        0.00 B/s    3.88 K/s  0.00 %  0.00 % python /usr/sbin/iotop -b -o
+ 1000 be/4 research    0.00 B/s   11.63 K/s  0.00 %  0.00 % upstart --user
+Total DISK READ :       0.00 B/s | Total DISK WRITE :      11.64 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       3.88 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4527 be/4 research    0.00 B/s    3.88 K/s  0.00 %  0.00 % firefox [DOM Worker]
+ 1000 be/4 research    0.00 B/s    7.76 K/s  0.00 %  0.00 % upstart --user
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.02 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :       0.00 B/s | Total DISK WRITE :      35.18 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:      50.82 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s   35.18 K/s  0.00 % 10.90 % [jbd2/sda1-8]
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.05 % [kworker/u2:2]
+ 4491 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % python /usr/sbin/iotop -b -o
+Total DISK READ :       0.00 B/s | Total DISK WRITE :      11.68 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       2.58 M/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 1000 be/4 research    0.00 B/s   11.68 K/s  0.00 %  0.00 % upstart --user
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       3.83 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+ 1000 be/4 research    0.00 B/s    3.83 K/s  0.00 %  0.00 % upstart --user
+Total DISK READ :       3.92 K/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       3.92 K/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4630 be/4 research    3.92 K/s    0.00 B/s  0.00 %  1.55 % soffice.bin --writer --splash-pipe=5
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :      43.07 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:      86.14 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s   39.15 K/s  0.00 % 19.46 % [jbd2/sda1-8]
+ 4491 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.03 % python /usr/sbin/iotop -b -o
+ 5132 be/4 root        0.00 B/s    3.92 K/s  0.00 %  0.02 % cupsd -l
+Total DISK READ :      15.38 K/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:      15.38 K/s | Actual DISK WRITE:     234.59 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 1302 be/4 research    3.85 K/s    0.00 B/s  0.00 %  0.98 % unity-panel-service
+ 4430 be/4 root       11.54 K/s    0.00 B/s  0.00 %  0.13 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.03 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       3.90 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4491 be/4 root        0.00 B/s    3.90 K/s  0.00 %  0.00 % python /usr/sbin/iotop -b -o
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:      58.73 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.03 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :      19.34 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:     278.50 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s   19.34 K/s  0.00 % 12.47 % [jbd2/sda1-8]
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.05 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       3.85 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.02 % [kworker/u2:2]
+ 4491 be/4 root        0.00 B/s    3.85 K/s  0.00 %  0.00 % python /usr/sbin/iotop -b -o
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :     504.10 K/s | Total DISK WRITE :       3.91 K/s
+Actual DISK READ:     504.10 K/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4630 be/4 research  504.10 K/s    0.00 B/s  0.00 %  3.58 % soffice.bin --writer --splash-pipe=5
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.02 % [kworker/u2:2]
+ 1589 be/4 research    0.00 B/s    3.91 K/s  0.00 %  0.00 % gvfsd-metadata
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:      70.05 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :       0.00 B/s | Total DISK WRITE :      38.78 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:     155.14 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s   38.78 K/s  0.00 % 12.04 % [jbd2/sda1-8]
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.02 % [kworker/u2:2]
+Total DISK READ :     363.76 K/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:     363.76 K/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4630 be/4 research  359.89 K/s    0.00 B/s  0.00 %  3.05 % soffice.bin --writer --splash-pipe=5
+ 1535 be/4 research    3.87 K/s    0.00 B/s  0.00 %  1.60 % compiz
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:      70.27 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :       0.00 B/s | Total DISK WRITE :      58.48 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:     128.65 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s   58.48 K/s  0.00 % 10.75 % [jbd2/sda1-8]
+ 4491 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.02 % python /usr/sbin/iotop -b -o
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       3.86 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4491 be/4 root        0.00 B/s    3.86 K/s  0.00 %  0.00 % python /usr/sbin/iotop -b -o
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.02 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.03 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:     202.69 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s    0.00 B/s  0.00 %  9.48 % [jbd2/sda1-8]
+ 4491 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.02 % python /usr/sbin/iotop -b -o
+Total DISK READ :     703.80 K/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:     703.80 K/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  803 be/4 root      703.80 K/s    0.00 B/s  0.00 %  0.21 % snapd
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.02 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :       8.01 M/s | Total DISK WRITE :      38.59 K/s
+Actual DISK READ:       8.01 M/s | Actual DISK WRITE:     100.32 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4630 be/4 research    8.01 M/s    0.00 B/s  0.00 % 30.16 % soffice.bin --writer --splash-pipe=5
+ 1589 be/4 research    0.00 B/s    3.86 K/s  0.00 %  0.14 % gvfsd-metadata
+  196 be/3 root        0.00 B/s   34.73 K/s  0.00 %  0.02 % [jbd2/sda1-8]
+Total DISK READ :    1532.70 K/s | Total DISK WRITE :     140.40 K/s
+Actual DISK READ:    1532.70 K/s | Actual DISK WRITE:     171.60 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4630 be/4 research 1532.70 K/s    0.00 B/s  0.00 % 43.65 % soffice.bin --writer --splash-pipe=5
+  196 be/3 root        0.00 B/s  105.30 K/s  0.00 % 38.37 % [jbd2/sda1-8]
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+ 1589 be/4 research    0.00 B/s   35.10 K/s  0.00 %  0.00 % gvfsd-metadata
+Total DISK READ :    1335.76 K/s | Total DISK WRITE :     255.54 K/s
+Actual DISK READ:    1335.76 K/s | Actual DISK WRITE:     391.05 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s   92.92 K/s  0.00 % 20.59 % [jbd2/sda1-8]
+ 1653 be/4 research    0.00 B/s   92.92 K/s  0.00 % 14.77 % zeitgeist-daemon
+ 4630 be/4 research 1335.76 K/s    0.00 B/s  0.00 %  2.95 % soffice.bin --writer --splash-pipe=5
+ 1661 be/4 research    0.00 B/s   69.69 K/s  0.00 %  0.08 % zeitgeist-fts
+Total DISK READ :      15.38 K/s | Total DISK WRITE :       7.69 K/s
+Actual DISK READ:      15.38 K/s | Actual DISK WRITE:     123.08 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s    0.00 B/s  0.00 % 36.08 % [jbd2/sda1-8]
+ 1661 be/4 research    0.00 B/s    7.69 K/s  0.00 %  9.65 % zeitgeist-fts
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.02 % [kworker/u2:2]
+ 4630 be/4 research   15.38 K/s    0.00 B/s  0.00 %  0.01 % soffice.bin --writer --splash-pipe=5
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       3.88 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4491 be/4 root        0.00 B/s    3.88 K/s  0.00 %  0.00 % python /usr/sbin/iotop -b -o
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.02 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :      39.24 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:      86.32 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s    0.00 B/s  0.00 % 19.07 % [jbd2/sda1-8]
+ 1589 be/4 research    0.00 B/s   39.24 K/s  0.00 %  0.04 % gvfsd-metadata
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.02 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:      11.70 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       3.91 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4491 be/4 root        0.00 B/s    3.91 K/s  0.00 %  0.00 % python /usr/sbin/iotop -b -o
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       7.81 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:      42.98 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s    7.81 K/s  0.00 % 10.24 % [jbd2/sda1-8]
+ 4491 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % python /usr/sbin/iotop -b -o
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       3.88 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :     388.62 K/s | Total DISK WRITE :       3.89 K/s
+Actual DISK READ:     388.62 K/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.03 % [kworker/u2:2]
+ 2086 be/4 research  388.62 K/s    0.00 B/s  0.00 %  0.01 % unity-scope-loader applications/applications.scope applications/scopes.scope commands.scope
+ 4491 be/4 root        0.00 B/s    3.89 K/s  0.00 %  0.00 % python /usr/sbin/iotop -b -o
+Total DISK READ :       3.84 K/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:     241.89 K/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 2086 be/4 research    3.84 K/s    0.00 B/s  0.00 %  0.01 % unity-scope-loader applications/applications.scope applications/scopes.scope commands.scope
+Total DISK READ :       0.00 B/s | Total DISK WRITE :      11.67 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:      23.35 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s   11.67 K/s  0.00 %  9.38 % [jbd2/sda1-8]
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.03 % [kworker/u2:2]
+ 4491 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.02 % python /usr/sbin/iotop -b -o
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:     407.76 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.02 % [kworker/u2:2]
+Total DISK READ :       7.76 K/s | Total DISK WRITE :      15.51 K/s
+Actual DISK READ:       7.76 K/s | Actual DISK WRITE:      73.67 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 2086 be/4 research    7.76 K/s    0.00 B/s  0.00 % 21.06 % unity-scope-loader applications/applications.scope applications/scopes.scope commands.scope
+ 1176 be/4 research    0.00 B/s   11.63 K/s  0.00 %  0.02 % dconf-service
+  196 be/3 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [jbd2/sda1-8]
+ 4491 be/4 root        0.00 B/s    3.88 K/s  0.00 %  0.00 % python /usr/sbin/iotop -b -o
+Total DISK READ :     124.98 K/s | Total DISK WRITE :     128.88 K/s
+Actual DISK READ:    1011.54 K/s | Actual DISK WRITE:     124.98 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s  105.45 K/s  0.00 % 45.20 % [jbd2/sda1-8]
+ 2086 be/4 research   42.96 K/s    0.00 B/s  0.00 %  6.06 % unity-scope-loader applications/applications.scope applications/scopes.scope commands.scope
+ 1176 be/4 research    0.00 B/s   11.72 K/s  0.00 %  0.02 % dconf-service
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+    1 be/4 root       82.02 K/s    0.00 B/s  0.07 %  0.01 % init splash
+  777 be/4 syslog      0.00 B/s    7.81 K/s  0.00 %  0.00 % rsyslogd -n [rs:main Q:Reg]
+ 1000 be/4 research    0.00 B/s    3.91 K/s  0.00 %  0.00 % upstart --user
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       7.80 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:      42.87 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s    3.90 K/s  0.00 %  9.95 % [jbd2/sda1-8]
+ 4491 be/4 root        0.00 B/s    3.90 K/s  0.00 %  0.00 % python /usr/sbin/iotop -b -o
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.02 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :     628.82 K/s | Total DISK WRITE :     209.61 K/s
+Actual DISK READ:     628.82 K/s | Actual DISK WRITE:     248.42 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s   31.05 K/s  0.00 % 23.52 % [jbd2/sda1-8]
+ 1653 be/4 research    0.00 B/s  108.69 K/s  0.00 % 19.12 % zeitgeist-daemon
+ 1661 be/4 research    0.00 B/s   65.99 K/s  0.00 % 11.93 % zeitgeist-fts
+ 1486 be/4 research  624.94 K/s    0.00 B/s  0.00 % 10.37 % nautilus -n
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.02 % [kworker/u2:2]
+ 5158 be/4 research    3.88 K/s    0.00 B/s  0.00 %  0.01 % nautilus -n [pool]
+ 1589 be/4 research    0.00 B/s    3.88 K/s  0.00 %  0.00 % gvfsd-metadata
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       3.86 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:      81.07 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s    0.00 B/s  0.00 % 30.53 % [jbd2/sda1-8]
+ 1661 be/4 research    0.00 B/s    3.86 K/s  0.00 %  4.85 % zeitgeist-fts
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       7.71 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:     134.88 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.03 % [kworker/u2:2]
+ 5132 be/4 root        0.00 B/s    7.71 K/s  0.00 %  0.02 % cupsd -l
+  196 be/3 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [jbd2/sda1-8]
+Total DISK READ :     116.98 K/s | Total DISK WRITE :     335.34 K/s
+Actual DISK READ:    1294.55 K/s | Actual DISK WRITE:     432.82 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s   66.29 K/s  0.00 % 60.03 % [jbd2/sda1-8]
+ 1653 be/4 research    0.00 B/s  136.47 K/s  0.00 % 41.36 % zeitgeist-daemon
+ 1661 be/4 research    0.00 B/s  128.68 K/s  0.00 % 32.53 % zeitgeist-fts
+ 1486 be/4 research    0.00 B/s    3.90 K/s  0.00 %  6.53 % nautilus -n
+  690 be/4 root      113.08 K/s    0.00 B/s  0.00 %  4.29 % NetworkManager --no-daemon
+ 1642 be/4 research    3.90 K/s    0.00 B/s  0.00 %  3.39 % zeitgeist-datahub
+ 4459 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:1]
+Total DISK READ :     908.60 K/s | Total DISK WRITE :     150.15 K/s
+Actual DISK READ:     908.60 K/s | Actual DISK WRITE:     423.50 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 5165 be/4 research  908.60 K/s    0.00 B/s  0.00 % 94.12 % gedit /home/researcher/Documents/sample.sh
+  196 be/3 root        0.00 B/s    3.85 K/s  0.00 % 70.31 % [jbd2/sda1-8]
+ 1661 be/4 research    0.00 B/s   69.30 K/s  0.00 % 27.46 % zeitgeist-fts
+ 1653 be/4 research    0.00 B/s   65.45 K/s  0.00 % 26.43 % zeitgeist-daemon
+ 1486 be/4 research    0.00 B/s    0.00 B/s  0.00 %  0.01 % nautilus -n
+ 1176 be/4 research    0.00 B/s   11.55 K/s  0.00 %  0.00 % dconf-service
+Total DISK READ :    1987.89 K/s | Total DISK WRITE :      57.90 K/s
+Actual DISK READ:    1987.89 K/s | Actual DISK WRITE:     389.86 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 5165 be/4 research 1980.17 K/s    0.00 B/s  0.00 % 78.40 % gedit /home/researcher/Documents/sample.sh
+  196 be/3 root        0.00 B/s    0.00 B/s  0.00 % 56.89 % [jbd2/sda1-8]
+ 1661 be/4 research    0.00 B/s   11.58 K/s  0.00 % 31.24 % zeitgeist-fts
+ 1176 be/4 research    0.00 B/s   46.32 K/s  0.00 %  6.36 % dconf-service
+ 1486 be/4 research    7.72 K/s    0.00 B/s  0.00 %  2.24 % nautilus -n
+ 4459 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.02 % [kworker/u2:1]
+Total DISK READ :     153.35 K/s | Total DISK WRITE :      84.34 K/s
+Actual DISK READ:     153.35 K/s | Actual DISK WRITE:     172.51 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s   11.50 K/s  0.00 % 35.92 % [jbd2/sda1-8]
+ 5165 be/4 research  153.35 K/s    3.83 K/s  0.00 % 15.50 % gedit /home/researcher/Documents/sample.sh
+ 1653 be/4 research    0.00 B/s   65.17 K/s  0.00 %  9.44 % zeitgeist-daemon
+ 1176 be/4 research    0.00 B/s    0.00 B/s  0.00 %  1.36 % dconf-service
+ 4491 be/4 root        0.00 B/s    3.83 K/s  0.00 %  0.00 % python /usr/sbin/iotop -b -o
+Total DISK READ :       0.00 B/s | Total DISK WRITE :      69.15 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:     161.35 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s    0.00 B/s  0.00 % 42.74 % [jbd2/sda1-8]
+ 1661 be/4 research    0.00 B/s   69.15 K/s  0.00 % 20.37 % zeitgeist-fts
+ 1653 be/4 research    0.00 B/s    0.00 B/s  0.00 %  4.79 % zeitgeist-daemon
+ 4459 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.03 % [kworker/u2:1]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       7.68 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       3.84 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 1653 be/4 research    0.00 B/s    7.68 K/s  0.00 %  5.12 % zeitgeist-daemon
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4459 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:1]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4459 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:1]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:      23.42 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s    0.00 B/s  0.00 % 10.62 % [jbd2/sda1-8]
+ 4491 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.02 % python /usr/sbin/iotop -b -o
+ 4459 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:1]
+Total DISK READ :      31.19 K/s | Total DISK WRITE :      23.39 K/s
+Actual DISK READ:      31.19 K/s | Actual DISK WRITE:     101.37 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s   15.59 K/s  0.00 % 22.11 % [jbd2/sda1-8]
+ 5165 be/4 research   15.59 K/s    3.90 K/s  0.00 % 12.20 % gedit /home/researcher/Documents/sample.sh
+ 1486 be/4 research   15.59 K/s    0.00 B/s  0.00 %  0.59 % nautilus -n
+ 5173 be/4 research    0.00 B/s    3.90 K/s  0.00 %  0.01 % gedit /home/researcher/Documents/sample.sh [pool]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :     117.10 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:     269.34 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s    0.00 B/s  0.00 % 43.69 % [jbd2/sda1-8]
+ 1661 be/4 research    0.00 B/s   70.26 K/s  0.00 % 21.22 % zeitgeist-fts
+ 1653 be/4 research    0.00 B/s   46.84 K/s  0.00 %  9.50 % zeitgeist-daemon
+ 4459 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:1]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :      19.67 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:     133.76 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s    3.93 K/s  0.00 % 22.56 % [jbd2/sda1-8]
+ 1176 be/4 research    0.00 B/s   11.80 K/s  0.00 %  0.02 % dconf-service
+ 4491 be/4 root        0.00 B/s    3.93 K/s  0.00 %  0.00 % python /usr/sbin/iotop -b -o
+Total DISK READ :     222.51 K/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:     437.21 K/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 1535 be/4 research  222.51 K/s    0.00 B/s  0.00 %  3.95 % compiz
+ 4459 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.01 % [kworker/u2:1]
+  827 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.00 % Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+Total DISK READ :       0.00 B/s | Total DISK WRITE :     140.46 K/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:     292.63 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s   19.51 K/s  0.00 % 38.02 % [jbd2/sda1-8]
+ 1661 be/4 research    0.00 B/s   70.23 K/s  0.00 % 21.13 % zeitgeist-fts
+ 1653 be/4 research    0.00 B/s   50.72 K/s  0.00 % 14.08 % zeitgeist-daemon
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4459 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.02 % [kworker/u2:1]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:      15.60 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :      15.61 K/s | Total DISK WRITE :       3.90 K/s
+Actual DISK READ:      23.42 K/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.03 % [kworker/u2:2]
+    1 be/4 root       15.61 K/s    0.00 B/s  0.01 %  0.00 % init splash
+ 4491 be/4 root        0.00 B/s    3.90 K/s  0.00 %  0.00 % python /usr/sbin/iotop -b -o
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:      85.91 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s    0.00 B/s  0.00 % 10.90 % [jbd2/sda1-8]
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.03 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:     261.46 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.03 % [kworker/u2:2]
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+Total DISK READ :       0.00 B/s | Total DISK WRITE :       0.00 B/s
+Actual DISK READ:       0.00 B/s | Actual DISK WRITE:       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4430 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.02 % [kworker/u2:2]
+Total DISK READ :      11.62 K/s | Total DISK WRITE :       7.75 K/s
+Actual DISK READ:       5.02 M/s | Actual DISK WRITE:     813.48 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+ 4496 be/4 research   11.62 K/s    0.00 B/s  0.00 %  2.04 % firefox
+ 4491 be/4 root        0.00 B/s    3.87 K/s  0.00 %  0.00 % python /usr/sbin/iotop -b -o
+ 4527 be/4 research    0.00 B/s    3.87 K/s  0.00 %  0.00 % firefox [DOM Worker]
+Total DISK READ :    1266.02 K/s | Total DISK WRITE :      53.23 K/s
+Actual DISK READ:    1266.02 K/s | Actual DISK WRITE:     266.13 K/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+  196 be/3 root        0.00 B/s   41.82 K/s  0.00 % 36.00 % [jbd2/sda1-8]

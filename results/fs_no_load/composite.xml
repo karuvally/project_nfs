@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v7.6.0-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>iozone_cache_init</Title>
+    <LastModified>2018-02-05 13:10:48</LastModified>
+    <TestClient>Phoronix Test Suite v7.6.0 (Alvdal)</TestClient>
+    <Description>IOzone test with host IO cache enabled in virtualbox</Description>
+  </Generated>
+  <System>
+    <Identifier>iozone_cache_init</Identifier>
+    <Hardware>Processor: Intel Xeon E5-2620 v3 @ 2.39GHz (1 Core), Motherboard: Oracle VirtualBox v1.2, Chipset: Intel 440FX- 82441FX PMC, Memory: 1024MB, Disk: 9GB VBOX HDD, Graphics: InnoTek VirtualBox, Network: AMD 79c970</Hardware>
+    <Software>OS: Debian 9.0, Kernel: 4.9.0-3-amd64 (x86_64), Compiler: GCC 7.2.0, File-System: ext4, System Layer: Oracle VirtualBox</Software>
+    <User>research</User>
+    <TimeStamp>2018-02-05 12:52:55</TimeStamp>
+    <TestClientVersion>7.6.0</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-vtable-verify --disable-werror --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-gnu-unique-object --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --enable-libmpx --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc=auto --enable-offload-targets=nvptx-none --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --program-prefix=x86_64-linux-gnu- --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i686 --with-default-libstdcxx-abi=new --with-gcc-major-version-only --with-multilib-list=m32,m64,mx32 --with-target-system-zlib --with-tune=generic --without-cuda-driver -v","disk-scheduler":"CFQ","disk-mount-options":"data=ordered,errors=remount-ro,relatime,rw"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/iozone-1.9.0</Identifier>
+    <Title>IOzone</Title>
+    <AppVersion>3.465</AppVersion>
+    <Arguments>-r 1m -s 2048M -i0 -i1 #READ</Arguments>
+    <Description>Record Size: 1MB - File Size: 2GB - Disk Test: Read Performance</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>iozone_cache_init</Identifier>
+        <Value>426.05</Value>
+        <RawString>1518.47265625:201.2607421875:220.595703125:202.767578125:214.248046875:198.9755859375</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/iozone-1.9.0</Identifier>
+    <Title>IOzone</Title>
+    <AppVersion>3.465</AppVersion>
+    <Arguments>-r 4k -s 2048M -i0 -i1 #READ</Arguments>
+    <Description>Record Size: 4Kb - File Size: 2GB - Disk Test: Read Performance</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>iozone_cache_init</Identifier>
+        <Value>208.04</Value>
+        <RawString>217.5615234375:200.5830078125:217.06640625:206.3095703125:200.2529296875:206.447265625</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/iozone-1.9.0</Identifier>
+    <Title>IOzone</Title>
+    <AppVersion>3.465</AppVersion>
+    <Arguments>-r 1m -s 2048M -i0 #WRITE</Arguments>
+    <Description>Record Size: 1MB - File Size: 2GB - Disk Test: Write Performance</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>iozone_cache_init</Identifier>
+        <Value>182.11</Value>
+        <RawString>162.6142578125:187.27734375:186.708984375:184.4697265625:191.962890625:179.615234375</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/iozone-1.9.0</Identifier>
+    <Title>IOzone</Title>
+    <AppVersion>3.465</AppVersion>
+    <Arguments>-r 4k -s 2048M -i0 #WRITE</Arguments>
+    <Description>Record Size: 4Kb - File Size: 2GB - Disk Test: Write Performance</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>iozone_cache_init</Identifier>
+        <Value>193.91</Value>
+        <RawString>195.7822265625:190.47265625:195.470703125</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/iozone-1.9.0</Identifier>
+    <Title>IOzone</Title>
+    <AppVersion>3.465</AppVersion>
+    <Arguments>-r 64k -s 2048M -i0 -i1 #READ</Arguments>
+    <Description>Record Size: 64Kb - File Size: 2GB - Disk Test: Read Performance</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>iozone_cache_init</Identifier>
+        <Value>206.52</Value>
+        <RawString>261.404296875:189.8896484375:205.9658203125:189.009765625:194.8603515625:197.9794921875</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/iozone-1.9.0</Identifier>
+    <Title>IOzone</Title>
+    <AppVersion>3.465</AppVersion>
+    <Arguments>-r 64k -s 2048M -i0 #WRITE</Arguments>
+    <Description>Record Size: 64Kb - File Size: 2GB - Disk Test: Write Performance</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>iozone_cache_init</Identifier>
+        <Value>190.16</Value>
+        <RawString>182.0048828125:195.318359375:186.001953125:195.9423828125:191.5078125</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>
