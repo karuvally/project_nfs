@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v7.8.0-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>nfs_test_5</Title>
+    <LastModified>2018-02-21 07:32:41</LastModified>
+    <TestClient>Phoronix Test Suite v7.8.0 (Folldal)</TestClient>
+    <Description>fstab[rw, sync, hard, intr, rsize=102400, wsize=102400 0 0], exports[rw, no_root_squash, subtree_check], client[6]</Description>
+  </Generated>
+  <System>
+    <Identifier>nfs_test_5</Identifier>
+    <Hardware>Processor: Intel Xeon E5-2620 v3 @ 2.39GHz (1 Core), Motherboard: Oracle VirtualBox v1.2, Chipset: Intel 440FX- 82441FX PMC, Memory: 1024MB, Disk: 17GB VBOX HDD, Graphics: InnoTek VirtualBox, Network: AMD 79c970</Hardware>
+    <Software>OS: Debian 9.3, Kernel: 4.9.0-3-amd64 (x86_64), Compiler: GCC 6.3.0 20170516, File-System: nfs, System Layer: Oracle VirtualBox</Software>
+    <User>user_1</User>
+    <TimeStamp>2018-02-21 06:56:12</TimeStamp>
+    <TestClientVersion>7.8.0</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --enable-libmpx --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc=auto --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --program-prefix=x86_64-linux-gnu- --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i686 --with-arch-directory=amd64 --with-default-libstdcxx-abi=new --with-multilib-list=m32,m64,mx32 --with-target-system-zlib --with-tune=generic -v","disk-scheduler":"CFQ"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/dbench-1.0.0</Identifier>
+    <Title>Dbench</Title>
+    <AppVersion>4.0</AppVersion>
+    <Arguments>6</Arguments>
+    <Description>Client Count: 6</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>nfs_test_5</Identifier>
+        <Value>0.94</Value>
+        <RawString>0.949296:0.943375:0.937427</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lpopt -O2"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>
