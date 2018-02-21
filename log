@@ -204,3 +204,7 @@ exports [rw, no_root_squash, subtree_check]
 force NFS to run on UDP
 
 many users report performance degradation after switching to NFSv4
+
+phoronix-test-suite showing "pts/dbench already running" error
+
+thinking of reinstalling client or cloning ldap_server
