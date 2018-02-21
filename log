@@ -189,3 +189,18 @@ nfssat shows no retranmsissions
 Client rpc stats:
 calls      retrans    authrefrsh
 2310766    0          2310766
+
+/proc/sys/net/core/rmem_default and max values are sufficiently large
+
+software development is attribute intensive env -> lot of small files
+
+nfs server memory usage is very low, with used cache being half of memory
+
+nfs_test_7:
+client [6]
+fstab [rw, sync, hard, intr, udp 0 0]
+exports [rw, no_root_squash, subtree_check]
+
+force NFS to run on UDP
+
+many users report performance degradation after switching to NFSv4
