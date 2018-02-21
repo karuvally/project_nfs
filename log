@@ -158,3 +158,13 @@ removed github/project_nfs moving it to gitlab
 
 ----[21-02-2018]------------------------------------------------------------
 
+nfs_test_5:
+client [6]
+fstab [rw, sync, hard, intr, rsize=102400, wsize=102400 0 0]
+exports [rw, no_root_squash, subtree_check]
+
+resulted in 0.94 MB/s -> no performance increment
+
+moved project_nfs to gitlab
+
+started writing the log
