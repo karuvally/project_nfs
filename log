@@ -1,0 +1,160 @@
+----[14-02-2018]------------------------------------------------------------
+
+setup of client VMs complete
+
+set new IPs for all VMs
+
+corected bugs in disk_stress script
+
+scripts to be made [start_stop_vm, run_command_vms, copy_config_script]
+
+client nfs performance is too low
+
+couldn't run phoronix on nfs mount
+
+thinking of searching for an alternate to phoronix
+
+----[15-02-2018]------------------------------------------------------------
+
+found client network adapter performance to be optimal
+
+hypervisor and clients are performing okay
+
+started writing script to automate start/shutdown of VMs
+
+VM manage script config template done:
+
+{
+    "host1_ip": {
+        "vm_names": ["name_1", "name_2", ...]
+    }
+
+    "host2_ip": {
+        "vm_names": ["name_3", "name_4", ...]
+    }
+}
+
+modifying cachedir and environmentdir in user-config.xml allow running
+phoronix on any mount point
+
+----[16-02-2018]------------------------------------------------------------
+
+started NFS benchmark with single client and no load, using pts/iozone
+
+benchmark-config:
+fstab [rw, sync, hard, intr 0 0]
+exports [rw, root_squash, subtree_check]
+record [all]
+file [512MB, 2GB]
+
+testing record [4KB, 64KB, 1MB] and file [512MB, 2GB], test [rw] is taking 
+too long to complete with one test > 6 hours
+
+phoronix test suite runs each test three or more times and takes mean to
+find the results
+
+found about btest, stress and filebench tools to simulate disk IO
+
+not using NFSometer as it is a mere wrapper around existing disk tools
+
+----[17-02-2018]------------------------------------------------------------
+
+Started overnight benchmark using pts/iozone:
+fstab [rw, sync, hard intr 0 0]
+exports [rw, root_squash, subtree_check]
+record [64KB]
+file [512 MB]
+
+----[18-02-2018]------------------------------------------------------------
+
+First NFS test completed
+
+NFS read performance at ~7700 MB/s, clearly incorrect
+
+installed bonnie++ to test NFS performance
+
+started bonnie++ benchmark:
+fstab [rw, sync, hard intr 0 0]
+exports [rw, root_squash, subtree_check]
+
+bonnie++ benchmark writing one byte at a time
+
+changed chunk size to 64K, still no change in "writing one byte at a time"
+
+bonnie++ benchmark taking too long to complete, cancelling
+
+----[19-02-2018]------------------------------------------------------------
+
+Created new VM for client-1
+
+installed dataplicity for remote administration
+
+----[20-02-2018]------------------------------------------------------------
+
+instlled phoronix on new VM
+
+installed nfs-common
+
+mounted nfs share as home directory
+
+started using pts/dbench as benchmark utility
+
+dbench is specifically meant for SMB/NFS benchmarking
+
+nfs_test_1:
+client [1]
+fstab [rw, sync, hard, intr 0 0]
+exports [rw, no_root_squash, subtree_check]
+
+removed root_squash as the nfs mount is now the home directory
+
+dbench can emulate large number of NFS clients
+
+dbench test complete quickly with ETA 40 minutes
+
+nfs_test_1 completed with 0.29 MB/s NFS speed
+
+nfs_test_2:
+client [6]
+fstab [rw, sync, hard, intr 0 0]
+exports [rw, no_root_squash, subtree_check]
+
+results in performance of 0.94 MB/s
+
+nfs_test_3:
+client [6]
+fstab [rw, sync, hard, intr, nfsvers=4 0 0]
+exports [rw, no_root_squash, subtree_check]
+
+enforced NFS version 4
+
+found that enforcing version 4 is not recommended
+
+server by default uses highest NFS version available
+
+lost contact to client-1 while modifying fstab
+
+the error was due to FS not being unmounted cleanly
+
+nfs_test_3:
+client [6]
+fstab [rw, sync, hard, intr, rsize=16384, wsize=16384 0 0]
+exports [rw, no_root_squash, subtree_check]
+
+changed read, write block size = 16K
+
+resulted in 0.94 MB/s -> no performance increment
+
+nfs_test_4:
+client [6]
+fstab [rw, sync, hard, intr, rsize=65536, wsize=65536 0 0]
+exports [rw, no_root_squash, subtree_check]
+
+changed read, write block size = 64K
+
+resulted in 0.95 MB/s -> no performance increment
+
+removed github/project_nfs moving it to gitlab
+
+----[21-02-2018]------------------------------------------------------------
+
