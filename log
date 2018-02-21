@@ -168,3 +168,24 @@ resulted in 0.94 MB/s -> no performance increment
 moved project_nfs to gitlab
 
 started writing the log
+
+client-1 MTU is set to 1500
+
+nfs_test_6:
+client [6]
+fstab [rw, sync, hard, intr, rsize=1024, wsize=1024 0 0]
+exports [rw, no_root_squash, subtree_check]
+
+reduced rsize, wsize to 1K
+
+looking if rsize/wsize < MTU can increase performance
+
+resulted in 0.92 MB/s -> marginal decrease in speed
+
+packet fragmentation can occur if rsize/wsize > MTU. But in this case, it
+is providing a marginal increment in performance
+
+nfssat shows no retranmsissions
+Client rpc stats:
+calls      retrans    authrefrsh
+2310766    0          2310766
