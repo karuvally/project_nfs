@@ -1,0 +1,1 @@
+BOOT_IMAGE=/boot/vmlinuz-4.9.0-3-amd64 root=/dev/sda1 ro quiet
