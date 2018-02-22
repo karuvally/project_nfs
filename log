@@ -215,3 +215,4 @@ phoronix fails to run when using UDP
 
 ran dbench manually, resulted in 0.77 MB/s -> decrease in performance
 
+ran dbench manually on VM without UDP, resulted in 0.94 MB/s
