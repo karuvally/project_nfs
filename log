@@ -266,3 +266,12 @@ dd if=/dev/zero of=/home/user_1/tmp_file bsize=1K count=2048000 conv=fdatasync
 resulted in 7.1 MB/s -> thats more like it :D
 
 server side async provides biggest performance boost
+
+nfs_test_10:
+client [6]
+fstab [rw, sync, hard, intr 0 0]
+exports [rw, no_root_squash, subtree_check, async]
+
+testing if subtree check has performance impacts
+
+resulted in 28.90 MB/s -> no major difference in performance
