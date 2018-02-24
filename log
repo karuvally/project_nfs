@@ -216,3 +216,29 @@ phoronix fails to run when using UDP
 ran dbench manually, resulted in 0.77 MB/s -> decrease in performance
 
 ran dbench manually on VM without UDP, resulted in 0.94 MB/s
+
+----[23-02-2018]------------------------------------------------------------
+
+instructions on the web provide marginal/no performance improvement
+
+disabling subtree check too see if there is performance improvement
+
+nfs_test_8:
+client [6]
+fstab [rw, sync, hard, intr 0 0]
+exports [rw, no_root_squash, no_subtree_check]
+
+resulted in 0.94 MB/s -> no performance difference from earlier setup
+
+----[24-02-2018]------------------------------------------------------------
+
+many of the performance guideliness in websites are dated / do not work
+
+nfs_test_9:
+client [6]
+fstab [rw, sync, hard, intr 0 0]
+exports [rw, no_root_squash, no_subtree_check, async]
+
+found that many of the websites have duplicated content
+
+test resulted in 28.72 MB/s -> huge increase in performance
