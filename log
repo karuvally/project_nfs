@@ -242,3 +242,6 @@ exports [rw, no_root_squash, no_subtree_check, async]
 found that many of the websites have duplicated content
 
 test resulted in 28.72 MB/s -> huge increase in performance
+
+cache effect is obvious, running test with dd:
+dd if=/dev/zero of=/home/user_1/tmp_file bsize=512M count=4 conv=fdatasync
