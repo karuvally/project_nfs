@@ -264,3 +264,5 @@ running test with dd:
 dd if=/dev/zero of=/home/user_1/tmp_file bsize=1K count=2048000 conv=fdatasync
 
 resulted in 7.1 MB/s -> thats more like it :D
+
+server side async provides biggest performance boost
