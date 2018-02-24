@@ -243,5 +243,24 @@ found that many of the websites have duplicated content
 
 test resulted in 28.72 MB/s -> huge increase in performance
 
-cache effect is obvious, running test with dd:
+cache effect is obvious
+
+running test with dd:
 dd if=/dev/zero of=/home/user_1/tmp_file bsize=512M count=4 conv=fdatasync
+
+resulted in 58.1 MB/s -> way over network card capabilities
+
+running test with dd:
+dd if=/dev/zero of=/home/user_1/tmp_file bsize=1M count=2048 conv=fdatasync
+
+resulted in 32.9 MB/s -> still not accurate
+
+running test with dd:
+dd if=/dev/zero of=/home/user_1/tmp_file bsize=4K count=512000 conv=fdatasync
+
+resulted in 14.1 MB/s -> the maximum speed should be ~ 12.5 MB/s
+
+running test with dd:
+dd if=/dev/zero of=/home/user_1/tmp_file bsize=1K count=2048000 conv=fdatasync
+
+resulted in 7.1 MB/s -> thats more like it :D
