@@ -275,3 +275,11 @@ exports [rw, no_root_squash, subtree_check, async]
 testing if subtree check has performance impacts
 
 resulted in 28.90 MB/s -> no major difference in performance
+
+----[25-02-2018]------------------------------------------------------------
+
+Suggesting improvement for client side async:
+sync before client side memory is full and when light traffic
+
+Suggesting improvement for server side async:
+Have client side permanent buffer as journal, recover if server fails
