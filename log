@@ -283,3 +283,7 @@ sync before client side memory is full and when light traffic
 
 Suggesting improvement for server side async:
 Have client side permanent buffer as journal, recover if server fails
+
+first phase of research found that highest performing gain is from async
+
+fault with server-async is data loss
