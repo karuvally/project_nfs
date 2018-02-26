@@ -217,6 +217,9 @@ ran dbench manually, resulted in 0.77 MB/s -> decrease in performance
 
 ran dbench manually on VM without UDP, resulted in 0.94 MB/s
 
+there is no packet fragmentation, thus number of tweaks such as rsize, wsize
+won't work
+
 ----[23-02-2018]------------------------------------------------------------
 
 instructions on the web provide marginal/no performance improvement
@@ -286,4 +289,58 @@ Have client side permanent buffer as journal, recover if server fails
 
 first phase of research found that highest performing gain is from async
 
-fault with server-async is data loss
+fault with server and client async is data loss
+
+----[26-02-2018]------------------------------------------------------------
+
+server side async accepts a file write command and immediatly provides
+file written complete signal, while file is being written in background
+
+client side async uses main memory as a large buffer. files to be written
+are stored in buffer till buffer is full or shutdown
+
+server side async can cause data loss if server improperly shutdowns
+
+server side async issue can be solved by implementing a client side temp 
+journal on secondary media
+
+Client --> Journal --> Server
+
+Everything to be written to the server goes through the client HDD. In case
+of server being not shutdown properly, the corrupt files can be recovered
+from journal.
+
+If corrupt shutdown happens, client and server prepares a list of files
+based on file access time and compares the list. If a file in client side
+is missing in server, it is transferred.
+
+Once server has the copies of all the files, server and client runs simple
+checksum to ensure server has the "correct" copies. If server side checksum
+does not match with that from client, the specific file is overwritten with
+a fresh copy from the client
+
+The client side journal is of fixed size and when it nears its capacity,
+the earliest written files are deleted to make room
+
+This implementation will mean server side async can be reliably used in
+environments where data loss cannot be tolerated.
+
+client side async writes the buffer to server only when memory is full or
+during shutdown. This means data loss can occur if client improperly
+shutdowns.
+
+the solution is to implement two values max_count and current_count 
+accesible in server.
+
+max_count represents the maximum clients that can connect to server at a
+time and current_count represents the number of clients connected at present
+
+if current_count < max_count, client can write to the server 
+
+clients will connect to the server at random intervals to check curent_count
+and writes if current_count < max_count
+
+There is no hurry as clients have buffers as big as their main memory
+
+The above solution will decrease traffic in the networking allowing for
+faster read speeds from the NFS server while reducing data corruption.
