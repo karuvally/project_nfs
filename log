@@ -296,6 +296,10 @@ fault with server and client async is data loss
 server side async accepts a file write command and immediatly provides
 file written complete signal, while file is being written in background
 
+this improves the write speed. It also improves the read speed as file can
+now be read by the client without waiting for the server to update the
+access timestamp on the read files
+
 client side async uses main memory as a large buffer. files to be written
 are stored in buffer till buffer is full or shutdown
 
@@ -344,3 +348,10 @@ There is no hurry as clients have buffers as big as their main memory
 
 The above solution will decrease traffic in the networking allowing for
 faster read speeds from the NFS server while reducing data corruption.
+
+created a 2.0 GB file on home directory which is NFS using dd:
+dd if=/dev/zero of=/home/user_1/file bs=512M count=4
+
+Copied the file using rsync --progress to /var/tmp which is native FS
+
+resulted in 54.35 MB/s -> Very fast read speeds
