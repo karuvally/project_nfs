@@ -1,18 +1,18 @@
-Paper Name
-Abstract
-Keywords
-Introduction
-Research methodology
-Working and Typical performance of NFS
-Parameters affecting performance
-Performance with Server side ASYNC
-Reliability concerns with Server side ASYNC
-Fixing server side ASYNC (behaviour)
-Advantages of the proposed solution
-Gaining additional performance - Client side ASYNC
-Reliability concerns with client side ASYNC
-Fixing client side ASYNC
-Advantages of proposed solution
-Benefits of NFS environment with the proposed system
-Conclusion
-References
+Paper Name                                              [x]
+Abstract                                                [x]
+Keywords                                                [x]
+Introduction                                            [x]
+Research methodology                                    [ ]
+Working and Typical performance of NFS                  [ ]
+Parameters affecting performance                        [ ]
+Performance with Server side ASYNC                      [ ]
+Reliability concerns with Server side ASYNC             [ ]
+Fixing server side ASYNC (behaviour)                    [ ]
+Advantages of the proposed solution                     [ ]
+Gaining additional performance - Client side ASYNC      [ ]
+Reliability concerns with client side ASYNC             [ ]
+Fixing client side ASYNC                                [ ]
+Advantages of proposed solution                         [ ]
+Benefits of NFS environment with the proposed system    [ ]
+Conclusion                                              [ ]
+References                                              [ ]
