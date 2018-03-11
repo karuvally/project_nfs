@@ -1,1 +1,10 @@
-The whole NFS system is tried to benchmark using virtual machine and nfs version 4.2 is used for simulation. One of the main reason to use virtual machine is that, they provide a number of networking hardware specifications which allow us to simulate target machine network hardware properties. Virtual machine is free to use, fast and easy to implement. A 100 Mbps bridged adapter is setup in the virtual machine to directly to outside network. In other words NAT (Network Address Translation) is not used because in NAT the translation is done by the CPU. This make sure that CPU will not bottleneck the system simulation. Benchmarking the system was a tedious process because of the absence of proper benchmarking tool. The benchmarking was properly completed by combing some of the available tools. Bonnie ++, Phoronix, Dbench and dd-the command line utility was used. The main disadvantages of first three test suits was caching effect. This was effectively avoided by using the command line utility "dd".  
+The whole NFS system is tried to benchmark using virtual machine and nfs version 4.2 is used for simulation. 
+One of the main reason to use virtual machine is that, they provide a number of networking hardware specifications 
+which allow us to simulate target machine network hardware properties. Virtual machine is free to use, fast and easy 
+to implement. A 100 Mbps bridged adapter is setup in the virtual machine to directly to outside network. In other 
+words NAT (Network Address Translation) is not used because in NAT the translation is done by the CPU. This 
+make sure that CPU will not bottleneck the system simulation. Benchmarking the system was a tedious process 
+because of the absence of proper benchmarking tool. The benchmarking was properly completed by combing some 
+of the available tools. Bonnie ++, Phoronix, Dbench and dd-the command line utility was used. The main 
+disadvantages of first three test suits was caching effect. This was effectively avoided by using the command line 
+utility "dd".  
