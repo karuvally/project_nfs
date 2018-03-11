@@ -1,0 +1,14 @@
+Network File System is a distributed File System protocol primarily used by
+UNIX family of Operating Systems. It allows a user to mount, access and
+manipulate a disk partition or directory on a remote computer as if the
+said partition or directory was a part of the local machine. Network File
+System was developed as an open standard by SUN Microsystems in 1984.
+
+NFS is widely used in Local Area Networks to conviniently share data and
+provide users the ability to access their files across the network.
+Sometimes, a directory access protocol such as LDAP is combined with NFS to
+allow users to login to their user account from any computer on the network.
+
+The main drawback of NFS is the slow read and write speeds it offers with
+the default setup. Though NFS offers a number of parameters in its
+configuration files to increase the performance, 
