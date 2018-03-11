@@ -3,8 +3,7 @@ Abstract
 Keywords
 Introduction
 Research methodology
-Working of NFS
-Typical NFS Performance
+Typical NFS Performance -> Include working of NFS
 Parameters affecting performance
 Performance with Server side ASYNC
 Reliability concerns with Server side ASYNC
