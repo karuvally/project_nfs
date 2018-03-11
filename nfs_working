@@ -1,0 +1,29 @@
+Network File System is a distributed file system originally developed by
+SUN Microsystems in 1984. A distributed file system differ from normal file
+systems in the sense that they operate over the network and allow sharing of
+storage resources. NFS was developed as an open standard. It was initially
+implemented for UNIX but is now compatible with a wide array of Operating
+Systems. NFS has gone through four major revisions, with the first publicly
+available version being v2. All the experiments for this research have been
+conducted using NFS v4.2
+
+NFS uses the Client-Server architecture. The NFS Server makes available a
+disk partition or directory on the network which can then be mounted just
+like a local storage device by the clients. For applications running on the
+client machine, NFS is just another file system and requires zero
+modifications inorder to work. This is made possible by an abstraction
+layer called Virtual File System or VFS. VFS defines what operations can be
+done on the filesystem regardless of the file system type. When an
+application deals with the UNIX file system, it is actually dealing with
+VFS. VFS receives data regarding the target file from the application, then
+hands it over to the actual file system, which in this case is NFS.
+
+Once NFS receives the data, it is transfered to the server with the help of
+Remote Procedure Call (RPC) in External Data Representation (XDR) format.
+RPC allows the NFS client to execute instructions on the server. XDR is a
+data representation standard that provides a uniform data format which can
+be understood by a variety of computers. This is one of the factors that
+provide NFS with cross platform compatibilty.
+
+NFS Figure
+
