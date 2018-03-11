@@ -16,5 +16,15 @@ affect the performance much or increases the chance of data corruption and
 loss. Thus the users are forced to run the system with the default, slow
 configuration.
 
-In many environments, this leads to lost human productivity as the computers
+In many environments, this leads to lost human productivity as interactive
+computing becomes impossible and Operating System needing access to data
+on NFS share often ends up freezing the whole computer. This also
+bottlenecks the CPU of the computer, thereby wasting precious computing
+resources.
 
+This paper proposes a number of changes to the Network File System protocol
+which increases the performance of Network File System while reducing
+the risk of data corruption and loss. The proposed system also ensures
+decent speeds in congested network as it consumes less bandwidth than the 
+original NFS implementation and protects the ability of the NFS server to
+provide access to files during period of peak network activity.
