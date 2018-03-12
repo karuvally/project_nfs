@@ -25,5 +25,16 @@ data representation standard that provides a uniform data format which can
 be understood by a variety of computers. This is one of the factors that
 provide NFS with cross platform compatibilty.
 
-NFS Figure
+VFS-NFS handover Figure
 
+NFS by default runs in what is called server side synchronous mode. In this
+mode, when the NFS client receives a write operation, it connects to the
+server, requsts a write and transfers the data. Once the transfer is
+complete, the server syncs the data to its disks. After completing the sync
+operation, server returns an acknowledgment message back to the client. The
+issue here is that, the client has to wait till it receives the 
+acknowledgment.It cannot perform any additional write to the server till the
+acknowledgment arrives. This considerably slows down the system.
+
+Further, clients are often configured to work in client side synchronous
+mode. In this mode,
