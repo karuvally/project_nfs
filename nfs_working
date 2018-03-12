@@ -41,7 +41,9 @@ In this mode, the client is forced to write the data to the server as
 soon as it receives the request. This often causes the system to crawl.
 
 The performance of an NFS system with client and server side synchronous
-mode turned on was benchmarked and resulted in 0.94 MB/s. The server and
-client systems in this case were equipped with 100mbps network adapter. The
-speeds obtained are thus clearly sub-optimal. The peformance graph obtained
-from the benchmark has been shown in figure.
+mode turned on was benchmarked with client side options in /etc/fstab set as
+[rw, sync, hard, intr 0 0] and the server side options  in /etc/exports set
+as [rw, no_root_squash, subtree_check] This resulted in 0.94 MB/s. The 
+server and client systems in this case were equipped with 100mbps network 
+adapters. The speeds obtained are thus clearly sub-optimal. The peformance 
+graph obtained from the benchmark has been shown in figure.
