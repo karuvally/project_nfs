@@ -23,7 +23,8 @@ Remote Procedure Call (RPC) in External Data Representation (XDR) format.
 RPC allows the NFS client to execute instructions on the server. XDR is a
 data representation standard that provides a uniform data format which can
 be understood by a variety of computers. This is one of the factors that
-provide NFS with cross platform compatibilty.
+provide NFS with cross platform compatibilty. The working of NFS protocol
+has been shown in figure.
 
 VFS-NFS handover Figure
 
@@ -34,7 +35,13 @@ complete, the server syncs the data to its disks. After completing the sync
 operation, server returns an acknowledgment message back to the client. The
 issue here is that, the client has to wait till it receives the 
 acknowledgment.It cannot perform any additional write to the server till the
-acknowledgment arrives. This considerably slows down the system.
+acknowledgment arrives. This considerably slows down the system. Further,
+clients are often configured to work in client side synchronous mode.
+In this mode, the client is forced to write the data to the server as
+soon as it receives the request. This often causes the system to crawl.
 
-Further, clients are often configured to work in client side synchronous
-mode. In this mode,
+The performance of an NFS system with client and server side synchronous
+mode turned on was benchmarked and resulted in 0.94 MB/s. The server and
+client systems in this case were equipped with 100mbps network adapter. The
+speeds obtained are thus clearly sub-optimal. The peformance graph obtained
+from the benchmark has been shown in figure.
