@@ -1,1 +1,23 @@
-Server side asynchronous mode changes the behaviour of NFS server such that
+In server side synchronous mode, the server waits till the data has been 
+written to its disk before returning the acknowledgment message to the 
+client. Server side asynchronous mode changes the behaviour of NFS server 
+such that it returns the acknowledgment message as soon as the client 
+completes the transfer of data. This has tremendous impact on the
+performance of the system.
+
+An NFS system with server side asynchronous mode was benchmarked with the
+client side options in /etc/fstab set as [rw, sync, hard, intr 0 0] and
+server side options in /etc/exports set as 
+[rw, no_root_squash, no_subtree_check, async]. The test was conducted using
+dbench tool - part of phoronix test suite, and resulted in 28.72 MB/s, a
+huge increase in performance boost, compared with the earlier server side
+synchronous mode, which returned 0.94 MB/s. The performance graph obtained
+has been shown in figure.
+
+Further benchmarks where also conducted with dd utility, with a block size
+of 1KB, file size of 2GB and fdatasync option turned on. The block size of
+1K ensures the computer writes only 1KB of data at a time and the fdatasync
+option flushes the cache after each block is written. The aim was to
+understand the performance of the system without the contribution of client
+side caches. The benchmark resulted in 7.1 MB/s which was stil significantly
+higher than results recorded with server side asynchronous mode.
