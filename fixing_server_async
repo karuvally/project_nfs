@@ -1,0 +1,21 @@
+Once VFS handovers the write request to NFS client, it transfers the 
+received data to the server rather than writing it to the local storage. In
+case of data loss, the file cannot be recovered, as the only copy of the
+file was in server's memory. The solution is to create a buffer in the 
+client's local storage such that, a copy of all the data written to server 
+will be kept with the client.
+
+The buffer is a predefined storage area in the client's secondary memory.
+It acts like a ring buffer with a fixed memory size. The oldest files are
+deleted once the buffer reaches its capacity. NFS client will maintain a 
+plaintext file in the buffer containing names of each file in the buffer,
+its path and hash generated from each file. During an NFS write operation,
+the client stores a copy of the file in the buffer area and updates the 
+metadata file with the information regarding the  new file. Figure shows the 
+working and structure of the buffer.
+
+Figure of the working and structure of buffer + metadata file
+
+Talk about the hash
+
+Talk about error recovery
