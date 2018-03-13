@@ -1,10 +1,13 @@
 Testing environment
 Testing environment is set up in a HP-Z640 Desktop Workstation running RHEL 
-(RedHat Enterprise Linux). A NFS server and six clients were setup on a virtual machine.
-Dbench is specifically meant for SMB/NFS benchmarking.
-Using the above tools for benchmarking, various tests were run on the previously setup environment.
-There are various factors that can be manipulated in the configuration of NFS server side and client side.
-NFS client side configuration is done in "/etc/fstab" whereas NFS server side configuration is done in "/etc/exports".
+(RedHat Enterprise Linux). A NFS server and six clients were setup on a 
+virtual machine.Dbench is specifically meant for SMB/NFS benchmarking.
+Using the above tools for benchmarking, various tests were run on the 
+previously setup environment.There are various factors that can be manipulated 
+in the configuration of NFS server side and client side.NFS client side 
+configuration is done in "/etc/fstab" whereas NFS server side configuration is 
+done in "/etc/exports".
+
 Client side options were
 [Tabular Description of NFS client side options]
 Slno  Option      Description
@@ -26,11 +29,14 @@ Slno	    Option              Description
 4	    async               Synchronous write
 5	    sync                Asynchronous write
 
-Various combinations of these options were experimentally simulated in the above mentioned environment. 
-Test span was  from 40 minutes to 12 hours. Test span depends upon the combination of tools we use and 
-the options we enforce in "/etc/fstab" and "/etc/exports". It is found that there is considerable decrese in performance 
-when UDP used in client side. Write speed decrement 0.94 MB/s to 0.77 MB/s . More importantly there is 
-sharp increase in the performance by turning on "async" mode on both server side and client side.
+Various combinations of these options were experimentally simulated in the 
+above mentioned environment. Test span was  from 40 minutes to 12 hours. 
+Test span depends upon the combination of tools we use and the options we 
+enforce in "/etc/fstab" and "/etc/exports". It is found that there is 
+considerable decrese in performance when UDP used in client side. Write speed 
+decrement 0.94 MB/s to 0.77 MB/s . More importantly there is sharp increase 
+in the performance by turning on "async" mode on both server side and client 
+side.
 
 
 

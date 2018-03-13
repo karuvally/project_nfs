@@ -1,0 +1,8 @@
+By default the async mode in client side and server side is turned off. One of
+the main reason behind it is the realiability and data loss. The above proposed 
+solution cleanly avoid the data loss by implementing a circular buffer system.
+The advantages are:-
+*Maintain high data speed
+*ELiminate data loss and corruption
+*The proposed system modifies only the NFS behaviour and leaves the underlying 
+ operating system untouched.
