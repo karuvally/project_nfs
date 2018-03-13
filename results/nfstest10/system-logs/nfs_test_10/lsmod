@@ -1,0 +1,71 @@
+Module                  Size  Used by
+rpcsec_gss_krb5        36864  0
+auth_rpcgss            61440  1 rpcsec_gss_krb5
+oid_registry           16384  1 auth_rpcgss
+nfsv4                 565248  2
+dns_resolver           16384  1 nfsv4
+nfs                   249856  2 nfsv4
+lockd                  90112  1 nfs
+grace                  16384  1 lockd
+fscache                61440  2 nfsv4,nfs
+sb_edac                24576  0
+edac_core              57344  1 sb_edac
+intel_powerclamp       16384  0
+sg                     32768  0
+ppdev                  20480  0
+joydev                 20480  0
+video                  40960  0
+battery                20480  0
+crct10dif_pclmul       16384  0
+crc32_pclmul           16384  0
+ghash_clmulni_intel    16384  0
+intel_rapl_perf        16384  0
+pcspkr                 16384  0
+evdev                  24576  3
+serio_raw              16384  0
+parport_pc             28672  0
+parport                49152  2 parport_pc,ppdev
+ac                     16384  0
+button                 16384  0
+acpi_cpufreq           20480  0
+sunrpc                344064  10 auth_rpcgss,rpcsec_gss_krb5,nfsv4,lockd,nfs
+ip_tables              24576  0
+x_tables               36864  1 ip_tables
+autofs4                40960  2
+ext4                  585728  1
+crc16                  16384  1 ext4
+jbd2                  106496  1 ext4
+crc32c_generic         16384  0
+fscrypto               28672  1 ext4
+ecb                    16384  0
+mbcache                16384  2 ext4
+hid_generic            16384  0
+usbhid                 53248  0
+hid                   122880  2 hid_generic,usbhid
+sr_mod                 24576  0
+cdrom                  61440  1 sr_mod
+sd_mod                 45056  3
+ata_generic            16384  0
+crc32c_intel           24576  2
+ohci_pci               16384  0
+ata_piix               36864  0
+ahci                   36864  2
+libahci                32768  1 ahci
+libata                249856  4 ahci,ata_piix,libahci,ata_generic
+aesni_intel           167936  1
+ohci_hcd               53248  1 ohci_pci
+ehci_pci               16384  0
+ehci_hcd               81920  1 ehci_pci
+aes_x86_64             20480  1 aesni_intel
+glue_helper            16384  1 aesni_intel
+lrw                    16384  1 aesni_intel
+gf128mul               16384  1 lrw
+ablk_helper            16384  1 aesni_intel
+cryptd                 24576  3 ablk_helper,ghash_clmulni_intel,aesni_intel
+psmouse               135168  0
+i2c_piix4              24576  0
+usbcore               249856  5 usbhid,ehci_hcd,ohci_pci,ohci_hcd,ehci_pci
+usb_common             16384  1 usbcore
+pcnet32                45056  0
+mii                    16384  1 pcnet32
+scsi_mod              225280  4 sd_mod,libata,sr_mod,sg

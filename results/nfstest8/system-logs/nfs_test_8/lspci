@@ -1,0 +1,74 @@
+Slot:	00:00.0
+Class:	Host bridge [0600]
+Vendor:	Intel Corporation [8086]
+Device:	440FX - 82441FX PMC [Natoma] [1237]
+Rev:	02
+
+Slot:	00:01.0
+Class:	ISA bridge [0601]
+Vendor:	Intel Corporation [8086]
+Device:	82371SB PIIX3 ISA [Natoma/Triton II] [7000]
+
+Slot:	00:01.1
+Class:	IDE interface [0101]
+Vendor:	Intel Corporation [8086]
+Device:	82371AB/EB/MB PIIX4 IDE [7111]
+Rev:	01
+ProgIf:	8a
+Driver:	ata_piix
+Module:	ata_piix
+Module:	ata_generic
+
+Slot:	00:02.0
+Class:	VGA compatible controller [0300]
+Vendor:	InnoTek Systemberatung GmbH [80ee]
+Device:	VirtualBox Graphics Adapter [beef]
+
+Slot:	00:03.0
+Class:	Ethernet controller [0200]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	79c970 [PCnet32 LANCE] [2000]
+SVendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+SDevice:	PCnet - Fast 79C971 [2000]
+Rev:	40
+Driver:	pcnet32
+Module:	pcnet32
+
+Slot:	00:04.0
+Class:	System peripheral [0880]
+Vendor:	InnoTek Systemberatung GmbH [80ee]
+Device:	VirtualBox Guest Service [cafe]
+
+Slot:	00:06.0
+Class:	USB controller [0c03]
+Vendor:	Apple Inc. [106b]
+Device:	KeyLargo/Intrepid USB [003f]
+ProgIf:	10
+Driver:	ohci-pci
+Module:	ohci_pci
+
+Slot:	00:07.0
+Class:	Bridge [0680]
+Vendor:	Intel Corporation [8086]
+Device:	82371AB/EB/MB PIIX4 ACPI [7113]
+Rev:	08
+Driver:	piix4_smbus
+Module:	i2c_piix4
+
+Slot:	00:0b.0
+Class:	USB controller [0c03]
+Vendor:	Intel Corporation [8086]
+Device:	82801FB/FBM/FR/FW/FRW (ICH6 Family) USB2 EHCI Controller [265c]
+ProgIf:	20
+Driver:	ehci-pci
+Module:	ehci_pci
+
+Slot:	00:0d.0
+Class:	SATA controller [0106]
+Vendor:	Intel Corporation [8086]
+Device:	82801HM/HEM (ICH8M/ICH8M-E) SATA Controller [AHCI mode] [2829]
+Rev:	02
+ProgIf:	01
+Driver:	ahci
+Module:	ahci
+

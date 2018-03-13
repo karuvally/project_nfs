@@ -1,0 +1,21 @@
+Client side asynchronous mode is another method, that can be used to improve
+the performance of Network File System. Client side asynchronous mode uses
+the client's RAM as a giant cache. Once enabled, writes to the NFS server
+are instead written to the client's RAM. The file gets written to server 
+only if one of the following conditions are met:
+    * Memory fills up
+    * An application flushes cache using sync, fsync or msync
+    * A file is closed with close()
+    * A file is locked/unlocked using fcntl
+
+That is, when using client side asynchronous mode, writes to the server are
+drastically reduced. This benefits both the client doing the write and the
+environment as a whole. For the client, it reduces the number of instances
+it has to transfer data to the server. For the server, it reduces the
+number of writes it has to deal with in unit time. This also means that the
+rest of the clients have to wait less to read/write to the server.
+
+An NFS system with server side and client side asynchronous mode was
+benchmarked with client side options in /etc/fstab set as
+[rw, async, hard, intr, 0 0] and server side options in /etc/exports set as
+[rw, no_root_squash, no_subtree_check, async]
