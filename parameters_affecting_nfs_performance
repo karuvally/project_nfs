@@ -7,24 +7,25 @@ There are various factors that can be manipulated in the configuration of NFS se
 NFS client side configuration is done in "/etc/fstab" whereas NFS server side configuration is done in "/etc/exports".
 Client side options were
 [Tabular Description of NFS client side options]
-Slno	Option					Description
-1		rw							Read/Write
-2		syn						Sync file system with the server
-3		hard						NFS requests are retried indefinitely
-4		intr						Provided for backward compatibility. Ignored after kernel 2.6.25
-5		nfsvers					Specifies the nfs versions
-6		rsize						The maximum number of bytes when reading data
-7		wsize						The maximum number of bytes when writing data to a file.
-8		udp						Specifies the connection to UDP
-9		async						Asynchronous write.
+Slno	Option			Description
+1		rw				Read/Write
+2		syn				Sync file system with the server
+3		hard				NFS requests are retried indefinitely
+4		intr				Provided for backward compatibility. Ignored after kernel 2.6.25
+5		nfsvers			Specifies the nfs versions
+6		rsize				The maximum number of bytes when reading data
+7		wsize			The maximum number of bytes when writing data to a file.
+8		udp				Specifies the connection to UDP
+9		async			Asynchronous write.
 
 [Tabular Description of NFS server side options]
-Slno	Option					Description
+Slno	Option					    Description
 1		rw							Read/Write
-2		no_root_squash			Turn off root squashing
+2		no_root_squash		Turn off root squashing
 3		subtree_check			Verifies the specified directory/its subrectory for access
 4		async						Synchronous write
-5		sync						Asynchronous write
+5		sync						    Asynchronous write
+
 
 
 
