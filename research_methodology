@@ -7,7 +7,8 @@ make sure that CPU will not bottleneck the system simulation. Benchmarking the s
 because of the absence of proper benchmarking tool. The benchmarking was properly completed by combing some 
 of the available tools. Bonnie ++, Phoronix, Dbench and dd-the command line utility was used. The main 
 disadvantages of first three test suits was caching effect. This was effectively avoided by using the command line 
-utility "dd". Benchmarking was done through proper combination of all these tools.
+utility "dd". Dbench is a powerful benchmarking tool which itself can simulate upto 512 clients by its own.
+Benchmarking was done through proper combination of all these tools.
 
 dd if=/dev/zero of=/home/user_1/tmp_file bsize=1K count=2048000 conv=fdatasync
  

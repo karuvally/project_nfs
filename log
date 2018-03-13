@@ -99,9 +99,10 @@ mounted nfs share as home directory
 started using pts/dbench as benchmark utility
 
 dbench is specifically meant for SMB/NFS benchmarking
-
+--------------------------------------------------------------------------------
 nfs_test_1:
 client [1]
+
 fstab [rw, sync, hard, intr 0 0]
 exports [rw, no_root_squash, subtree_check]
 
@@ -112,14 +113,14 @@ dbench can emulate large number of NFS clients
 dbench test complete quickly with ETA 40 minutes
 
 nfs_test_1 completed with 0.29 MB/s NFS speed
-
+---------------------------------------------------------------------------------------
 nfs_test_2:
 client [6]
 fstab [rw, sync, hard, intr 0 0]
 exports [rw, no_root_squash, subtree_check]
 
 results in performance of 0.94 MB/s
-
+----------------------------------------------------------------------------------------
 nfs_test_3:
 client [6]
 fstab [rw, sync, hard, intr, nfsvers=4 0 0]
@@ -134,7 +135,7 @@ server by default uses highest NFS version available
 lost contact to client-1 while modifying fstab
 
 the error was due to FS not being unmounted cleanly
-
+-----------------------------------------------------------------------------------------
 nfs_test_3:
 client [6]
 fstab [rw, sync, hard, intr, rsize=16384, wsize=16384 0 0]
@@ -143,7 +144,7 @@ exports [rw, no_root_squash, subtree_check]
 changed read, write block size = 16K
 
 resulted in 0.94 MB/s -> no performance increment
-
+----------------------------------------------------------------------------------------------
 nfs_test_4:
 client [6]
 fstab [rw, sync, hard, intr, rsize=65536, wsize=65536 0 0]
@@ -169,7 +170,7 @@ moved project_nfs to gitlab
 started writing the log
 
 client-1 MTU is set to 1500
-
+--------------------------------------------------------------------------------------------------------
 nfs_test_6:
 client [6]
 fstab [rw, sync, hard, intr, rsize=1024, wsize=1024 0 0]
@@ -194,7 +195,7 @@ calls      retrans    authrefrsh
 software development is attribute intensive env -> lot of small files
 
 nfs server memory usage is very low, with used cache being half of memory
-
+---------------------------------------------------------------------------------------------------
 nfs_test_7:
 client [6]
 fstab [rw, sync, hard, intr, udp 0 0]
