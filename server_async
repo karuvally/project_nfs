@@ -21,3 +21,13 @@ option flushes the cache after each block is written. The aim was to
 understand the performance of the system without the contribution of client
 side caches. The benchmark resulted in 7.1 MB/s which was stil significantly
 higher than results recorded with server side asynchronous mode.
+
+Performance Figure
+
+The higher performance comes from the fact that the clients do not have to 
+wait till the server syncs the data with its disks. Clients can transfer
+data to the server, then get on with other tasks such as writing additional
+files. This also means that more number of clients can access the server
+in unit time. Still, with the current protocol, it is not advisable to leave
+server side async turned on due to the possibility of data loss and
+corruption.
