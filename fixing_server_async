@@ -21,6 +21,13 @@ Figure of the working and structure of buffer + metadata file
 
 Optional (Sample implementation of buffer deletion strategy)
 
-In case of a server crash, during the next boot, the server requests the
-metadata file from each client that connects to it. When the server receives
-
+In case of a server crash, the server creates a list of corrupted or lost
+files. During the first boot after the crash, the server requests the
+metadata file from each client that connects to it. Once the server receives
+the metadata, it calculates the hash for the local copy of each file that
+is listed in the metadata. If a file is missing or if the hashes do not
+match, they are added to retransmit-list, a list of files to be 
+retransmitted from the client. Once the metadata file from a client is fully
+scanned, the retransmit list is sent to the client. The client in turn
+transmits a new copy of each file in the retransmit list. Figure shows the
+error recovery process.
