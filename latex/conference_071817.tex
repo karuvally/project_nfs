@@ -143,13 +143,13 @@ When eliminating client side cache effect was required, dd was run with
 KB.
 \section{Working and Typical performance of NFS}
 Network File System is a distributed file system originally developed by
-SUN Microsystems in 1984. A distributed file system differ from normal file
-systems in the sense that they operate over the network and allow sharing of
-storage resources. NFS was developed as an open standard. It was initially
-implemented for UNIX but is now compatible with a wide array of Operating
-Systems. NFS has gone through four major revisions, with the first publicly
-available version being v2 (RFC 1094). All the experiments for this research
-have been conducted using NFS v4.2
+SUN Microsystems in 1984. The differential factors identifying a distributed 
+file system from a normal filesystem involves the manner they, operate over the 
+network and allow sharing of storage resources. NFS was developed as an open 
+standard. It was initially implemented for UNIX but is now compatible with a
+wide array of Operating Systems. NFS has gone through four major revisions, 
+with the first publicly available version being v2 (RFC 1094). All the 
+experiments for this research has been conducted using NFS v4.2
 
 NFS uses the Client-Server architecture. The NFS Server makes available a
 disk partition or directory on the network which can then be mounted just
@@ -204,8 +204,7 @@ The peformance graph obtained from the benchmark has been shown in figure.
 NFS operates on the client-server architecture. There are tweaks that can
 be applied to NFS both at the client and server end. At the client end, the
 tweaks are made to /etc/fstab file and at the server end, the configuration
-is done to the /etc/exports file. Some of the commonly used options are
-listed below.
+is done to the /etc/exports file. Some of the commonly used options are listed below.
 \begin{table}[htbp]
 \caption{NFS Options-Client Side}
 \begin{center}
@@ -249,15 +248,11 @@ listed below.
 Various compbinations of these options were benchmarked. It was found that
 most of the options provided no increment in the performance of NFS
 environment with performance in the ball park of 0.94 MB/s.
-
-Figure 0.77 MB/s
-
 One notabble
 exception was the client side UDP option which reduced the speeds to
 0.77 MB/s. At the end of experiments, it was found that considerable 
 increase in performance was provided only by client side and server side 
 async.
-
 
 \section{Performance with Server side ASYNC}
 In server side synchronous mode, the server waits till the data has been 
@@ -274,13 +269,21 @@ server side options in /etc/exports set as
 dbench tool - part of phoronix test suite, and resulted in 28.72 MB/s, a
 huge increase in performance boost, compared with the earlier server side
 synchronous mode, which returned 0.94 MB/s. The performance graph obtained has been shown in figure.
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.5\textwidth,natwidth=400,natheight=300]{server_async_fig.png}}
+\caption{Performance figure .}
+\label{fig}
+\end{figure}
 Further benchmarks were also conducted with dd utility, with a block size
 of 1KB, file size of 2GB and fdatasync option turned on. The block size of
 1K ensures the computer writes only 1KB of data at a time and the fdatasync
 option flushes the cache after each block is written. The aim was to
 understand the performance of the system without the contribution of client
 side caches. The benchmark resulted in 7.1 MB/s which was stil significantly
-higher than results recorded with server side asynchronous mode.Performance Figure.
+higher than results recorded with server side asynchronous mode.
+
+Performance Figure
+
 The higher performance comes from the fact that the clients do not have to 
 wait till the server syncs the data with its disks. Clients can transfer
 data to the server, then get on with other tasks such as writing additional
@@ -306,7 +309,8 @@ chance of loosing it. This is because, if prior to crash the server was
 serving a critical configuration file, the application dependant on the file
 can crash. If the application is part of the Operating System, it can bring
 down the whole system. The latter is often the case with environments where
-home directory is served by an NFS share.
+home directory is served by an NFS share. Thus, with the current system,
+server side asynchronous mode is a very risky option to leave turned on.
 
 \subsection{Fixing server side ASYNC behaviour}
 
@@ -325,9 +329,8 @@ its path and hash generated from each file. During an NFS write operation,
 the client stores a copy of the file in the buffer area and updates the 
 metadata file with the information regarding the  new file. The hash is
 calculated whenever a file is written to the buffer. To minimize the CPU
-overhead for hash calculation, one should implement a lightweight hashing
-algorithm such as QUARK or PHOTON. Figure shows the working and structure of
-the buffer.
+overhead for hash calculation, a lightweight hashing algorithm such as QUARK
+or PHOTON. Figure shows the working and structure of the buffer.
 
 Figure of the working and structure of buffer + metadata file
 
@@ -345,18 +348,17 @@ transmits a new copy of each file in the retransmit list. Figure shows the
 error recovery process.
 
 \subsection{Advantages of the proposed solution}
-By default the async mode in client side and server side is turned off. One of
-the main reason behind is the realiability and data loss. Concerning an
-organization data is very important. Loss of data is something that is
-difficult to accept. The above proposed solution cleanly avoid the data loss 
-by implementing a circular buffer system.
-The advantages are:-
-\begin{itemize}
-\item Maintain high data speed.
-\item Eliminate data loss and corruption.
-\item The proposed system modifies only the NFS behaviour and leaves the underlying operating system untouched.
-\item End effect -> Leave server side async turned on.
-\end{itemize}
+The proposed solution has a number of advantages, the most important one
+being higher security against data corruption and loss. With the current 
+system, server side asynchronous mode is turned off by default, due to 
+concerns about data loss. The proposed solution once implemented, virtually
+eliminates the chance of data loss and makes it safe to leave the server
+side asynchronous mode turned on.
+
+The solution allows the NFS environment to maintain high speeds while
+keeping chances of data loss negligibly low. The solution is also easy to
+implement as it requires changes to only the NFS protocol and leaves the
+Operating System untouched.
 
 \section{Client side Asynchronous mode}
 Client side asynchronous mode is another method, that can be used to improve
@@ -372,19 +374,20 @@ only if one of the following conditions are met:
 \item Client shutdown
 \end{itemize}
 
-That is, when using client side asynchronous mode, writes to the server are
+hat is, when using client side asynchronous mode, writes to the server are
 drastically reduced. This benefits both the client doing the write and the
 environment as a whole. For the client, it reduces the number of instances
 it has to transfer data to the server. For the server, it reduces the
 number of writes it has to deal with in unit time. This also means that the
 rest of the clients have to wait less to read/write to the server.
 
-Client side asynchronous mode has mixed results from the benchmarks with
-pts/dbench measuring a marginally low 24 MB/s down from 28 MB/s with only 
-server side asynchronous mode turned on , while dd measured 68 MB/s, an 
-increase of 10 MB/s compared with only server side asynchronous mode turned
-on. Regardless of the benchmark, client side asynchronous mode certainly
-improves the performance of the network.
+The performance from client side asynchronous mode is not obvious from
+benchmarks. Client side asynchronous mode has mixed results from the 
+benchmarks with pts/dbench measuring a marginally low 24 MB/s down from 
+28 MB/s with only server side asynchronous mode turned on, while dd 
+measured 68 MB/s, an increase of 10 MB/s compared with only server side
+asynchronous mode turned on. Regardless of the benchmark, client side 
+asynchronous mode certainly improves the performance of the network.
 
 \subsection{Enhancing client side ASYNC }\label{SCM}
 The behaviour of client side asynchronous mode can be further enhanced to 
@@ -407,15 +410,16 @@ reached its client limit, it denies the connection. The client waits for a
 random time rand-wait-time before trying to connect again. rand-wait-time
 is also user configurable and needs to be optimized per the size of the
 network.
+
 Figure shows the propsed behaviour of client side asynchronous mode
 \subsection{Advantages of proposed solution}
 The proposed solution provides a number of considerable advantages over the
-current system. First and foremost, it guards the data against data 
-corruption. With the current system, a particular file can remain in the
-memory for too long. The proposed system forces the NFS client to flush its
-caches when a limit is reached. That is, a file won't remain in the cache
-for long, making sure it gets written to the server and to the proposed
-buffer, reducing the risk of data corruption.
+current system. First and foremost, it guards the data against corruption.
+With the current system, a particular file can remain in the memory for too
+long. The proposed system forces the NFS client to flush its caches when a
+limit is reached. That is, a file won't remain in the cache for long, making
+sure it gets written to the server and to the proposed buffer, reducing the
+risk of data corruption.
 
 The current client side asynchronous mode tries to fill up the RAM before
 trying to transfer the contents to the buffer. This can negatively affect
@@ -433,55 +437,6 @@ write to the server will remain a constant. This can improve the overall
 performance of the environment by ensuring that the server can provide 
 decent read/write speeds regardless of the state of the environment. Thus
 the proposed system can provide a speedy and mature NFS behaviour.
-
-
-\subsection{Figures and Tables}
-\paragraph{Positioning Figures and Tables} Place figures and tables at the top and 
-bottom of columns. Avoid placing them in the middle of columns. Large 
-figures and tables may span across both columns. Figure captions should be 
-below the figures; table heads should appear above the tables. Insert 
-figures and tables after they are cited in the text. Use the abbreviation 
-``Fig.~\ref{fig}'', even at the beginning of a sentence.
-
-\begin{table}[htbp]
-\caption{NFS Options-Client Side}
-\begin{center}
-\begin{tabular}{|c|c|c|}
-\hline
-\cline{2-3} 
-\textbf{SlNo.} & \textbf{\textit{Option}}& \textbf{\textit{Description}} \\
-\hline
-1& rw & Read/Write  \\
-2& syn & Sync file system with the server  \\
-3& hard & NFS requests are retried indefinitely  \\
-4& intr & Provided for backward compatibility \\
-5& nfsvers & Specifies the nfs versions  \\
-6& rsize & Maximum number of bytes when reading data  \\
-7& wsize & Maximum number of bytes when writing data  \\
-8& udp & Specifies the connection to UDP  \\
-9& async & Asynchronous write  \\
-\hline
-
-\end{tabular}
-\label{tab1}
-\end{center}
-\end{table}
-
-\begin{figure}[htbp]
-\centerline{\includegraphics[width=0.5\textwidth,natwidth=400,natheight=300]{fig1.png}}
-\caption{Example of a figure caption.}
-\label{fig}
-\end{figure}
-
-Figure Labels: Use 8 point Times New Roman for Figure labels. Use words 
-rather than symbols or abbreviations when writing Figure axis labels to 
-avoid confusing the reader. As an example, write the quantity 
-``Magnetization'', or ``Magnetization, M'', not just ``M''. If including 
-units in the label, present them within parentheses. Do not label axes only 
-with units. In the example, write ``Magnetization (A/m)'' or ``Magnetization 
-\{A[m(1)]\}'', not just ``A/m''. Do not label axes with a ratio of 
-quantities and units. For example, write ``Temperature (K)'', not 
-``Temperature/K''.
 
 \section*{Acknowledgment}
 
