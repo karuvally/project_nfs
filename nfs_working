@@ -43,7 +43,7 @@ soon as it receives the request. This often causes the system to crawl.
 The performance of an NFS system with client and server side synchronous
 mode turned on was benchmarked with client side options in /etc/fstab set as
 [rw, sync, hard, intr 0 0] and the server side options  in /etc/exports set
-as [rw, no_root_squash, subtree_check]. The benchmarks were conducted using
+as [rw, no-root-squash, subtree-check]. The benchmarks were conducted using
 dbench utility part of Phoronix Test Suite. This resulted in performance of
 0.94 MB/s. The server and client systems in this case were equipped with
 100mbps network adapters. The speeds obtained are thus clearly sub-optimal.

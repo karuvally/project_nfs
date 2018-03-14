@@ -15,7 +15,7 @@
 }
 
 \author{
-\makebox[.5\linewidth]{ Aswin Babu karuvally }\\
+\makebox[.5\linewidth]{ Aswin Babu Karuvally }\\
 Department of Computer Applications \\
 College of Engineering Trivandrum, KTU\\
 Trivandrum, Kerala \\
@@ -30,67 +30,117 @@ Department of Computer Applications \\
 College of Engineering Trivandrum, KTU\\
 Trivandrum, Kerala  \\
 annjerinajs@gmail.com\\
-\and \makebox[.5\linewidth]{Given Name Surname}\\
-dept. name of organization (of Aff.) \\
-name of organization (of Aff.)\\
-City, Country \\
-email address\\
+\and \makebox[.5\linewidth]{Prof. John Prakash Joseph}\\
+Asst. Professor, Department of Computer Applications \\
+College of Engineering Trivandrum, KTU\\
+Trivandrum, Kerala \\
+john@cet.ac.in\\
 \\
 }
 \maketitle
 
 \begin{abstract}
-Network File System is a commonly used distributed file system, allowing the user to access and manipulate storage on remote computers as if they were part of the local machine. Network File System is notoriously slow in its default configuration. This is accentuated if the NFS environment has more than a dozen clients. When configured to deliver faster speeds by turning on asynchronous mode, the system suffers from higher risk of data corruption and loss.
+Network File System is a widely used distributed file system that allows the
+user to access and manipulate storage on remote computers, as if they were a
+part of the local machine. Network File System is notoriously slow in its 
+default configuration and the incorporation of more than a dozen clients in the 
+NFS environment merely accentuates the delay. When configured to deliver faster
+speeds by turning on asynchronous mode, the system suffers from higher risk of 
+data corruption and loss.
 
-This paper proposes a number of modifications to the Network File System allowing the file system to provide very high performance, while minimizing the risk of data loss and corruption. Further, the proposed system behaves better in congested networks by consuming less bandwidth ensuring decent speeds even during periods of heavy network traffic.
+This study proposes variegated modifications to the Network File System,
+enabling it to provide elevated system performance, while containing
+the risk of data loss and corruption. Further, the proposed system behaves
+better in congested networks by consuming less bandwidth, ensuring decent
+speeds, even during periods of heavy network traffic.
 \end{abstract}
 
 \begin{IEEEkeywords}
-UNIX, NFS, Performance, Data loss, Data corruption, Reliability, Optimize, Speed, Tweak, Link, Journal
+UNIX,
+NFS,
+Performance,
+Data loss,
+Data corruption
 \end{IEEEkeywords}
 
 \section{Introduction}
-Network File System is a distributed File System protocol primarily used by the UNIX family of Operating Systems. It allows users to mount, access and manipulate disk partitions or directories on a remote computer, as if the said partition or directory was a part of the local machine. Network File System was developed as an open standard by SUN Microsystems in 1984.
+manipulate disk partitions or directories on a remote computer, as if the
+said partition or directory was a part of the local machine. Network File
+System was developed as an open standard by SUN Microsystems in 1984.
 
-NFS is widely used in Local Area Networks to conveniently share data and provides users the ability to access their files across the network. Sometimes, a directory access protocol such as LDAP is combined with NFS allowing the users to login to their user account from any computer on the  network.
+NFS is widely used in Local Area Networks to conveniently share data and
+provides users the ability to access their files across the network.
+Sometimes, a directory access protocol such as LDAP is combined with NFS
+allowing the users to login to their user account from any computer on the 
+network.
 
-The main drawback of NFS is the slow read and write speeds it offers with the default setup. Though NFS offers a number of parameters in its configuration files to  increase the performance, these either do not affect the performance much or increases the chance of data corruption and loss. Thus the users are forced to run the system with the default, slow configuration.
+The main drawback of NFS is the slow read and write speeds it offers with
+the default setup. Though NFS offers a number of parameters in its
+configuration files to increase the performance, these either do not
+affect the performance much or increases the chance of data corruption and
+loss. Thus the users are forced to run the system with the default, slow
+configuration.
 
-In many environments, this leads to lost human productivity as interactive computing becomes impossible and Operating System needing access to data on NFS share often ends up freezing the whole computer. This also bottlenecks the CPU of the computer, thereby wasting precious computing resources.
+In many environments, this leads to lost human productivity as interactive
+computing becomes impossible and Operating System needing access to data
+on NFS share often ends up freezing the whole computer. This also
+bottlenecks the CPU of the computer, thereby wasting precious computing
+resources.
 
-This paper proposes a number of changes to the Network File System protocol which increases the performance of Network File System while reducing the risk of data corruption and loss. The proposed system also ensures
-decent speeds in congested network as it consumes less bandwidth than the original NFS implementation and protects the ability of the NFS server to provide access to files during period of peak network activity.
+This paper proposes a number of changes to the Network File System protocol
+which increases the performance of Network File System while reducing
+the risk of data corruption and loss. The proposed system also ensures
+decent speeds in congested network as it consumes less bandwidth than the 
+original NFS implementation and protects the ability of the NFS server to
+provide access to files during period of peak network activity.
 
 \section{Background work}
+Past projects have proposed new Network File System protocols for
+transmitting data over Wide Area Networks. Some other papers have dealt with
+improving the performance of NFS over wireless links.
 
-\subsection{Maintaining the Integrity of the Specifications}
+A.Muthitacharoen, B.Chen and D.Mazieres has proposed a Low Bandwidth Network
+File System, which can be used over Wide Area Networks such as the Internet.
+Though it minimizes the bandwidth usage of the protocol, it is meant for 90s
+era internet. To use it in current scenario would require extensive 
+modification to the protocol and it is not compatible with SUN's NFS.
 
-The IEEEtran class file is used to format your paper and style the text. All margins, 
-column widths, line spaces, and text fonts are prescribed; please do not 
-alter them. You may note peculiarities. For example, the head margin
-measures proportionately more than is customary. This measurement 
-and others are deliberate, using specifications that anticipate your paper 
-as one part of the entire proceedings, and not as an independent document. 
-Please do not revise any of the current designations.
+R.Dube, C.D Rais and S.K Tripathi has proposed a number of changes to the
+network stack to increase the performance of NFS over wireless links. The
+paper does not suggest changes to the NFS protocol, instead it tries to
+optimize the wireless network stack.
+
+In our literature review, we are yet to come across a paper, which directly
+deals with enhancing the performance and reducing data corruption rates of 
+the widely adopted Network File System originally implemented by SUN 
+Microsystems.
 
 \section{Research Methodology}
-The whole NFS system is tried to benchmark using virtual machine and nfs version 4.2 is used for simulation. 
-One of the main reason to use virtual machine is that, they provide a number of networking hardware specifications 
-which allow us to simulate target machine network hardware properties. Virtual machine is free to use, fast and easy 
-to implement. A 100 Mbps bridged adapter is setup in the virtual machine to directly to outside network. In other 
-words NAT (Network Address Translation) is not used because in NAT the translation is done by the CPU. This 
-make sure that CPU will not bottleneck the system simulation. Benchmarking the system was a tedious process 
-because of the absence of proper benchmarking tool. The benchmarking was properly completed by combing some 
-of the available tools. Bonnie ++, Phoronix, Dbench and dd-the command line utility was used. The main 
-disadvantages of first three test suits was caching effect. This was effectively avoided by using the command line 
-utility "dd". Dbench is a powerful benchmarking tool which itself can simulate upto 512 clients by its own.
-Benchmarking was done through proper combination of all these tools.
+All the benchmarks for this research paper has been done using NFS v4.2.
+The NFS environment comprising of client and server were emulated using
+virtual machines, with the Oracle VirtualBox hypervisor. Virtual Machines 
+(VMs) provide a convinient method of simulating target hardware and 
+networking infrastructure. The VirtualBox hypervisor was run on RedHat 
+Enterprise Linux 7.2 with the hardware being an HP-Z640 workstation to 
+ensure the VMs were not bottlenecked during benchmarks. The VMs were 
+equipped with AMD PCnet-FAST III 100 Mbps network adapter, which was bridged
+to the network so that each VM was represented as a real machine on the 
+network. Network Address Translation (NAT) was not used as NAT consumes CPU
+resources, which could in turn affect benchmarks. The NFS server and client
+VMs were set up to run Debian 9.3 (Stable) as their OS. Debian is a heavily
+tested distribution that ships with very stable packages. Debian was chosen
+so as to minimize the chance of bugs affecting the benhmarks.
 
-$ dd if=/dev/zero of=/home/user_1/tmp_file $
-$ bsize=1K count=2048000 conv=fdatasync $
- 
- The "conv=fdatasync" option flushes each 1 KB of data from cache and this ensures that caching effect on virtual 
- machine and nfs performance is zero.
+The benchmarking tools used include Bonnie ++, Phoronix Test Suite/iozone,
+Phoronix Test Suite/dbench, Stand-alone Dbench and the "dd" utility. dd was
+used to perform benchmarks were client side cache effects needed to be
+avoided. Dbench is a powerful benchmarking tool designed to test the
+performance of NFS and SMB systems. It is capable of emulating upto 512 
+clients. All the benchmarks where done with Dbench emulating 6 clients.
+Benchmarking was often done through proper combination of all these tools.
+When eliminating client side cache effect was required, dd was run with 
+"conv=fdatasync bs=1K" options to flush data from cache after write of each
+KB.
 \section{Working and Typical performance of NFS}
 Network File System is a distributed file system originally developed by
 SUN Microsystems in 1984. A distributed file system differ from normal file
@@ -98,8 +148,8 @@ systems in the sense that they operate over the network and allow sharing of
 storage resources. NFS was developed as an open standard. It was initially
 implemented for UNIX but is now compatible with a wide array of Operating
 Systems. NFS has gone through four major revisions, with the first publicly
-available version being v2. All the experiments for this research have been
-conducted using NFS v4.2
+available version being v2 (RFC 1094). All the experiments for this research
+have been conducted using NFS v4.2
 
 NFS uses the Client-Server architecture. The NFS Server makes available a
 disk partition or directory on the network which can then be mounted just
@@ -137,21 +187,17 @@ soon as it receives the request. This often causes the system to crawl.
 The performance of an NFS system with client and server side synchronous
 mode turned on was benchmarked with client side options in /etc/fstab set as
 [rw, sync, hard, intr 0 0] and the server side options  in /etc/exports set
-as [rw, no-root-squash, subtree-check]. The benchmarks were conducted using
+as [rw, no_root_squash, subtree_check]. The benchmarks were conducted using
 dbench utility part of Phoronix Test Suite. This resulted in performance of
 0.94 MB/s. The server and client systems in this case were equipped with
 100mbps network adapters. The speeds obtained are thus clearly sub-optimal.
 The peformance graph obtained from the benchmark has been shown in figure.
 \section{Parameters affecting performance}
-Testing environment
-Testing environment is set up in a HP-Z640 Desktop Workstation running RHEL 
-(RedHat Enterprise Linux). A NFS server and six clients were setup on a 
-virtual machine.Dbench is specifically meant for SMB/NFS benchmarking.
-Using the above tools for benchmarking, various tests were run on the 
-previously setup environment.There are various factors that can be manipulated 
-in the configuration of NFS server side and client side.NFS client side 
-configuration is done in "/etc/fstab" whereas NFS server side configuration is 
-done in "/etc/exports".
+NFS operates on the client-server architecture. There are tweaks that can
+be applied to NFS both at the client and server end. At the client end, the
+tweaks are made to /etc/fstab file and at the server end, the configuration
+is done to the /etc/exports file. Some of the commonly used options are
+listed below.
 \begin{table}[htbp]
 \caption{NFS Options-Client Side}
 \begin{center}
@@ -192,14 +238,17 @@ done in "/etc/exports".
 \label{tab1}
 \end{center}
 \end{table}
-Various combinations of these options were experimentally simulated in the 
-above mentioned environment. Test span was  from 40 minutes to 12 hours. 
-Test span depends upon the combination of tools we use and the options we 
-enforce in "/etc/fstab" and "/etc/exports". It is found that there is 
-considerable decrese in performance when UDP used in client side. Write speed 
-decrement 0.94 MB/s to 0.77 MB/s . More importantly there is sharp increase 
-in the performance by turning on "async" mode on both server side and client 
-side.
+Various compbinations of these options were benchmarked. It was found that
+most of the options provided no increment in the performance of NFS
+environment with performance in the ball park of 0.94 MB/s.
+
+Figure 0.77 MB/s
+
+One notabble
+exception was the client side UDP option which reduced the speeds to
+0.77 MB/s. At the end of experiments, it was found that considerable 
+increase in performance was provided only by client side and server side 
+async.
 
 
 \section{Performance with Server side ASYNC}
