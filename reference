@@ -1,5 +1,19 @@
 SUN Network File System - Original paper
-Increasing reliability of NFS links over wireless network
+Section : Introduction, 1st paragraph
+Link    : http://www-inst.eecs.berkeley.edu/~cs262a/sp02/Papers/nfs.pdf
+
 Low Bandwidth Network File System
+Section : Background Work, 2nd paragraph
+Link    : https://pdos.csail.mit.edu/papers/lbfs:sosp01/lbfs.pdf
+
+Increasing reliability of NFS links over wireless network
+Section : Background Work, 3rd paragraph
+Link    : https://pdfs.semanticscholar.org/8559/07710863da6b181b0487c2605e38b11e8c2c.pdf
+
 QUARK
+Section : Fixing Server side asynchronous mode
+Link    : https://131002.net/quark/quark_full.pdf
+
 PHOTON
+Section : Fixing Server side asynchronous mode
+Link    : https://eprint.iacr.org/2011/609.pdf
