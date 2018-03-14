@@ -1,13 +1,20 @@
-The whole NFS system is tried to benchmark using virtual machine and nfs version 4.2 is used for simulation. 
-One of the main reason to use virtual machine is that, they provide a number of networking hardware specifications 
-which allow us to simulate target machine network hardware properties. Virtual machine is free to use, fast and easy 
-to implement. A 100 Mbps bridged adapter is setup in the virtual machine to directly to outside network. In other 
-words NAT (Network Address Translation) is not used because in NAT the translation is done by the CPU. This 
-make sure that CPU will not bottleneck the system simulation. Benchmarking the system was a tedious process 
-because of the absence of proper benchmarking tool. The benchmarking was properly completed by combing some 
-of the available tools. Bonnie ++, Phoronix, Dbench and dd-the command line utility was used. The main 
-disadvantages of first three test suits was caching effect. This was effectively avoided by using the command line 
-utility "dd". Dbench is a powerful benchmarking tool which itself can simulate upto 512 clients by its own.
+All the benchmarks for this research paper has been done using NFS v4.2.
+The NFS environment comprising of client and server were emulated using
+virtual machines, with the Oracle VirtualBox hypervisor. Virtual Machines 
+(VMs) provide a convinient method of simulating target hardware and 
+networking infrastructure. The VirtualBox hypervisor was run on RedHat 
+Enterprise Linux 7.2 with the hardware being an HP-Z640 workstation to 
+ensure the VMs were not bottlenecked during benchmarks.
+
+The VMs were equipped with AMD PCnet-FAST III 100 Mbps network adapter,
+which was bridged to the network so that each VM was represented as a real
+machine on the network. Network Address Translation (NAT) was not used as
+NAT consumes CPU resources, which could in turn affect benchmarks. The
+benchmarking tools used include Bonnie ++, Phoronix Test Suite/iozone,
+Phoronix Test Suite/dbench, Stand-alone Dbench and the "dd" utility. dd was
+used to perform benchmarks were client side cache effects needed to be
+avoided. Dbench is a powerful benchmarking tool which is capable of 
+emulating upto 512 clients.
 Benchmarking was done through proper combination of all these tools.
 
 dd if=/dev/zero of=/home/user_1/tmp_file bsize=1K count=2048000 conv=fdatasync
