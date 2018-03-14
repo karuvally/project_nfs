@@ -1,8 +1,3 @@
-#Intro 
-
-
-#
-
 Network File System is a distributed File System protocol primarily used by the  
 UNIX family of Operating Systems. It allows users to mount, access and
 manipulate disk partitions or directories on a remote computer, as if the
@@ -17,7 +12,7 @@ network.
 
 The main drawback of NFS is the slow read and write speeds it offers with
 the default setup. Though NFS offers a number of parameters in its
-configuration files to  increase the performance, these either do not
+configuration files to increase the performance, these either do not
 affect the performance much or increases the chance of data corruption and
 loss. Thus the users are forced to run the system with the default, slow
 configuration.
