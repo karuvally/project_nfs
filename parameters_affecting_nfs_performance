@@ -1,43 +1,34 @@
-Testing environment
-Testing environment is set up in a HP-Z640 Desktop Workstation running RHEL 
-(RedHat Enterprise Linux). A NFS server and six clients were setup on a 
-virtual machine.Dbench is specifically meant for SMB/NFS benchmarking.
-Using the above tools for benchmarking, various tests were run on the 
-previously setup environment.There are various factors that can be manipulated 
-in the configuration of NFS server side and client side.NFS client side 
-configuration is done in "/etc/fstab" whereas NFS server side configuration is 
-done in "/etc/exports".
+NFS operates on the client-server architecture. There are tweaks that can
+be applied to NFS both at the client and server end. At the client end, the
+tweaks are made to /etc/fstab file and at the server end, the configuration
+is done to the /etc/exports file. Some of the commonly used options are
+listed below.
 
 Client side options were
 [Tabular Description of NFS client side options]
-Slno  Option      Description
-1           rw          Read/Write
-2           syn		Sync file system with the server
-3           hard	NFS requests are retried indefinitely
-4           intr	Provided for backward compatibility. Ignored after kernel 2.6.25
-5           nfsvers	Specifies the nfs versions
-6           rsize	The maximum number of bytes when reading data
-7           wsize	The maximum number of bytes when writing data to a file.
-8           udp		Specifies the connection to UDP
-9           async	Asynchronous write.
+Slno    Option      Description
+1       rw          Enable Read/Write
+2       sync		Client side synchronous mode
+3       hard	    If write fails, infinite retries
+4       intr	    Deprecated option. Ignored after kernel 2.6.25
+5       nfsvers	    Specify the NFS version
+6       rsize	    Set read cache size
+7       wsize	    Set write cache size.
+8       udp		    Use UDP instead of TCP
+9       async	    Client side asynchronous write 
 
 [Tabular Description of NFS server side options]
-Slno	    Option              Description
+Slno    Option              Description
 1	    rw                  Read/Write
-2	    no_root_squash      Turn off root squashing
-3	    subtree_check       Verifies the specified directory/its subrectory for access
-4	    async               Synchronous write
-5	    sync                Asynchronous write
+2	    no_root_squash      Turn of root squashing
+3	    subtree_check       Verify accessed path is part of NFS share
+4	    async               Server side asynchronous mode
+5	    sync                Server side synchronous mode
 
-Various combinations of these options were experimentally simulated in the 
-above mentioned environment. Test span was  from 40 minutes to 12 hours. 
-Test span depends upon the combination of tools we use and the options we 
-enforce in "/etc/fstab" and "/etc/exports". It is found that there is 
-considerable decrese in performance when UDP used in client side. Write speed 
-decrement 0.94 MB/s to 0.77 MB/s . More importantly there is sharp increase 
-in the performance by turning on "async" mode on both server side and client 
-side.
-
-
-
-
+Various compbinations of these options were benchmarked. It was found that
+most of the options provided no increment in the performance of NFS
+environment with performance in the ball park of 0.94 MB/s. One notabble
+exception was the client side UDP option which reduced the speeds to
+0.77 MB/s. At the end of experiments, it was found that considerable 
+increase in performance was provided only by client side and server side 
+async.
