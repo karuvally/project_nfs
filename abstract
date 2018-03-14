@@ -1,13 +1,13 @@
-Network File System is a commonly used distributed file system, allowing the
-user to access and manipulate storage on remote computers as if they were
+The Network File System is a widely used distributed file system that allows the
+user to access and manipulate storage on remote computers, as if they were a
 part of the local machine. Network File System is notoriously slow in its 
-default configuration. This is accentuated if the NFS environment has more 
-than a dozen clients. When configured to deliver faster speeds by turning on
-asynchronous mode, the system suffers from higher risk of data corruption 
-and loss.
+default configuration and the incorporation of more than a dozen clients in the 
+NFS environment merely accentuates the delay. When configured to deliver faster
+speeds by turning on asynchronous mode, the system suffers from higher risk of 
+data corruption and loss.
 
-This paper proposes a number of modifications to the Network File System
-allowing the file system to provide very high performance, while minimizing
+This study proposes variegated modifications to the Network File System,
+enabling it to provide elevated system performance, while containing
 the risk of data loss and corruption. Further, the proposed system behaves
 better in congested networks by consuming less bandwidth ensuring decent
-speeds even during periods of heavy network traffic.
+speeds, even during periods of heavy network traffic.
