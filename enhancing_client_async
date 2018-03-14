@@ -18,4 +18,5 @@ reached its client limit, it denies the connection. The client waits for a
 random time rand-wait-time before trying to connect again. rand-wait-time
 is also user configurable and needs to be optimized per the size of the
 network.
+
 Figure shows the propsed behaviour of client side asynchronous mode
