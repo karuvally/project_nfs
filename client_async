@@ -17,9 +17,9 @@ it has to transfer data to the server. For the server, it reduces the
 number of writes it has to deal with in unit time. This also means that the
 rest of the clients have to wait less to read/write to the server.
 
-Unfortunately, when used with server side asynchronous mode, the performance
-of client asynchronous mode suffers. An NFS environment with client and server side asynchronous
-mode turned on was benchmarked and resulted in resulted in 24.18 MB/s, down
-from the 28.90 MB/s obtained with server side asynchronous mode alone. The
-degradation results from the non optimized behaviour of client side
-asynchronous mode.
+Client side asynchronous mode has mixed results from the benchmarks with
+pts/dbench measuring a marginally low 24 MB/s down from 28 MB/s with only 
+server side asynchronous mode turned on , while dd measured 68 MB/s, an 
+increase of 10 MB/s compared with only server side asynchronous mode turned
+on. Regardless of the benchmark, client side asynchronous mode certainly
+improves the performance of the network.
