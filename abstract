@@ -1,4 +1,4 @@
-The Network File System is a widely used distributed file system that allows the
+Network File System is a widely used distributed file system that allows the
 user to access and manipulate storage on remote computers, as if they were a
 part of the local machine. Network File System is notoriously slow in its 
 default configuration and the incorporation of more than a dozen clients in the 
