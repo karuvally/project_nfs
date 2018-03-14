@@ -19,7 +19,7 @@ rest of the clients have to wait less to read/write to the server.
 
 Unfortunately, when used with server side asynchronous mode, the performance
 of client asynchronous mode suffers. An NFS environment with client and server side asynchronous
-mode turned on was benchmarked and resulted in resulted in 24 MB/s, no
-considerable 
-
-Client side asynchronous mode poses similar issues 
+mode turned on was benchmarked and resulted in resulted in 24.18 MB/s, down
+from the 28.90 MB/s obtained with server side asynchronous mode alone. The
+degradation results from the non optimized behaviour of client side
+asynchronous mode.
