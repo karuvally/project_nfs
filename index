@@ -8,7 +8,7 @@
 6  Parameters affecting performance                        [x]
 7  Performance with Server side ASYNC                      [x]
 7.1Reliability concerns with Server side ASYNC             [x]
-7.2Fixing server side ASYNC (behaviour)                    [x]
+7.2Fixing server side ASYNC behaviour                      [x]
 7.3Advantages of the proposed solution                     [x]
 8  Client side Asynchronous mode                           [x]
 8.1Enhancing client side ASYNC                             [x]
