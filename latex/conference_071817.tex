@@ -331,8 +331,11 @@ metadata file with the information regarding the  new file. The hash is
 calculated whenever a file is written to the buffer. To minimize the CPU
 overhead for hash calculation, a lightweight hashing algorithm such as QUARK
 or PHOTON. Figure shows the working and structure of the buffer.
-
-Figure of the working and structure of buffer + metadata file
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.5\textwidth,natwidth=400,natheight=50]{fixing_server_async.png}}
+\caption{Working and structure of buffer.}
+\label{fig}
+\end{figure}
 
 Optional (Sample implementation of buffer deletion strategy)
 
