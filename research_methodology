@@ -5,20 +5,20 @@ virtual machines, with the Oracle VirtualBox hypervisor. Virtual Machines
 networking infrastructure. The VirtualBox hypervisor was run on RedHat 
 Enterprise Linux 7.2, with the hardware being an HP-Z640 workstation to 
 ensure the VMs were not bottlenecked during benchmarks. The VMs were 
-equipped with an AMD PCnet-FAST III 100 Mbps network adapter, which was bridged
-to the network so that each VM represented a real machine on the 
+equipped with an AMD PCnet-FAST III 100 Mbps network adapter which was bridged
+to the network, so that each VM represented a real machine on the 
 network. Network Address Translation (NAT) was not used as it consumes CPU
 resources, which could in turn affect benchmarks. The NFS server and client
 VMs were set up to run Debian 9.3 (Stable) as their OS. Debian is a heavily
 tested distribution that ships with highly stable packages. Debian was chosen
-so as to minimize the chance of bugs affecting the benhmarks.
+so as to minimize the chance of bugs affecting the benchmarks.
 
 The benchmarking tools used include Bonnie ++, Phoronix Test Suite/iozone,
 Phoronix Test Suite/dbench, Stand-alone Dbench and the "dd" utility. dd was
-used to perform benchmarks, where client side cache effects needed to be
+used to perform benchmarks where client side cache effects needed to be
 avoided. Dbench is a powerful benchmarking tool designed to test the
 performance of NFS and SMB systems. It is capable of emulating upto 512 
-clients. All the benchmarks where done with Dbench emulating 6 clients.
+clients. All the benchmarks were done with Dbench emulating 6 clients.
 Benchmarking was often done through proper combination of all these tools.
 When eliminating client side cache effect was required, dd was run with 
 "conv=fdatasync bs=1K" options to flush data from cache after write of each
