@@ -15,4 +15,5 @@ chance of loosing it. This is because, if prior to crash the server was
 serving a critical configuration file, the application dependant on the file
 can crash. If the application is part of the Operating System, it can bring
 down the whole system. The latter is often the case with environments where
-home directory is served by an NFS share.
+home directory is served by an NFS share. Thus, with the current system,
+server side asynchronous mode is a very risky option to leave turned on.
