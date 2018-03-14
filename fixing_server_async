@@ -13,9 +13,8 @@ its path and hash generated from each file. During an NFS write operation,
 the client stores a copy of the file in the buffer area and updates the 
 metadata file with the information regarding the  new file. The hash is
 calculated whenever a file is written to the buffer. To minimize the CPU
-overhead for hash calculation, one should implement a lightweight hashing
-algorithm such as QUARK or PHOTON. Figure shows the working and structure of
-the buffer.
+overhead for hash calculation, a lightweight hashing algorithm such as QUARK
+or PHOTON. Figure shows the working and structure of the buffer.
 
 Figure of the working and structure of buffer + metadata file
 
