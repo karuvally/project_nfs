@@ -412,9 +412,13 @@ connect only if max-count - current-count >= 1. In case the server has
 reached its client limit, it denies the connection. The client waits for a
 random time rand-wait-time before trying to connect again. rand-wait-time
 is also user configurable and needs to be optimized per the size of the
-network.
+network.Figure shows the propsed behaviour of client side asynchronous mode.
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.5\textwidth,natwidth=400,natheight=100]{error_recovery.png}}
+\caption{Error recovery.}
+\label{fig}
+\end{figure}
 
-Figure shows the propsed behaviour of client side asynchronous mode
 \subsection{Advantages of proposed solution}
 The proposed solution provides a number of considerable advantages over the
 current system. First and foremost, it guards the data against corruption.
