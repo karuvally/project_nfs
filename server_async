@@ -14,6 +14,8 @@ huge increase in performance boost, compared with the earlier server side
 synchronous mode, which returned 0.94 MB/s. The performance graph obtained
 has been shown in figure.
 
+Performance figure
+
 Further benchmarks were also conducted with dd utility, with a block size
 of 1KB, file size of 2GB and fdatasync option turned on. The block size of
 1K ensures the computer writes only 1KB of data at a time and the fdatasync
