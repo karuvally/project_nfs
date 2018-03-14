@@ -4,24 +4,23 @@ manipulate disk partitions or directories on a remote computer, as if the
 said partition or directory was a part of the local machine. Network File
 System was developed as an open standard by SUN Microsystems in 1984.
 
-NFS is widely used in Local Area Networks to conveniently share data and
+NFS is widely used in Local Area Networks to conveniently share data, and
 provides users the ability to access their files across the network.
-Sometimes, a directory access protocol such as LDAP is combined with NFS
-allowing the users to login to their user account from any computer on the 
+Occasionally, a directory access protocol such as LDAP is combined with NFS,
+allowing the users to login to their user accounts from any computer on the 
 network.
 
-The main drawback of NFS is the slow read and write speeds it offers with
-the default setup. Though NFS offers a number of parameters in its
-configuration files to increase the performance, these either do not
-affect the performance much or increases the chance of data corruption and
-loss. Thus the users are forced to run the system with the default, slow
-configuration.
+The crucial setback NFS depicts is the slow read and write speeds it offers
+with the default setup.The existent performance enhancing parameters in its 
+default setup configuration files, either leave the performance rates unaffected
+or increases the probability of data corruption and loss. Thus the users are 
+forced to run the system with the default, slow configuration.
 
-In many environments, this leads to lost human productivity as interactive
-computing becomes impossible and Operating System needing access to data
-on NFS share often ends up freezing the whole computer. This also
-bottlenecks the CPU of the computer, thereby wasting precious computing
-resources.
+The aforestated strategy diminishes the possibilities of interactive computing, 
+and an Operating System requiring access to data on NFS share, often ends up 
+freezing the computer in it's entirety, resulting environments with lost human 
+productivity. Moreover, this bottlenecks the computer CPU, thereby exhausting
+valuable computing resources. 
 
 This paper proposes a number of changes to the Network File System protocol
 which increases the performance of Network File System while reducing
