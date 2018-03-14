@@ -4,20 +4,18 @@ virtual machines, with the Oracle VirtualBox hypervisor. Virtual Machines
 (VMs) provide a convinient method of simulating target hardware and 
 networking infrastructure. The VirtualBox hypervisor was run on RedHat 
 Enterprise Linux 7.2 with the hardware being an HP-Z640 workstation to 
-ensure the VMs were not bottlenecked during benchmarks.
+ensure the VMs were not bottlenecked during benchmarks. The VMs were 
+equipped with AMD PCnet-FAST III 100 Mbps network adapter, which was bridged
+to the network so that each VM was represented as a real machine on the 
+network. Network Address Translation (NAT) was not used as NAT consumes CPU
+resources, which could in turn affect benchmarks. 
 
-The VMs were equipped with AMD PCnet-FAST III 100 Mbps network adapter,
-which was bridged to the network so that each VM was represented as a real
-machine on the network. Network Address Translation (NAT) was not used as
-NAT consumes CPU resources, which could in turn affect benchmarks. The
-benchmarking tools used include Bonnie ++, Phoronix Test Suite/iozone,
+The benchmarking tools used include Bonnie ++, Phoronix Test Suite/iozone,
 Phoronix Test Suite/dbench, Stand-alone Dbench and the "dd" utility. dd was
 used to perform benchmarks were client side cache effects needed to be
 avoided. Dbench is a powerful benchmarking tool which is capable of 
-emulating upto 512 clients.
-Benchmarking was done through proper combination of all these tools.
-
-dd if=/dev/zero of=/home/user_1/tmp_file bsize=1K count=2048000 conv=fdatasync
- 
- The "conv=fdatasync" option flushes each 1 KB of data from cache and this ensures that caching effect on virtual 
- machine and nfs performance is zero.
+emulating upto 512 clients. All the benchmarks where done with Dbench
+emulating 6 clients. Benchmarking was often done through proper combination
+of all these tools. When eliminating client side cache effect was required,
+dd was run with "conv=fdatasync bs=1K" options to flush data from cache
+after write of each KB.
