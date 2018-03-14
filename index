@@ -9,7 +9,7 @@
 7  Performance with Server side ASYNC                      [x][x]
 7.1Reliability concerns with Server side ASYNC             [x][x]
 7.2Fixing server side ASYNC behaviour                      [x][x]
-7.3Advantages of the proposed solution                     [x]
+7.3Advantages of the proposed solution                     [x][x]
 8  Client side Asynchronous mode                           [x]
 8.1Enhancing client side ASYNC                             [x]
 8.2Advantages of proposed solution                         [x]
