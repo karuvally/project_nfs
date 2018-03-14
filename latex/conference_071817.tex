@@ -84,7 +84,7 @@ forced to run the system with the default, slow configuration.
 The aforestated strategy diminishes the possibilities of interactive computing, 
 and an Operating System requiring access to data on NFS share, often ends up 
 freezing the computer in it's entirety, resulting environments with lost human 
-productivity. Moreover, this bottlenecks the computer CPU, thereby exhausting
+productivity. Moreover, this bottlenecks the computer CPU, thereby squandering
 valuable computing resources. 
 
 This paper proposes a number of changes to the Network File System protocol
@@ -95,8 +95,8 @@ original NFS implementation and protects the ability of the NFS server to
 provide access to files during period of peak network activity.
 
 \section{Background work}
-Past projects have proposed new Network File System protocols for
-transmitting data over Wide Area Networks. Some other papers have dealt with
+Quondam studies have proposed new Network File System protocols for
+transmitting data over Wide Area Networks. Some other projects have dealt with
 improving the performance of NFS over wireless links.
 
 A.Muthitacharoen, B.Chen and D.Mazieres has proposed a Low Bandwidth Network
@@ -105,38 +105,38 @@ Though it minimizes the bandwidth usage of the protocol, it is meant for 90s
 era internet. To use it in current scenario would require extensive 
 modification to the protocol and it is not compatible with SUN's NFS.
 
-R.Dube, C.D Rais and S.K Tripathi has proposed a number of changes to the
+R.Dube, C.D Rais and S.K Tripathi have proposed several changes to the
 network stack to increase the performance of NFS over wireless links. The
 paper does not suggest changes to the NFS protocol, instead it tries to
 optimize the wireless network stack.
 
-In our literature review, we are yet to come across a paper, which directly
+In our literature review, we are yet to come across a paper, which squarely
 deals with enhancing the performance and reducing data corruption rates of 
-the widely adopted Network File System originally implemented by SUN 
+the widely adopted Network File System, originally implemented by SUN 
 Microsystems.
 
 \section{Research Methodology}
-All the benchmarks for this research paper has been done using NFS v4.2.
-The NFS environment comprising of client and server were emulated using
+All the benchmarks for this research study has been done using NFS v4.2.
+The NFS environment encompassing the client and server, was emulated using
 virtual machines, with the Oracle VirtualBox hypervisor. Virtual Machines 
-(VMs) provide a convinient method of simulating target hardware and 
+(VMs) provide a convenient method of simulating target hardware and 
 networking infrastructure. The VirtualBox hypervisor was run on RedHat 
-Enterprise Linux 7.2 with the hardware being an HP-Z640 workstation to 
+Enterprise Linux 7.2, with the hardware being an HP-Z640 workstation to 
 ensure the VMs were not bottlenecked during benchmarks. The VMs were 
-equipped with AMD PCnet-FAST III 100 Mbps network adapter, which was bridged
-to the network so that each VM was represented as a real machine on the 
-network. Network Address Translation (NAT) was not used as NAT consumes CPU
+equipped with an AMD PCnet-FAST III 100 Mbps network adapter which was bridged
+to the network, so that each VM represented a real machine on the 
+network. Network Address Translation (NAT) was not used as it consumes CPU
 resources, which could in turn affect benchmarks. The NFS server and client
 VMs were set up to run Debian 9.3 (Stable) as their OS. Debian is a heavily
-tested distribution that ships with very stable packages. Debian was chosen
-so as to minimize the chance of bugs affecting the benhmarks.
+tested distribution that ships with highly stable packages. Debian was chosen
+so as to minimize the chance of bugs affecting the benchmarks.
 
 The benchmarking tools used include Bonnie ++, Phoronix Test Suite/iozone,
 Phoronix Test Suite/dbench, Stand-alone Dbench and the "dd" utility. dd was
-used to perform benchmarks were client side cache effects needed to be
+used to perform benchmarks where client side cache effects needed to be
 avoided. Dbench is a powerful benchmarking tool designed to test the
 performance of NFS and SMB systems. It is capable of emulating upto 512 
-clients. All the benchmarks where done with Dbench emulating 6 clients.
+clients. All the benchmarks were done with Dbench emulating 6 clients.
 Benchmarking was often done through proper combination of all these tools.
 When eliminating client side cache effect was required, dd was run with 
 "conv=fdatasync bs=1K" options to flush data from cache after write of each
@@ -174,9 +174,6 @@ has been shown in figure.
 \caption{VFS-NFS handover .}
 \label{fig}
 \end{figure}
-
-
-
 NFS by default runs in what is called server side synchronous mode. In this
 mode, when the NFS client receives a write operation, it connects to the
 server, requsts a write and transfers the data. Once the transfer is
@@ -197,6 +194,12 @@ dbench utility part of Phoronix Test Suite. This resulted in performance of
 0.94 MB/s. The server and client systems in this case were equipped with
 100mbps network adapters. The speeds obtained are thus clearly sub-optimal.
 The peformance graph obtained from the benchmark has been shown in figure.
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.5\textwidth,natwidth=400,natheight=50]{nfs_working_fig_2.png}}
+\caption{Performance graph.}
+\label{fig}
+\end{figure}
+
 \section{Parameters affecting performance}
 NFS operates on the client-server architecture. There are tweaks that can
 be applied to NFS both at the client and server end. At the client end, the
