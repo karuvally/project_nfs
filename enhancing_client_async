@@ -1,0 +1,21 @@
+The behaviour of client side asynchronous mode can be further enhanced to 
+optimize the performance of an NFS environment. This can be done by
+modifying the server such that it keeps two variables, max_count and 
+current_count. max_count is the maximum number of clients which can write 
+to the NFS server at a time, while current_count is the number of clients 
+which are currently writing to the server. max_count is a user configurable
+value and can be optimized as per the size of the network.
+
+The client side asynchronous behaviour is modified such that, the clients 
+try to write to the server as soon as a threshold is reached. The threshold
+is user configurable and can be optimized as per the configuration of the
+system. The server initially sets the value of current_count to 0. The 
+server increments the value by one whenever a new client connects. When the
+client tries to connect to the server, the server checks if the
+current_count is less than max_count. The server allows the client to
+connect only if max_count - current_count >= 1. In case the server has
+reached its client limit, it denies the connection. The client waits for a
+random time rand_wait_time before trying to connect again. rand_wait_time
+is also user configurable and needs to be optimized per the size of the
+network.
+Figure shows the propsed behaviour of client side asynchronous mode
