@@ -1,10 +1,10 @@
 The proposed solution provides a number of considerable advantages over the
-current system. First and foremost, it guards the data against data 
-corruption. With the current system, a particular file can remain in the
-memory for too long. The proposed system forces the NFS client to flush its
-caches when a limit is reached. That is, a file won't remain in the cache
-for long, making sure it gets written to the server and to the proposed
-buffer, reducing the risk of data corruption.
+current system. First and foremost, it guards the data against corruption.
+With the current system, a particular file can remain in the memory for too
+long. The proposed system forces the NFS client to flush its caches when a
+limit is reached. That is, a file won't remain in the cache for long, making
+sure it gets written to the server and to the proposed buffer, reducing the
+risk of data corruption.
 
 The current client side asynchronous mode tries to fill up the RAM before
 trying to transfer the contents to the buffer. This can negatively affect
