@@ -19,7 +19,7 @@ forced to run the system with the default, slow configuration.
 The aforestated strategy diminishes the possibilities of interactive computing, 
 and an Operating System requiring access to data on NFS share, often ends up 
 freezing the computer in it's entirety, resulting environments with lost human 
-productivity. Moreover, this bottlenecks the computer CPU, thereby exhausting
+productivity. Moreover, this bottlenecks the computer CPU, thereby squandering
 valuable computing resources. 
 
 This paper proposes a number of changes to the Network File System protocol
