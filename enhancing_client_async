@@ -13,5 +13,9 @@ system. The server initially sets the value of current_count to 0. The
 server increments the value by one whenever a new client connects. When the
 client tries to connect to the server, the server checks if the
 current_count is less than max_count. The server allows the client to
-connect only if max_count - current_count >= 1
+connect only if max_count - current_count >= 1. In case the server has
+reached its client limit, it denies the connection. The client waits for a
+random time rand_wait_time before trying to connect again. rand_wait_time
+is also user configurable and needs to be optimized per the size of the
+network.
 Figure shows the propsed behaviour of client side asynchronous mode
