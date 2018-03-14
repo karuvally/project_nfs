@@ -1,11 +1,11 @@
 Network File System is a distributed file system originally developed by
-SUN Microsystems in 1984. A distributed file system differ from normal file
-systems in the sense that they operate over the network and allow sharing of
+SUN Microsystems in 1984. The differential factors identifying a distributed 
+file system from a normal filesystem involves the manner they, operate over the network and allow sharing of
 storage resources. NFS was developed as an open standard. It was initially
 implemented for UNIX but is now compatible with a wide array of Operating
 Systems. NFS has gone through four major revisions, with the first publicly
 available version being v2 (RFC 1094). All the experiments for this research
-have been conducted using NFS v4.2
+has been conducted using NFS v4.2
 
 NFS uses the Client-Server architecture. The NFS Server makes available a
 disk partition or directory on the network which can then be mounted just
