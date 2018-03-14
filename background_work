@@ -1,5 +1,5 @@
-Past projects have proposed new Network File System protocols for
-transmitting data over Wide Area Networks. Some other papers have dealt with
+Quondam studies have proposed new Network File System protocols for
+transmitting data over Wide Area Networks. Some other projects have dealt with
 improving the performance of NFS over wireless links.
 
 A.Muthitacharoen, B.Chen and D.Mazieres has proposed a Low Bandwidth Network
@@ -8,12 +8,12 @@ Though it minimizes the bandwidth usage of the protocol, it is meant for 90s
 era internet. To use it in current scenario would require extensive 
 modification to the protocol and it is not compatible with SUN's NFS.
 
-R.Dube, C.D Rais and S.K Tripathi has proposed a number of changes to the
+R.Dube, C.D Rais and S.K Tripathi have proposed several changes to the
 network stack to increase the performance of NFS over wireless links. The
 paper does not suggest changes to the NFS protocol, instead it tries to
 optimize the wireless network stack.
 
-In our literature review, we are yet to come across a paper, which directly
+In our literature review, we are yet to come across a paper, which squarely
 deals with enhancing the performance and reducing data corruption rates of 
-the widely adopted Network File System originally implemented by SUN 
+the widely adopted Network File System, originally implemented by SUN 
 Microsystems.
