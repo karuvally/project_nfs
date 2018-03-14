@@ -8,7 +8,10 @@ ensure the VMs were not bottlenecked during benchmarks. The VMs were
 equipped with AMD PCnet-FAST III 100 Mbps network adapter, which was bridged
 to the network so that each VM was represented as a real machine on the 
 network. Network Address Translation (NAT) was not used as NAT consumes CPU
-resources, which could in turn affect benchmarks. 
+resources, which could in turn affect benchmarks. The NFS server and client
+VMs were set up to run Debian 9.3 (Stable) as their OS. Debian is a heavily
+tested distribution that ships with very stable packages. Debian was chosen
+so as to minimize the chance of bugs affecting the benhmarks.
 
 The benchmarking tools used include Bonnie ++, Phoronix Test Suite/iozone,
 Phoronix Test Suite/dbench, Stand-alone Dbench and the "dd" utility. dd was
