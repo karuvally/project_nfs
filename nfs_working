@@ -10,30 +10,30 @@ experiments for this research has been conducted using NFS v4.2
 NFS uses the Client-Server architecture. The NFS Server makes available a
 disk partition or directory on the network which can then be mounted just
 like a local storage device by the clients. For applications running on the
-client machine, NFS is just another file system and requires zero
+client machine, NFS is just another file system and requires nought
 modifications inorder to work. This is made possible by an abstraction
-layer called Virtual File System or VFS. VFS defines what operations can be
-done on the filesystem regardless of the file system type. When an
-application deals with the UNIX file system, it is actually dealing with
-VFS. VFS receives data regarding the target file from the application, then
-hands it over to the actual file system, which in this case is NFS.
+layer called Virtual File System or VFS. VFS defines operations that can be
+performed on the filesystem, regardless of the file system type. When an
+application deals with the UNIX file system, it is in fact dealing with the
+VFS. Upon receival of data regarding the target file from the application, VFS 
+then hands it over to the actual file system, which in this instance being NFS.
 
 Once NFS receives the data, it is transfered to the server with the help of
 Remote Procedure Call (RPC) in External Data Representation (XDR) format.
 RPC allows the NFS client to execute instructions on the server. XDR is a
-data representation standard that provides a uniform data format which can
-be understood by a variety of computers. This is one of the factors that
-provide NFS with cross platform compatibilty. The working of NFS protocol
-has been shown in figure.
+data representation standard that provides a uniform data format, comprehensible
+by a variety of computers. This is one of the factors that provides NFS with
+cross platform compatibilty. The working of NFS protocol has been shown in 
+figure.
 
 VFS-NFS handover Figure
 
 NFS by default runs in what is called server side synchronous mode. In this
 mode, when the NFS client receives a write operation, it connects to the
-server, requsts a write and transfers the data. Once the transfer is
-;complete, the server syncs the data to its disks. After completing the sync
-operation, server returns an acknowledgment message back to the client. The
-issue here is that, the client has to wait till it receives the 
+server, requests a write and eventually transfers the data. Once the transfer is
+complete, the server syncs the data to its disks. On completion of the sync
+operation, the server then returns an acknowledgment message back to the client.
+-->The issue here is that, the client has to wait till it receives the 
 acknowledgment.It cannot perform any additional write to the server till the
 acknowledgment arrives. This considerably slows down the system. Further,
 clients are often configured to work in client side synchronous mode.
