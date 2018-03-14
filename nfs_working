@@ -4,8 +4,8 @@ systems in the sense that they operate over the network and allow sharing of
 storage resources. NFS was developed as an open standard. It was initially
 implemented for UNIX but is now compatible with a wide array of Operating
 Systems. NFS has gone through four major revisions, with the first publicly
-available version being v2. All the experiments for this research have been
-conducted using NFS v4.2
+available version being v2 (RFC 1094). All the experiments for this research
+have been conducted using NFS v4.2
 
 NFS uses the Client-Server architecture. The NFS Server makes available a
 disk partition or directory on the network which can then be mounted just
