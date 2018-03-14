@@ -10,5 +10,5 @@ NFS client and server when using client side asynchronous mode with an aim
 to reduce data loss and improve overall performance of the system.
 
 Once implemented, the changes suggested in this paper can enhance the
-performance of the NFS protocol while bringing down risk of  data corruption
+performance of the NFS protocol while bringing down risk of data corruption
 and loss.
