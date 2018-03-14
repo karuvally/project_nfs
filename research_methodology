@@ -13,9 +13,10 @@ resources, which could in turn affect benchmarks.
 The benchmarking tools used include Bonnie ++, Phoronix Test Suite/iozone,
 Phoronix Test Suite/dbench, Stand-alone Dbench and the "dd" utility. dd was
 used to perform benchmarks were client side cache effects needed to be
-avoided. Dbench is a powerful benchmarking tool which is capable of 
-emulating upto 512 clients. All the benchmarks where done with Dbench
-emulating 6 clients. Benchmarking was often done through proper combination
-of all these tools. When eliminating client side cache effect was required,
-dd was run with "conv=fdatasync bs=1K" options to flush data from cache
-after write of each KB.
+avoided. Dbench is a powerful benchmarking tool designed to test the
+performance of NFS and SMB systems. It is capable of emulating upto 512 
+clients. All the benchmarks where done with Dbench emulating 6 clients.
+Benchmarking was often done through proper combination of all these tools.
+When eliminating client side cache effect was required, dd was run with 
+"conv=fdatasync bs=1K" options to flush data from cache after write of each
+KB.
