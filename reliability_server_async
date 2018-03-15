@@ -1,19 +1,19 @@
-One side effect of enabling server side asynchronous mode is that, more
-clients can access the server in unit time. This in turn can cause a write
-queue to form on the client side. That is, writing a file to the server
-gives no guarantee that it has been written to permanent storage. In case
-the server crashes immediately after some data has been transferred to it,
-be it software crash or hardware failure, it can cause data corruption or 
-loss. The more worrying fact is that, it is not just a single computer which
-looses data. Data loss can occour to most of the clients which has written 
-to the server shortly before the crash.
+The sole side effect of enabling server side asynchronous mode is that, more
+clients can access the server in unit time. Consecutively, this can cause a
+write queue to form on the client side. That is, writing a file to the server
+gives no guarantee that it has been written to permanent storage. In the event 
+that a server crashes immediately after some data transfer, be it software crash
+or hardware failure, it can induce data corruption or loss. The more 
+frustrating part is when the data loss affects most of the clients which 
+has written to the server shortly before the crash, and not just a single 
+computer.
 
-If a server crash occours, a client has no means of protecting itself from
+If a server crash occurs, a client has no means of protecting itself from
 the data loss. A client has no NFS cache that is permanent in nature. Even
 if the client has the lost file in its primary memory, there is a high
 chance of loosing it. This is because, if prior to crash the server was
 serving a critical configuration file, the application dependant on the file
-can crash. If the application is part of the Operating System, it can bring
+can crash as well. If the application is part of the Operating System, it can bring
 down the whole system. The latter is often the case with environments where
 home directory is served by an NFS share. Thus, with the current system,
-server side asynchronous mode is a very risky option to leave turned on.
+server side asynchronous mode is rather a risky option to leave turned on.
