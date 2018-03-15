@@ -1,14 +1,14 @@
 Client side asynchronous mode is another method, that can be used to improve
 the performance of Network File System. Client side asynchronous mode uses
 the client's RAM as a giant cache. Once enabled, writes to the NFS server
-are instead written to the client's RAM. The file gets written to server 
+are written to the client's RAM instead. The file gets written to the server 
 only if one of the following conditions are met:
 
     * Memory fills up
     * An application flushes cache using sync
     * A file is closed with close()
     * A file is locked/unlocked
-    * Client shutdown
+    * Client shuts down
 
 That is, when using client side asynchronous mode, writes to the server are
 drastically reduced. This benefits both the client doing the write and the
@@ -17,10 +17,10 @@ it has to transfer data to the server. For the server, it reduces the
 number of writes it has to deal with in unit time. This also means that the
 rest of the clients have to wait less to read/write to the server.
 
-The performance from client side asynchronous mode is not obvious from
+The performance from client side asynchronous mode is not obvious from the
 benchmarks. Client side asynchronous mode has mixed results from the 
 benchmarks with pts/dbench measuring a marginally low 24 MB/s down from 
 28 MB/s with only server side asynchronous mode turned on, while dd 
-measured 68 MB/s, an increase of 10 MB/s compared with only server side
+measured 68 MB/s,an increase of 10 MB/s compared with only server side
 asynchronous mode turned on. Regardless of the benchmark, client side 
 asynchronous mode certainly improves the performance of the network.
