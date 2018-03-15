@@ -5,9 +5,9 @@ are instead written to the client's RAM. The file gets written to server
 only if one of the following conditions are met:
 
     * Memory fills up
-    * An application flushes cache using sync, fsync or msync
+    * An application flushes cache using sync
     * A file is closed with close()
-    * A file is locked/unlocked using fcntl
+    * A file is locked/unlocked
     * Client shutdown
 
 That is, when using client side asynchronous mode, writes to the server are
