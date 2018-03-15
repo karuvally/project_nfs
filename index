@@ -1,6 +1,6 @@
 0  Paper Name                                              [x][x][ann]
 1  Abstract                                                [x][x][ann]
-1.1Keywords                                                [x][x]
+1.1Keywords                                                [x][x][ann]
 2  Introduction                                            [x][x][ann]
 3  Background work                                         [x][x][ann]
 4  Research methodology                                    [x][x][ann]
@@ -14,4 +14,4 @@
 8.1Enhancing client side ASYNC                             [x][x][ann]
 8.2Advantages of proposed solution                         [x][x][ann]
 10 Conclusion                                              [x][x][ann]
-11 References                                              [ ]
+11 References                                              [x]
