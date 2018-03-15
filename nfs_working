@@ -33,18 +33,18 @@ mode, when the NFS client receives a write operation, it connects to the
 server, requests a write and eventually transfers the data. Once the transfer is
 complete, the server syncs the data to its disks. On completion of the sync
 operation, the server then returns an acknowledgment message back to the client.
--->The issue here is that, the client has to wait till it receives the 
-acknowledgment.It cannot perform any additional write to the server till the
-acknowledgment arrives. This considerably slows down the system. Further,
-clients are often configured to work in client side synchronous mode.
-In this mode, the client is forced to write the data to the server as
-soon as it receives the request. This often causes the system to crawl.
+The issue arises with the prolonged waiting period the client endures for the
+required acknowledgement. An additional write to the server is occluded untill 
+the entailing  acknowledgement is received. This considerably slows down the
+system. Furthermore, clients are often configured to work in client side 
+synchronous mode, wherein the client is forced to write the data to the server 
+as soon as it receives the request. This often causes the system to crawl.
 
 The performance of an NFS system with client and server side synchronous
 mode turned on was benchmarked with client side options in /etc/fstab set as
 [rw, sync, hard, intr 0 0] and the server side options  in /etc/exports set
 as [rw, no-root-squash, subtree-check]. The benchmarks were conducted using
-dbench utility part of Phoronix Test Suite. This resulted in performance of
-0.94 MB/s. The server and client systems in this case were equipped with
+dbench utility part of Phoronix Test Suite. This resulted in a performance of
+0.94 MB/s. In this case, the server and client systems were equipped with
 100mbps network adapters. The speeds obtained are thus clearly sub-optimal.
 The peformance graph obtained from the benchmark has been shown in figure.
