@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.6)  15 MAR 2018 03:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.6)  15 MAR 2018 15:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -328,6 +328,9 @@ LaTeX Warning: Label `fig' multiply defined.
 
 LaTeX Warning: Label `fig' multiply defined.
 
+
+LaTeX Warning: Label `fig' multiply defined.
+
 )
 \openout1 = `conference_071817.aux'.
 
@@ -450,14 +453,24 @@ File: fixing_server_async.png Graphic file (type png)
 <use fixing_server_async.png>
 Package pdftex.def Info: fixing_server_async.png used on input line 335.
 (pdftex.def)             Requested size: 258.0pt x 228.53853pt.
- [4 <./fixing_server_async.png>]
-<error_recovery.png, id=28, 375.4025pt x 470.75874pt>
+
+<error_recovery.png, id=24, 487.8225pt x 470.75874pt>
 File: error_recovery.png Graphic file (type png)
  <use error_recovery.png>
-Package pdftex.def Info: error_recovery.png used on input line 417.
-(pdftex.def)             Requested size: 258.0pt x 323.55246pt.
+Package pdftex.def Info: error_recovery.png used on input line 340.
+(pdftex.def)             Requested size: 258.0pt x 248.97658pt.
 
-[5 <./error_recovery.png>]
+[4 <./fixing_server_async.png> <./error_recovery.png>]
+<enhancing_client_async.png, id=29, 598.235pt x 466.74374pt>
+File: enhancing_client_async.png Graphic file (type png)
+
+<use enhancing_client_async.png>
+Package pdftex.def Info: enhancing_client_async.png used on input line 421.
+(pdftex.def)             Requested size: 258.0pt x 201.29413pt.
+ [5 <./enhancing_client_async.png>]
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ± in font ptmr7t!
+
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -477,23 +490,23 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3949 strings out of 493029
- 58844 string characters out of 6136235
+ 3954 strings out of 493029
+ 58993 string characters out of 6136235
  127683 words of memory out of 5000000
- 7423 multiletter control sequences out of 15000+600000
+ 7427 multiletter control sequences out of 15000+600000
  41733 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,8n,26p,304b,265s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,8n,26p,250b,265s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
 /times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on conference_071817.pdf (6 pages, 139359 bytes).
+Output written on conference_071817.pdf (6 pages, 146904 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
+ 58 PDF objects out of 1000 (max. 8388607)
  34 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
