@@ -8,7 +8,7 @@ only if one of the following conditions are met:
     * An application flushes cache using sync
     * A file is closed with close()
     * A file is locked/unlocked
-    * Client shuts down
+    * Client shutdown
 
 That is, when using client side asynchronous mode, writes to the server are
 drastically reduced. This benefits both the client doing the write and the
