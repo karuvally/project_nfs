@@ -1,21 +1,24 @@
-SUN Network File System - Original paper
+Design and Implementation of the Sun Network Filesystem
 Section : Introduction, 1st paragraph
 Link    : http://www-inst.eecs.berkeley.edu/~cs262a/sp02/Papers/nfs.pdf
+Details : Russel Sandberg, David Goldberg, Steve Kielman, Den Walsh and Bob Lyon, "Design and Implementation of the Sun Network Filesystem", USENIX Conference & Exhibition, Portland, Oregon, 1985
 
-Low Bandwidth Network File System
+A low Bandwidth Network File System
 Section : Background Work, 2nd paragraph
 Link    : https://pdos.csail.mit.edu/papers/lbfs:sosp01/lbfs.pdf
+Details : Athicha Muthitacharoen, Benjie Chen and David Mazières, "A low-bandwidth network file system" in ACM SIGOPS Operating Systems Review, vol. 35, pp. 174-187, December 2001
 
 Increasing reliability of NFS links over wireless network
 Section : Background Work, 3rd paragraph
 Link    : https://pdfs.semanticscholar.org/8559/07710863da6b181b0487c2605e38b11e8c2c.pdf
+Details : Rohit Dube, Cynthia D. Rais and Satish K. Tripathi, "Improving NFS Performance over Wireless Links" in IEEE Transactions on Computers, vol. 46, pp. 290-298, March 1997
 
 QUARK
 Section : Fixing Server side asynchronous mode
 Link    : https://131002.net/quark/quark_full.pdf
+Details : Jean-Philippe Aumasson, Luca Henzen, Willi Meier, and Marıa Naya-Plasencia, "QUARK: A Lightweight Hash" in Journal of Cryptology, vol. 26, pp. 313-339, April 2013
 
 PHOTON
 Section : Fixing Server side asynchronous mode
 Link    : https://eprint.iacr.org/2011/609.pdf
-
-
+Details : Jian Guo, Thomas Peyrin and Axel Poschmann, "The PHOTON Family of Lightweight Hash Functions" in Advances in Cryptology - CRYPTO 2011, 2011
