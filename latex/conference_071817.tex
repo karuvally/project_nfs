@@ -66,7 +66,7 @@ Network File System is a distributed File System protocol primarily used by the
 UNIX family of Operating Systems. It allows users to mount, access and
 manipulate disk partitions or directories on a remote computer, as if the
 said partition or directory was a part of the local machine. Network File
-System was developed as an open standard by SUN Microsystems in 1984.
+System was developed as an open standard by SUN Microsystems in 1984\cite{b1}.
 
 NFS is widely used in Local Area Networks to conveniently share data, and
 provides users the ability to access their files across the network.
@@ -98,14 +98,14 @@ Past studies have proposed new Network File System protocols for
 transmitting data over Wide Area Networks. Some other research have dealt
 with improving the performance of NFS over wireless links.
 
-A.Muthitacharoen Et al. has proposed a Low Bandwidth Network File System,
+A.Muthitacharoen Et al. has proposed a Low Bandwidth Network File System\cite{b2},
 which can be used over Wide Area Networks such as the Internet. Though it
 minimizes the bandwidth usage of the protocol, it is meant for '90s
 era internet. To use it in current scenario would require extensive 
 modification to the protocol and it is not compatible with SUN's NFS.
 
 R.Dube Et al. has proposed several changes to the network stack to increase
-the performance of NFS over wireless links. The paper does not suggest
+the performance of NFS over wireless links\cite{b3}. The paper does not suggest
 changes to the NFS protocol, instead it tries to optimize the wireless
 network stack.
 
@@ -139,7 +139,7 @@ emulating upto 512 clients. All the benchmarks were done with Dbench tool
 emulating 6 clients. Higher number of clients not used to avoid choking the
 server. Benchmarking was often done through proper combination of all these
 tools. When eliminating client side cache effect was required, dd was run
-with "conv=fdatasync bs=1K" options to flush data from cache after write of
+with $conv=fdatasync bs=1K$ options to flush data from cache after write of
 each Kilobyte. Each test was run three times, and the average of the results
 obtained were taken as the final result.
 \section{Working and Typical performance of NFS}
@@ -166,15 +166,15 @@ mode, wherein the client is forced to write the data to the server as soon
 as it receives the request. This often causes the system to crawl.
 
 The performance of an NFS system with client and server side synchronous
-mode turned on was benchmarked with client side options in /etc/fstab set as
-[rw, sync, hard, intr 0 0] and the server side options  in /etc/exports set
-as [rw, no-root-squash, subtree-check]. The benchmarks were conducted using
+mode turned on was benchmarked with client side options in $/etc/fstab$ set as
+\texttt{[rw, sync, hard, intr 0 0]} and the server side options  in $/etc/exports$ set
+as \texttt{[rw, no\_root\_squash, subtree\_check]}. The benchmarks were conducted using
 dbench utility part of Phoronix Test Suite. This resulted in a performance
 of 0.94 MB/s. The speeds obtained are thus clearly sub-optimal. The
 peformance graph obtained from the benchmark has been shown in Fig. 2.
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=0.5\textwidth,natwidth=400,natheight=50]{nfs_working_fig_2.png}}
-\caption{Performance with client and server sync.}
+\caption{Performance with client and server side sync.}
 \label{fig}
 \end{figure}
 
@@ -240,9 +240,9 @@ completes the transfer of data to server's buffer. This has tremendous
 impact on the performance of the system.
 
 An NFS system with server side asynchronous mode was benchmarked with the
-client side options in /etc/fstab set as [rw, sync, hard, intr 0 0] and
-server side options in /etc/exports set as 
-[rw, no-root-squash, no-subtree-check, async]. The test conducted using
+client side options in $/etc/fstab$ set as\texttt{[rw, sync, hard, intr 0 0]}  and
+server side options in $/etc/exports$ set as
+\texttt{[rw, no\_root\_squash, no\_subtree\_check, async]}. The test conducted using
 dbench resulted in 28.72 MB/s, a huge boost in performance, compared with
 side synchronous mode, which returned 0.94 MB/s in dbench. The performance
 graph obtained has been shown in Fig 3.
@@ -252,7 +252,7 @@ graph obtained has been shown in Fig 3.
 \label{fig}
 \end{figure}
 Benchmarks were also conducted with dd utility, with a block size of 1KB,
-file size of 2GB and fdatasync option turned on. The aim was to measure the
+file size of 2GB and $fdatasync$ option turned on. The aim was to measure the
 worst case performance of server side asynchronous mode. The benchmark
 resulted in 7.1 MB/s which was still significantly higher than results
 recorded with server side synchronous mode with caching.
@@ -267,22 +267,21 @@ corruption.
 \subsection{Reliability concerns with Server side ASYNC}\label{AA}
 An advantage of enabling server side asynchronous mode is that, more
 clients can access the server in unit time. A side effect is that it can
-cause a write queue to form on the client side. That is, writing a file to
-the server gives no guarantee that it has been written to permanent storage.
-In the event of a server crash, the data written immediatly before can be
-lost. frustrating part is when the data loss affects most of the clients which 
-has written to the server shortly before the crash, and not just a single 
-computer.
+cause a write queue to form on the client side. A file write can get delayed
+and writing a file to the server gives no guarantee that it has been written
+to permanent storage. In the event of a server crash, the data written
+immediatly before can be lost. Worryingly, the data can be lost from more
+than one computer connected to the NFS server.
 
-If a server crash occurs, a client has no means of protecting itself from
-the data loss. A client has no NFS cache that is permanent in nature. Even
-if the client has the lost file in its primary memory, there is a high
-chance of loosing it. This is because, if prior to crash the server was
-serving a critical configuration file, the application dependant on the file
-can crash as well. If the application is part of the Operating System, it can bring
-down the whole system. The latter is often the case with environments where
-home directory is served by an NFS share. Thus, with the current system,
-server side asynchronous mode is rather a risky option to leave turned on.
+A client has no means of protecting itself from a server crash. A client has
+no NFS cache that is permanent in nature. Even if the client has the lost
+file in its primary memory, there is a high chance of loosing it. This is
+because, if prior to crash the server was serving a critical file, the
+application dependant on the file can crash as well. If the application is
+part of the Operating System, it can bring down the whole computer. The
+latter is often the case with environments where home directory is served by
+an NFS share. Thus, with the current system, server side asynchronous mode
+is rather a risky option to leave turned on.
 
 \subsection{Fixing server side ASYNC behaviour}
 
@@ -290,32 +289,25 @@ Once VFS handovers the write request to the NFS client, it transfers the
 received data to the server rather than writing it to the local storage. In
 case of data loss, the file cannot be recovered, as the only copy of the
 file was in the server's memory. The solution is to create a buffer in the 
-client's local storage such that, a copy of all the data written to the server 
-will be kept with the client.
+client's local storage such that, a copy of all the data written to the
+server will be kept with the client.
 
-The buffer is a predefined storage area in the client's secondary memory.
+This buffer is a predefined storage area in the client's secondary memory.
 It acts like a ring buffer with a flexible memory size. The oldest files are
-deleted once the buffer reaches a predefined size. The NFS client will maintain
-a plaintext file in the buffer containing, names of each file in the buffer,
-its path and hash generated from each file. During an NFS write operation,
-the client stores a copy of the file in the buffer area and updates the 
-metadata file with the information regarding the  new file. The hash is
-calculated whenever a file is written to the buffer. To minimize the CPU
-overhead for hash calculation, a lightweight hashing algorithm such as QUARK
-or PHOTON is implemented. The following figure shows the working and structure 
-of the buffer.
+deleted once the buffer reaches a predefined size. The NFS client will
+maintain a plaintext file in the buffer containing names of each file in the
+buffer, its path and hash generated from each file. During an NFS write
+operation, the client stores a copy of the file in the buffer area and
+updates the metadata file with the information regarding the  new file. The
+hash is calculated whenever a file is written to the buffer. To minimize the
+CPU overhead for hash calculation, a lightweight hashing algorithm such as
+QUARK\cite{b4} or PHOTON\cite{b5} should be used. Fig.4 shows working and structure of the
+buffer.
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=0.5\textwidth,natwidth=400,natheight=50]{fixing_server_async.png}}
 \caption{Working and structure of buffer and metadata.}
 \label{fig}
 \end{figure}
-\begin{figure}[htbp]
-\centerline{\includegraphics[width=0.5\textwidth,natwidth=400,natheight=50]{error_recovery.png}}
-\caption{Working and structure of buffer.}
-\label{fig}
-\end{figure}
-
-
 In case of a server crash, the server creates a list of corrupted or lost
 files. During the first boot after the crash, the server requests the
 metadata file from each client that connects to it. Once the server receives
@@ -324,16 +316,24 @@ is listed in the metadata. If a file is missing or if the hashes do not
 match, they are added to the retransmit-list, a list of files to be 
 retransmitted from the client. Once the metadata file from a client is fully
 scanned, the retransmit list is sent to the client. The client in turn
-transmits a new copy of each file in the retransmit list. The following figure 
-shows the error recovery process.
+transmits a new copy of each file in the retransmit list. Fig.5 depicts
+the recovery process.
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.5\textwidth,natwidth=400,natheight=50]{error_recovery.png}}
+\caption{Error recovery process.}
+\label{fig}
+\end{figure}
+
+
+
 
 \subsection{Advantages of the proposed solution}
 The proposed solution has several advantages, the most important one
 being higher security against data corruption and loss. With the current 
-system, due to concerns pertaining to data loss , the server side asynchronous 
-mode is turned off by default. The proposed solution once implemented, virtually
-eliminates the chance of data loss and makes it safe to leave the server
-side asynchronous mode turned on.
+system, due to concerns pertaining to data loss, the server side
+asynchronous mode is turned off by default. The proposed solution once
+implemented, virtually eliminates the chance of data loss and makes it safe
+to leave the server side asynchronous mode turned on.
 
 The solution allows the NFS environment to maintain high speeds while
 keeping chances of data loss negligibly low. The solution is also easy to
@@ -348,9 +348,9 @@ are written to the client's RAM instead. The file gets written to the server
 only if one of the following conditions are met:
 \begin{itemize}
 \item Memory fills up
-\item An application flushes cache using sync, fsync or msync
+\item An application flushes cache using sync
 \item A file is closed with close()
-\item A file is locked/unlocked using fcntl
+\item A file is locked/unlocked
 \item Client shutdown
 \end{itemize}
 
@@ -359,40 +359,35 @@ drastically reduced. This benefits both the client doing the write and the
 environment as a whole. For the client, it reduces the number of instances
 it has to transfer data to the server. For the server, it reduces the
 number of writes it has to deal with in unit time. This also means that the
-rest of the clients have to wait less to read/write to the server.
-
-The performance from client side asynchronous mode is not obvious from the
-benchmarks. Client side asynchronous mode has mixed results from the 
-benchmarks with pts/dbench measuring a marginally low 24 MB/s down from 
-28 MB/s with only server side asynchronous mode turned on, while dd 
-measured 68 MB/s,an increase of 10 MB/s compared with only server side
-asynchronous mode turned on. Regardless of the benchmark, client side 
-asynchronous mode certainly improves the performance of the network.
+rest of the clients have to wait less to read/write to the server. dd was
+run without arguments and measured 68 MB/s, an increase of 10 MB/s from the
+58 MB/s that was measured when dd was run in same configuration with only
+server side asynchronous mode turned on.
 
 \subsection{Enhancing client side ASYNC }\label{SCM}
 The behaviour of client side asynchronous mode can be further enhanced to 
 optimize the performance of an NFS environment. This can be done by
-modifying the server such that it keeps two variables, max-count and 
-current-count. max-count is the maximum number of clients which can write 
-to the NFS server at a time, while current-count is the number of clients 
-which are currently writing to the server. max-count is a user configurable
+modifying the server such that it keeps two variables, \texttt{max-count} and 
+\texttt{current-count}. \texttt{max-count} is the maximum number of clients which can write 
+to the NFS server at a time, while \texttt{current-count} is the number of clients 
+which are currently writing to the server. \texttt{max-count} is a user configurable
 value and can be optimized as per the size of the network.
 
 The client side asynchronous behaviour is modified such that, the clients 
 try to write to the server as soon as a threshold is reached. The threshold
 is user configurable and can be optimized as per the configuration of the
-system. The server initially sets the value of current-count to 0. The 
+system. The server initially sets the value of \texttt{current-count}  to 0. The 
 server increments the value by one whenever a new client connects. When the
 client tries to connect to the server, the server checks if the
-current-count is less than max-count. The server allows the client to
-connect only if max-count - current-count >= 1. In case the server has
+\texttt{current-count} is less than \texttt{max-count}. The server allows the client to
+connect only if \texttt{max-count - current-count >= 1}. In case the server has
 reached its client limit, it denies the connection. The client waits for a
-random time rand-wait-time before trying to connect again. rand-wait-time
+random time \texttt{rand-wait-time} before trying to connect again. \texttt{rand-wait-time} 
 is also user configurable and needs to be optimized per the size of the
-network.
+network. Fig.6 shows the propsed behaviour of client side asynchronous mode
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=0.5\textwidth,natwidth=400,natheight=100]{enhancing_client_async.png}}
-\caption{Error recovery.}
+\caption{Proposed client-server behaviour.}
 \label{fig}
 \end{figure}
 
@@ -400,10 +395,10 @@ network.
 The proposed solution provides a number of considerable advantages over the
 current system. First and foremost, it guards the data against corruption.
 With the current system, a particular file can remain in the memory for too
-long, while the proposed system forces the NFS client to flush it's caches when 
-a limit is reached. That is, a file won't remain in the cache for long, making
-sure it gets written to the server and to the proposed buffer, reducing the
-risk of data corruption.
+long, while the proposed system forces the NFS client to flush it's caches
+when a limit is reached. That is, a file won't remain in the cache for long,
+making sure it gets written to the server and to the proposed buffer,
+reducing the risk of data corruption.
 
 The current client side asynchronous mode tries to fill up the RAM before
 trying to transfer the contents to the buffer. This can negatively affect
@@ -412,8 +407,8 @@ network. If a particularly heavy application needs to be loaded, the client
 is forced to flush the caches, thus initiaing the NFS write. The client
 will need to wait for the write to complete before the application can be
 properly loaded. This introduces unnecessary latency to the system. The 
-proposed system also makes sure that the server's capacity is not wasted. The 
-system makes sure a healthy number of clients get to write to the server
+proposed system also makes sure that the server's capacity is not wasted.
+The system makes sure a healthy number of clients get to write to the server
 throughout its running time.
 
 Regardless of the number of active clients, the number of clients doing
@@ -422,18 +417,21 @@ performance of the environment by ensuring that the server can provide
 decent read/write speeds regardless of the state of the environment. Thus
 the proposed system can provide a swift and mature NFS behaviour.
 \section{Overall performance}
+TABLE III summarizes the results of benchmarks obtained during research. The
+dd tool in each test was run with options \texttt{bs=1M} and \texttt{count=2048}, meaning
+dd created a 2 GB file with block size of 1 MB.
 \begin{table}[htbp]
-\caption{NFS Options-Server Side}
+\caption{Benchmark result summary}
 \begin{center}
-\begin{tabular}{|c|c|c|c|}
+\begin{tabular}{|c|c|c|c|c|}
 \hline
 \cline{2-3} 
-\textbf{SlNo.} & \textbf{\textit{Client}}& \textbf{\textit{Server}}&\textbf{\textit{Performance}} \\
+\textbf{SlNo.} & \textbf{\textit{Client}}& \textbf{\textit{Server}}&\textbf{\textit{Dbench(MB/s)}}&\textbf{\textit{dd(MB/s)}} \\
 \hline
-1& sync & sync & samplp  \\
-2& sync & async & samplp  \\
-3& async & sync & samplp  \\
-4& async & sync & samplp  \\
+1& sync & sync & 0.94  &7.3 \\
+2& sync & async & 28.72 &58.1 \\
+3& async & async & 24.18 & 68.2  \\
+4& async & sync & 1.16  & 1.1  \\
 \hline
 \end{tabular}
 \label{tab1}
@@ -452,15 +450,15 @@ NFS client and server when using client side asynchronous mode with an aim
 to reduce data loss and improve overall performance of the system.
 
 Once implemented, the changes suggested in this paper can enhance the
-performance of the NFS protocol while bringing down the risk of data corruption
-and loss.
+performance of the NFS protocol while bringing down the risks of data
+corruption and loss.
 
 \begin{thebibliography}{00}
-\bibitem{b1} Russel Sandberg and David Gold Berg "Design and Implementation of Sun Network FIle System". 
-\bibitem{b2} Athicha Muthitacharoen, Benjie Chen, and David Mazieres "A Low-bandwidth Network File System".
-\bibitem{b3} Rohit Dube, Cynthia D. Rais and Satish K. Tripathi, "Improving NFS Performance over Wire Links".
-\bibitem{b4} Jean-Philippe Aumasson, Luca Henzen, Willi Meier and  Marıa Naya-Plasencia, "Quark: a lightweight hash".
-\bibitem{b5}Jian Guo, Thomas Peyrin and Axel Poschmann, "The PHOTON Family of Lightweight Hash Functions"
+\bibitem{b1} Russel Sandberg, David Goldberg, Steve Kielman, Den Walsh and Bob Lyon, "Design and Implementation of the Sun Network Filesystem", USENIX Conference and Exhibition, Portland, Oregon, 1985.
+\bibitem{b2} Athicha Muthitacharoen, Benjie Chen and David Mazières, "A low-bandwidth network file system" in ACM SIGOPS Operating Systems Review, vol. 35, pp. 174-187, December 2001.
+\bibitem{b3} Rohit Dube, Cynthia D. Rais and Satish K. Tripathi, "Improving NFS Performance over Wireless Links" in IEEE Transactions on Computers, vol. 46, pp. 290-298, March 1997.
+\bibitem{b4} Jean-Philippe Aumasson, Luca Henzen, Willi Meier, and Marıa Naya-Plasencia, "QUARK: A Lightweight Hash" in Journal of Cryptology, vol. 26, pp. 313-339, April 2013.
+\bibitem{b5}Jian Guo, Thomas Peyrin and Axel Poschmann, "The PHOTON Family of Lightweight Hash Functions" in Advances in Cryptology - CRYPTO 2011, 2011.
 
 \end{thebibliography}
 
