@@ -10,21 +10,21 @@ Occasionally, a directory access protocol such as LDAP is combined with NFS,
 allowing the users to login to their user accounts from any computer on the 
 network.
 
-The crucial setback NFS depicts is the slow read and write speeds it offers
-with the default setup.The existent performance enhancing parameters in its 
-default setup configuration files, either leave the performance rates unaffected
-or increases the probability of data corruption and loss. Thus the users are 
+The main drawback of NFS is the slow read and write speeds it offers with 
+the default setup. The current performance enhancing parameters in its 
+configuration files, either leave the performance rates unaffected or 
+increases the probability of data corruption and loss. Thus the users are 
 forced to run the system with the default, slow configuration.
 
-The aforestated strategy diminishes the possibilities of interactive computing, 
-and an Operating System requiring access to data on NFS share, often ends up 
-freezing the computer in it's entirety, resulting environments with lost human 
-productivity. Moreover, this bottlenecks the computer CPU, thereby squandering
-valuable computing resources. 
+The aforestated configuration diminishes the possibilities of interactive 
+computing, and an Operating System requiring access to data on NFS share, 
+often ends up freezing the computer, resulting in loss of human productivity.
+Moreover, this bottlenecks the computer CPU, wasting valuable computing 
+resources. 
 
 This paper proposes a number of changes to the Network File System protocol
 which increases the performance of Network File System while reducing
 the risk of data corruption and loss. The proposed system also ensures
 decent speeds in congested network as it consumes less bandwidth than the 
 original NFS implementation and protects the ability of the NFS server to
-provide access to files during period of peak network activity.
+continue providing access to files during period of peak load.
