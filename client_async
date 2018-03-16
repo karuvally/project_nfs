@@ -15,12 +15,7 @@ drastically reduced. This benefits both the client doing the write and the
 environment as a whole. For the client, it reduces the number of instances
 it has to transfer data to the server. For the server, it reduces the
 number of writes it has to deal with in unit time. This also means that the
-rest of the clients have to wait less to read/write to the server.
-
-The performance from client side asynchronous mode is not obvious from the
-benchmarks. Client side asynchronous mode has mixed results from the 
-benchmarks with pts/dbench measuring a marginally low 24 MB/s down from 
-28 MB/s with only server side asynchronous mode turned on, while dd 
-measured 68 MB/s,an increase of 10 MB/s compared with only server side
-asynchronous mode turned on. Regardless of the benchmark, client side 
-asynchronous mode certainly improves the performance of the network.
+rest of the clients have to wait less to read/write to the server. dd was
+run without arguments and measured 68 MB/s, an increase of 10 MB/s from the
+58 MB/s that was measured when dd was run in same configuration with only
+server side asynchronous mode turned on.

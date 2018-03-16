@@ -1,9 +1,9 @@
 The proposed solution has several advantages, the most important one
 being higher security against data corruption and loss. With the current 
-system, due to concerns pertaining to data loss , the server side asynchronous 
-mode is turned off by default. The proposed solution once implemented, virtually
-eliminates the chance of data loss and makes it safe to leave the server
-side asynchronous mode turned on.
+system, due to concerns pertaining to data loss, the server side
+asynchronous mode is turned off by default. The proposed solution once
+implemented, virtually eliminates the chance of data loss and makes it safe
+to leave the server side asynchronous mode turned on.
 
 The solution allows the NFS environment to maintain high speeds while
 keeping chances of data loss negligibly low. The solution is also easy to
