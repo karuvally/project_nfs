@@ -23,4 +23,5 @@ emulating 6 clients. Higher number of clients not used to avoid choking the
 server. Benchmarking was often done through proper combination of all these
 tools. When eliminating client side cache effect was required, dd was run
 with "conv=fdatasync bs=1K" options to flush data from cache after write of
-each Kilobyte.
+each Kilobyte. Each test was run three times, and the average of the results
+obtained were taken as the final result.
