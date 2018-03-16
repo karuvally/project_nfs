@@ -2,32 +2,29 @@ In server side synchronous mode, the server waits till the data has been
 written to its disk before returning the acknowledgment message to the 
 client. Server side asynchronous mode changes the behaviour of NFS server 
 such that it returns the acknowledgment message as soon as the client 
-completes the transfer of data. This has tremendous impact on the
-performance of the system.
+completes the transfer of data to server's buffer. This has tremendous
+impact on the performance of the system.
 
 An NFS system with server side asynchronous mode was benchmarked with the
 client side options in /etc/fstab set as [rw, sync, hard, intr 0 0] and
 server side options in /etc/exports set as 
-[rw, no_root_squash, no_subtree_check, async]. The test was conducted using
-dbench tool - part of phoronix test suite, and resulted in 28.72 MB/s, a
-huge boost in performance increase, compared with the earlier server side
-synchronous mode, which returned 0.94 MB/s. The performance graph obtained
-has been shown in figure.
+[rw, no_root_squash, no_subtree_check, async]. The test conducted using
+dbench resulted in 28.72 MB/s, a huge boost in performance, compared with
+side synchronous mode, which returned 0.94 MB/s in dbench. The performance
+graph obtained has been shown in Fig 3.
 
-Performance figure
+Figure: Performance with client side sync and server side async
 
-Further benchmarks were also conducted with dd utility, with a block size
-of 1KB, file size of 2GB and fdatasync option turned on. The block size of
-1K ensures the computer writes only 1KB of data at a time and the fdatasync
-option flushes the cache after each block is written. The aim was to
-understand the performance of the system without the contribution of client
-side caches. The benchmark resulted in 7.1 MB/s which was stil significantly
-higher than results recorded with server side asynchronous mode.
+Benchmarks were also conducted with dd utility, with a block size of 1KB,
+file size of 2GB and fdatasync option turned on. The aim was to measure the
+worst case performance of server side asynchronous mode. The benchmark
+resulted in 7.1 MB/s which was still significantly higher than results
+recorded with server side synchronous mode with caching.
 
-The higher performance comes from the fact that the clients no longer have to 
-wait till the server syncs the data with its disks. Clients can transfer
-data to the server and get on with other tasks such as writing additional
-files. This also means that more number of clients can access the server
-in unit time. Still, with the current protocol, it is not advisable to leave
-server side async turned on due to the possibility of data loss and
+The higher performance comes from the fact that the clients no longer have
+to wait till the server syncs the data with its disks. Clients can transfer
+data to the server's buffer and get on with other tasks such as writing
+additiona files. This also means that more number of clients can access the
+server in unit time. Still, with the current protocol, it is not advisable
+to leave server side async turned on due to the possibility of data loss and
 corruption.
