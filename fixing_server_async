@@ -2,24 +2,22 @@ Once VFS handovers the write request to the NFS client, it transfers the
 received data to the server rather than writing it to the local storage. In
 case of data loss, the file cannot be recovered, as the only copy of the
 file was in the server's memory. The solution is to create a buffer in the 
-client's local storage such that, a copy of all the data written to the server 
-will be kept with the client.
+client's local storage such that, a copy of all the data written to the
+server will be kept with the client.
 
-The buffer is a predefined storage area in the client's secondary memory.
+This buffer is a predefined storage area in the client's secondary memory.
 It acts like a ring buffer with a flexible memory size. The oldest files are
-deleted once the buffer reaches a predefined size. The NFS client will maintain
-a plaintext file in the buffer containing, names of each file in the buffer,
-its path and hash generated from each file. During an NFS write operation,
-the client stores a copy of the file in the buffer area and updates the 
-metadata file with the information regarding the  new file. The hash is
-calculated whenever a file is written to the buffer. To minimize the CPU
-overhead for hash calculation, a lightweight hashing algorithm such as QUARK
-or PHOTON is implemented. The following figure shows the working and structure 
-of the buffer.
+deleted once the buffer reaches a predefined size. The NFS client will
+maintain a plaintext file in the buffer containing names of each file in the
+buffer, its path and hash generated from each file. During an NFS write
+operation, the client stores a copy of the file in the buffer area and
+updates the metadata file with the information regarding the  new file. The
+hash is calculated whenever a file is written to the buffer. To minimize the
+CPU overhead for hash calculation, a lightweight hashing algorithm such as
+QUARK or PHOTON should be used. Fig. 4 shows working and structure of the
+buffer.
 
-Figure of the working and structure of buffer + metadata file
-
-Optional (Sample implementation of buffer deletion strategy)
+Figure: Working and structure of buffer
 
 In case of a server crash, the server creates a list of corrupted or lost
 files. During the first boot after the crash, the server requests the
@@ -29,5 +27,7 @@ is listed in the metadata. If a file is missing or if the hashes do not
 match, they are added to the retransmit-list, a list of files to be 
 retransmitted from the client. Once the metadata file from a client is fully
 scanned, the retransmit list is sent to the client. The client in turn
-transmits a new copy of each file in the retransmit list. The following figure 
-shows the error recovery process.
+transmits a new copy of each file in the retransmit list. Fig.5 depicts
+the recovery process.
+
+Figure: Error recovery process
