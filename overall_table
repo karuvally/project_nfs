@@ -3,7 +3,7 @@ dd tool in each test was run with options "bs=1M and count=2048", meaning
 dd created a 2 GB file with block size of 1 MB.
 
 Client  Server  dbench          dd
-SYNC    SYNC    0.94  MB/s
+SYNC    SYNC    0.94  MB/s      7.3  MB/s
 SYNC    ASYNC   28.72 MB/s      58.1 MB/s
 ASYNC   ASYNC   24.18 MB/s      68.2 MB/s
-ASYNC   SYNC    1.16  MB/s      1.1 MB/s
+ASYNC   SYNC    1.16  MB/s      1.1  MB/s
