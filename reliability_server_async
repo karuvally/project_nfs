@@ -1,18 +1,17 @@
 An advantage of enabling server side asynchronous mode is that, more
 clients can access the server in unit time. A side effect is that it can
-cause a write queue to form on the client side. That is, writing a file to
-the server gives no guarantee that it has been written to permanent storage.
-In the event of a server crash, the data written immediatly before can be
-lost. frustrating part is when the data loss affects most of the clients which 
-has written to the server shortly before the crash, and not just a single 
-computer.
+cause a write queue to form on the client side. A file write can get delayed
+and writing a file to the server gives no guarantee that it has been written
+to permanent storage. In the event of a server crash, the data written
+immediatly before can be lost. Worryingly, the data can be lost from more
+than one computer connected to the NFS server.
 
-If a server crash occurs, a client has no means of protecting itself from
-the data loss. A client has no NFS cache that is permanent in nature. Even
-if the client has the lost file in its primary memory, there is a high
-chance of loosing it. This is because, if prior to crash the server was
-serving a critical configuration file, the application dependant on the file
-can crash as well. If the application is part of the Operating System, it can bring
-down the whole system. The latter is often the case with environments where
-home directory is served by an NFS share. Thus, with the current system,
-server side asynchronous mode is rather a risky option to leave turned on.
+A client has no means of protecting itself from a server crash. A client has
+no NFS cache that is permanent in nature. Even if the client has the lost
+file in its primary memory, there is a high chance of loosing it. This is
+because, if prior to crash the server was serving a critical file, the
+application dependant on the file can crash as well. If the application is
+part of the Operating System, it can bring down the whole computer. The
+latter is often the case with environments where home directory is served by
+an NFS share. Thus, with the current system, server side asynchronous mode
+is rather a risky option to leave turned on.
