@@ -1,8 +1,6 @@
-NFS operates on the client-server architecture. There are tweaks that can
-be applied to NFS both at the client and server end. At the client end, the
-tweaks are made to /etc/fstab file, while at the server end, the configuration
-is done to the /etc/exports file. Some of the commonly used options are
-listed below.
+NFS configuration at the client end are in /etc/fstab file, while at the
+server end, the configuration are in /etc/exports file. The commonly used
+options are listed in TABLE I and TABLE II
 
 NFS Client side options 
 [Tabular Description of NFS client side options]
@@ -26,13 +24,11 @@ Slno    Option              Description
 4	    async               Server side asynchronous mode
 5	    sync                Server side synchronous mode
 
-Various combinations of these options were benchmarked. It was observed that
-most of the options showed no augmented performance in the NFS environment with 
-the ball park performance estimate of 0.94 MB/s.
-
-Figure 0.77 MB/s
+Various combinations of these options were benchmarked. It was observed 
+that most of the options did not improve the performance of the NFS
+environment. Server performance remained at 0.94 MB/s.
 
 One significant characteristic observed was that the client side UDP option 
 reduced the speeds to 0.77 MB/s. The end of experiments resulted in the 
-observation that, only the client and server side provided a considerable 
-elevated performance. 
+observation that, only the client and server side asynchronous mode provided
+a considerable elevation in performance. 
