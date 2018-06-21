@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.6)  7 JUN 2018 16:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.6)  21 JUN 2018 23:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -422,12 +422,12 @@ e
 
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 146.
+LaTeX Font Info:    Try loading font information for U+msa on input line 138.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 146.
+LaTeX Font Info:    Try loading font information for U+msb on input line 138.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -435,9 +435,9 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <Diagram1.png, id=9, 601.24625pt x 512.91624pt>
 File: Diagram1.png Graphic file (type png)
  <use Diagram1.png>
-Package pdftex.def Info: Diagram1.png used on input line 157.
+Package pdftex.def Info: Diagram1.png used on input line 149.
 (pdftex.def)             Requested size: 258.0pt x 220.10358pt.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 174.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 166.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
@@ -447,20 +447,20 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 File: nfs_working_fig_2.png Graphic file (type png)
 
 <use nfs_working_fig_2.png>
-Package pdftex.def Info: nfs_working_fig_2.png used on input line 180.
+Package pdftex.def Info: nfs_working_fig_2.png used on input line 172.
 (pdftex.def)             Requested size: 258.0pt x 79.12206pt.
 
-Underfull \hbox (badness 1496) in paragraph at lines 172--184
+Underfull \hbox (badness 1496) in paragraph at lines 164--176
 []\OT1/ptm/m/n/10 The per-for-mance of an NFS sys-tem with client and
  []
 
 
-Underfull \hbox (badness 4072) in paragraph at lines 172--184
+Underfull \hbox (badness 4072) in paragraph at lines 164--176
 \OT1/ptm/m/n/10 server side syn-chronous mode turned on was bench-
  []
 
 
-Underfull \hbox (badness 2452) in paragraph at lines 172--184
+Underfull \hbox (badness 2452) in paragraph at lines 164--176
 \OT1/ptm/m/n/10 marked with client side op-tions in $\OML/cmm/m/it/10 =etc=fsta
 b$ \OT1/ptm/m/n/10 set as
  []
@@ -469,20 +469,20 @@ b$ \OT1/ptm/m/n/10 set as
 <server_async_fig.png, id=19, 481.8pt x 147.752pt>
 File: server_async_fig.png Graphic file (type png)
  <use server_async_fig.png>
-Package pdftex.def Info: server_async_fig.png used on input line 254.
+Package pdftex.def Info: server_async_fig.png used on input line 246.
 (pdftex.def)             Requested size: 258.0pt x 79.12206pt.
 
 <fixing_server_async.png, id=20, 545.03625pt x 482.80376pt>
 File: fixing_server_async.png Graphic file (type png)
 
 <use fixing_server_async.png>
-Package pdftex.def Info: fixing_server_async.png used on input line 311.
+Package pdftex.def Info: fixing_server_async.png used on input line 303.
 (pdftex.def)             Requested size: 258.0pt x 228.53853pt.
 
 <error_recovery.png, id=21, 487.8225pt x 470.75874pt>
 File: error_recovery.png Graphic file (type png)
  <use error_recovery.png>
-Package pdftex.def Info: error_recovery.png used on input line 326.
+Package pdftex.def Info: error_recovery.png used on input line 318.
 (pdftex.def)             Requested size: 258.0pt x 248.97658pt.
 
 [3 <./server_async_fig.png>]
@@ -490,7 +490,7 @@ Package pdftex.def Info: error_recovery.png used on input line 326.
 File: enhancing_client_async.png Graphic file (type png)
 
 <use enhancing_client_async.png>
-Package pdftex.def Info: enhancing_client_async.png used on input line 393.
+Package pdftex.def Info: enhancing_client_async.png used on input line 385.
 (pdftex.def)             Requested size: 258.0pt x 201.29413pt.
  [4 <./fixing_server_async.png> <./error_recovery.png>]
 Missing character: There is no Ã in font ptmr7t!
@@ -517,7 +517,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  3988 strings out of 493029
  59502 string characters out of 6136235
- 127678 words of memory out of 5000000
+ 126678 words of memory out of 5000000
  7456 multiletter control sequences out of 15000+600000
  42248 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -530,7 +530,7 @@ ype1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/time
 s/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on conference_071817.pdf (5 pages, 168921 bytes).
+Output written on conference_071817.pdf (5 pages, 168696 bytes).
 PDF statistics:
  62 PDF objects out of 1000 (max. 8388607)
  38 compressed objects within 1 object stream
