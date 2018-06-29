@@ -1,0 +1,18 @@
+good afternoon friends
+
+I am going to present my paper titled "Enhancing the Performance and Reliability
+of Network File System".
+
+With this paper, we are trying to introduce a number of methods for increasing
+the general performance and reducing chances of data correction with the Network
+File System.
+
+NFS is a generic term, it can refer to any network protocol which allows
+accessing files on a remote disk. But today, we are talking about SUN's NFS,
+which was first introduced way back in 1985.
+
+It is still being actively developed, and is widely deployed across 
+organizations, often with a directory access protocol such as LDAP.
+
+This allows people to log into their user accounts and access their files from
+any machine on the network.
