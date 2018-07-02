@@ -77,3 +77,57 @@ It turns out, leaving the ASYNC mode on is fairly risky.
 
 It causes the NFS server to accept more connections in unit time and the write
 queue at the server side starts filling up.
+
+if the server crashes, all the data from the queue is lost.
+
+But when ASYNC is turned off, no amount of fiddling in the server or client
+part could improve the performance of the system.
+
+We saw that, the only way out was to modify the NFS protocol.
+
+So we came upon the idea of creating a buffer in the NFS client.
+
+The buffer would be a predefined area in the secondary memory of the client.
+
+When the client tries to write some data to the server, a copy of it is stored
+in the buffer.
+
+When the buffer reaches the a predefined size, the oldest files are deleted.
+
+The client also maintains a metadata file in the buffer containing hashes of
+each file.
+
+The files are hashed with a lighweight hash such as QUARK to reduce CPU
+overhead.
+
+When a server crash occurs, the server requests the metadata file, and then
+compares it with the hashes of recently modified files.
+
+The server creates a list of missing or corrupt files, which is then sent to
+the client.
+
+The client in turn retransmits the files back to the server.
+
+When implemented, this mechanism can greatly reduce the chances of having
+corrupt files due to asynchronous mode.
+
+In the client side, it was almost the same story. The only parameter which
+provided a boost was the client side asynchronous mode.
+
+The client side asynchronous mode works by using the RAM of the client machine
+as a huge buffer.
+
+Data is written to the server only when some conditions are met, like an
+application calling the close() function or when sync is called.
+
+This reduces the traffic between the server and client and results in better
+performance among computers in the system.
+
+We found that we might be able to optimize the traffic in the system by
+forcing the client to write data to server when the size of data reaches a user
+set threshold and at the server side, controlling how many clients can write
+at the same time.
+
+The motive is to reduce the idle time of the server while also ensuring
+sufficient bandwidth is available for clients who wishes to read data from the
+server
