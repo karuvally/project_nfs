@@ -7,12 +7,12 @@ With this paper, we are trying to introduce a number of methods for increasing
 the general performance and reducing chances of data correction with the Network
 File System.
 
+NFS allows us to mount the partitions on a remote computer, and use them as if
+they were part of the local machine.
+
 NFS is a generic term, it can refer to any network protocol which allows
 accessing files on a remote disk. But today, we are talking about SUN's NFS,
 which was first introduced way back in 1985.
-
-NFS allows us to mount the partitions on a remote computer, and use them as if
-they were part of the local machine.
 
 It is still being actively developed, and is widely deployed across 
 organizations, often with a directory access protocol such as LDAP.
@@ -30,14 +30,14 @@ system.
 
 Our research began as a way to find means to improve the speed of the system
 
-Now, NFS has a client-server architecture and at both the client and server end
-there are lot of options that can be tweaked.
-
 We began by setting up a virtual lab on our workstation with one virtual
 machine running as the NFS server and the rest as clients.
 
 Each of the NFS instances was running in the default configuration, as we
 wanted to create a base benchmark score.
+
+Now, NFS has a client-server architecture and at both the client and server end
+there are lot of options that can be tweaked.
 
 For measuring the performance, a number of benchmarking tools including DBench,
 Bonnie++, Phoronix Test Suite were used as no single tool could not provide
