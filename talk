@@ -58,12 +58,12 @@ The next benchmark showed us that NFS could now perform at 28.90 MB/s.
 We knew that the ASYNC mode could provide a performance boost, but had not
 expected it to perform this well.
 
-When ASYNC is turned off and the client wants to write a bumch of files, it
+When ASYNC is turned off, if the client wants to write a bumch of files, it
 transfers the content of each file to the server and waits for the
 acknowledgment message from the server.
 
 The server returns the acknowledgment only after it finishes writing the data
-completely.
+to it's disk.
 
 The client does not transfer the next file until it receives acknowledgment.
 
@@ -71,39 +71,57 @@ This is the root cause for the disappointing performance of NFS in it's
 default configuration.
 
 Turning on ASYNC means that the client receives the acknowledgment as soon as
-it finishes transferring the data, speeding things up considerably.
+it finishes transferring the data.
 
-But if ASYNC is such a useful option, why is turned off by default?
+This means, the client can start sending the next file almost immediately,
+considerably reducing the lag.
+
+But if ASYNC is such a useful option, why not just leave it on? and why is it
+turned off by default?
 
 It turns out, leaving the ASYNC mode on is fairly risky.
 
-It causes the NFS server to accept more connections in unit time and the write
-queue at the server side starts filling up.
+When ASYNC is on, the clients can keep sending files to the server without
+waiting for the server to write them to the disks.
 
-if the server crashes, all the data from the queue is lost.
+It causes the server to accept more connections in unit time
 
-But when ASYNC is turned off, no amount of fiddling in the server or client
-part could improve the performance of the system.
+But as the server cannot write the incoming data at the same rate it can accept
+the data, a write queue at the server gets formed.
 
-We saw that, the only way out was to modify the NFS protocol.
+if the server crashes, all the data in the queue is lost.
+
+In other words, power loss or software failure in the server can cause data
+loss or corruptions in all the systems connected to the server.
+
+But without ASYNC, we would fall back to speeds which were inadequate to say the
+least.
+
+The only way out was to propose changes to the NFS protocol.
 
 So we came upon the idea of creating a buffer in the NFS client.
 
-The buffer would be a predefined area in the secondary memory of the client.
+The proposed buffer would be a predefined area in the secondary memory of the
+client.
 
-When the client tries to write some data to the server, a copy of it is stored
-in the buffer.
+All the data to be written to the server goes through the buffer.
 
-When the buffer reaches the a predefined size, the oldest files are deleted.
+The buffer would act like a ring buffer, deleting its oldest contents when a
+certain size is reached.
 
-The client also maintains a metadata file in the buffer containing hashes of
-each file.
+The client also maintains the metadata of each file in the buffer, including
+hashes for correctly identifying the files.
 
 The files are hashed with a lighweight hash such as QUARK to reduce CPU
 overhead.
 
-When a server crash occurs, the server requests the metadata file, and then
-compares it with the hashes of recently modified files.
+Once a server crash occurs, the server requests the metadata of all the files
+currently in each machine's buffer.
+
+It then compares them with the files on the server.
+
+If a file is missing or if the hashes do not match, the server requests the file
+to be retransmitted from the client.
 
 The server creates a list of missing or corrupt files, which is then sent to
 the client.
