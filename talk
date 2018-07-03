@@ -4,21 +4,21 @@ I am going to present my paper titled "Enhancing the Performance and Reliability
 of Network File System".
 
 With this paper, we are trying to introduce a number of methods for increasing
-the general performance and reducing chances of data correction with the Network
+the general performance and reducing chances of data corruption with the Network
 File System.
 
 NFS allows us to mount the partitions on a remote computer, and use them as if
 they were part of the local machine.
 
-NFS is a generic term, it can refer to any network protocol which allows
+Now, NFS is a generic term, it can refer to any network protocol which allows
 accessing files on a remote disk. But today, we are talking about SUN's NFS,
 which was first introduced way back in 1985.
 
 It is still being actively developed, and is widely deployed across 
 organizations, often with a directory access protocol such as LDAP.
 
-This allows people to log into their user accounts and access their files from
-any machine on the network.
+These sytems allow people to log into their user accounts and access their files
+from any machine on the network.
 
 One such system is operational in Department of Computer Applications, College
 of Engineering, Trivandrum.
@@ -26,18 +26,20 @@ of Engineering, Trivandrum.
 The issue with NFS is, in its default configuration, it is notoriously slow.
 
 In our lab, this means countless man hours are lost just trying to use the
-system.
+computers.
 
-Our research began as a way to find means to improve the speed of the system
+Our research began in hope of finding methods to improve the performance of
+the system.
+
+NFS follows a client-server architecture. 
 
 We began by setting up a virtual lab on our workstation with one virtual
 machine running as the NFS server and the rest as clients.
 
-Each of the NFS instances was running in the default configuration, as we
-wanted to create a base benchmark score.
+At both the client and server end there are lot of options that can be tweaked.
 
-Now, NFS has a client-server architecture and at both the client and server end
-there are lot of options that can be tweaked.
+But initially, each of the NFS instances was running in the default
+configuration, as we wanted to create a base benchmark score.
 
 For measuring the performance, a number of benchmarking tools including DBench,
 Bonnie++, Phoronix Test Suite were used as no single tool could not provide
