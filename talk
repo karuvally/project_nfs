@@ -1,4 +1,4 @@
-good afternoon friends
+Good afternoon friends
 
 I am going to present my paper titled "Enhancing the Performance and Reliability
 of Network File System".
@@ -160,14 +160,26 @@ We found that, we could further improve the read performance of a system under
 heavy load by limiting the number of simultaneous write requests accepted by the
 server.
 
-The client's behaviour will be modified such that, they write data to the
+The client's behaviour will be modified such that, they try to write data to the
 servers whenever possible.
 
-We found that we might be able to optimize the traffic in the system by
-forcing the client to write data to server when the size of data reaches a user
-set threshold and at the server side, controlling how many clients can write
-at the same time.
+The server on the other hand maintains two values, current_count and max_count,
+current_count being the number of currently writing clients, and max_count the
+maximum permissible number of clients.
 
-The motive is to reduce the idle time of the server while also ensuring
-sufficient bandwidth is available for clients who wishes to read data from the
-server
+The server accepts the write request from a client only if the number of
+currently connected clients is less than maximum permissible number of clients.
+
+If a client's request is denied, it waits for a random time before requesting
+again.
+
+The data to be written to the server stays in the RAM of the client and causes
+no performance degradation.
+
+But more importantly, it allows the server to reserve bandwidth for clients
+reading data from the server, thereby ensuring performance.
+
+These techniques, if implemented can provided a long needed performance boost to
+the protocol, while also reducing chances of data corruption.
+
+ThankYou
