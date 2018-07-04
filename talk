@@ -123,25 +123,45 @@ It then compares them with the files on the server.
 If a file is missing or if the hashes do not match, the server requests the file
 to be retransmitted from the client.
 
-The server creates a list of missing or corrupt files, which is then sent to
-the client.
-
 The client in turn retransmits the files back to the server.
+
+This ensures that the server will always have error free copy of files.
 
 When implemented, this mechanism can greatly reduce the chances of having
 corrupt files due to asynchronous mode.
 
-In the client side, it was almost the same story. The only parameter which
-provided a boost was the client side asynchronous mode.
+The obvious advantage of the proposed system is that, it can greatly improve the
+performance of NFS without sacrificing integrity of the data.
 
-The client side asynchronous mode works by using the RAM of the client machine
-as a huge buffer.
+Next, we moved to the client side of things.
+
+Most of the parameters in the client side gave little to no performance boost,
+with some negatively affecting the performance.
+
+The only parameter which gave considerable boost in performance was the client
+side asynchronous mode.
+
+Client side async works a bit different compared to the one at the server end.
+
+It works by using the RAM of the client machine as a huge buffer.
+
+On a client with async enabled, when data needs to be written to the server, it
+is written to the RAM.
 
 Data is written to the server only when some conditions are met, like an
-application calling the close() function or when sync is called.
+application calling the close() function or when memory is full.
 
 This reduces the traffic between the server and client and results in better
 performance among computers in the system.
+
+This results in a speed bump of around 10 MB/s
+
+We found that, we could further improve the read performance of a system under 
+heavy load by limiting the number of simultaneous write requests accepted by the
+server.
+
+The client's behaviour will be modified such that, they write data to the
+servers whenever possible.
 
 We found that we might be able to optimize the traffic in the system by
 forcing the client to write data to server when the size of data reaches a user
